@@ -152,7 +152,7 @@ const headlines = ref({
             </div>
             <div class="aspect-square max-w-[85%]">
               <img
-                src="../assets/sectionImages/image-2.jpg"
+                src="/src/assets/sectionImages/image-2.jpg"
                 alt="Image"
                 class="h-full w-full overflow-hidden object-cover"
               >
@@ -220,7 +220,7 @@ const headlines = ref({
           </div>
           <div class="sticky top-5 h-screen max-w-[55%] w-[55%] overflow-hidden">
             <img
-              src="../assets/sectionImages/image-1.jpg"
+              src="/src/assets/sectionImages/image-1.jpg"
               alt="Image"
               class="h-188 w-full bg-no-repeat object-cover pl-10 grayscale"
             >
@@ -254,7 +254,7 @@ const headlines = ref({
   position: absolute;
   display: block;
   content: '';
-  background-image: url(../../src/assets/bg-graphics.jpg);
+  background-image: url(/src/assets/bg-graphics.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;

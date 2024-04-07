@@ -1,53 +1,52 @@
 <script setup lang="ts">
 import { isActiveNavItem } from '@/utils/helpers'
 
-const { t } = useI18n()
 const route = useRoute()
 
 const items = ref([
   {
     index: 1,
-    label: t('components.navBar.item1'),
+    label: 'Accueil',
   },
   {
     index: 2,
-    label: t('components.navBar.item2'),
+    label: 'Fenêtres & baies vitrées alu',
   },
   {
     index: 3,
-    label: t('components.navBar.item3'),
+    label: 'Volets alu & occultants',
     items: [
       {
-        label: t('components.navBar.subItem31'),
+        label: 'Volets roulants',
       },
       {
-        label: t('components.navBar.subItem32'),
+        label: 'BSO',
       },
     ],
   },
   {
     index: 4,
-    label: t('components.navBar.item4'),
+    label: 'Menuiseries minimalistes',
   },
   {
     index: 5,
-    label: t('components.navBar.item5'),
+    label: 'Garde corps minimaliste',
   },
   {
     index: 6,
-    label: t('components.navBar.item6'),
+    label: 'Portes & portails alu',
   },
   {
     index: 7,
-    label: t('components.navBar.item7'),
+    label: 'Nos réalisations',
   },
   {
     index: 8,
-    label: t('components.navBar.item8'),
+    label: 'Guide local',
   },
   {
     index: 9,
-    label: t('components.navBar.item9'),
+    label: 'Contact',
   },
 ])
 </script>
@@ -58,7 +57,7 @@ const items = ref([
       :model="items"
       class="border-none bg-transparent hover:bg-transparent"
     >
-      <template #item="{ item, props, root }">
+      <template #item="{ item, props }">
         <a
           v-ripple
           class="align-items-center flex border-x-0 border-t-0 border-[#003f5e] border-solid"
@@ -66,15 +65,15 @@ const items = ref([
           v-bind="props.action"
         >
           <span :class="item.icon" />
-          <span class="ml-2 text-white">{{ item.label }}</span>
+          <span class="ml-0 text-white">{{ item.label }}</span>
           <Badge
             v-if="item.badge"
-            :class="{ 'ml-auto': !root, 'ml-2': root }"
+            class="ml-0"
             :value="item.badge"
           />
           <span
             v-if="item.shortcut"
-            class="surface-border surface-100 border-round ml-auto border-1 p-1 text-xs"
+            class="surface-border surface-100 border-round ml-0 border-1 p-1 text-xs"
           >{{ item.shortcut }}</span>
         </a>
       </template>
