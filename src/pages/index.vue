@@ -139,18 +139,91 @@ const headlines = ref({
     </section>
     <section
       id="section-4"
-      class="relative mt-30 h-572 bg-[#003f5e] bg-opacity-40 pt-10 text-black"
+      class="relative mt-30 min-h-max flex justify-center bg-[#003f5e] bg-opacity-40 pt-10 text-black"
     >
-      <div
-        class="absolute top-0 z-0 block h-full w-full bg-cover"
-        style="background-image: url('src/assets/bg-graphics.jpg');"
-      >
-        <div>
-          <div class="mb-3 text-sm text-white tracking-[0.5em] uppercase">
-            DES PRESTATIONS
+      <div class="section-4-content max-w-[85%] w-[85%] pt-25">
+        <div class="relative z-3 flex justify-center">
+          <div class="max-w-[40%] w-[40%] flex flex-col items-end pb-20">
+            <div class="mb-3 text-sm text-white tracking-[0.5em] uppercase">
+              DES PRESTATIONS
+            </div>
+            <div class="mb-5 text-5xl text-white font-bold leading-15">
+              sur-mesure
+            </div>
+            <div class="aspect-square max-w-[85%]">
+              <img
+                src="../assets/sectionImages/image-2.jpg"
+                alt="Image"
+                class="h-full w-full overflow-hidden object-cover"
+              >
+              <div class="max-w-[15%]" />
+            </div>
+            <div class="mb-5 mt-2.5 h-auto w-full bg-white p-5 text-left text-[1.7em] leading-10">
+              FABRICANT DE FENÊTRES ET BAIES VITRÉES
+              SUR-MESURE HAUT DE GAMME EN RHÔNE-ALPES
+            </div>
+            <div class="max-w-[85%] text-left text-white">
+              <strong class="mb-2.5 mt-10 block leading-6">
+                Menuiserie aluminium sur-mesure à Lyon
+              </strong>
+              <div class="text-justify text-[14px] leading-7">
+                <div class="mb-5">
+                  Nous intervenons sur l’étude, la conception et la pose de <strong>fenêtres et baies vitrées en
+                    aluminium</strong> pour vos
+                  projets de construction ou rénovation de maison pour particuliers, professionnels et architectes proche
+                  d’ <strong>Aix-les-Bains</strong> (73) ou des <strong>Monts d’Or</strong>, près de Lyon (69). Notre
+                  savoir-faire nous permet de vous offrir des
+                  <strong>fenêtres et baies vitrées en aluminium</strong> aux structures épurées et aux grandes
+                  performances d’isolation
+                  thermique et phonique, qui renforcent votre sentiment de sécurité tout en apportant un style
+                  contemporain et
+                  minimaliste à votre bien d’exception.
+                </div>
+
+                <div class="mb-5">
+                  Conçues <strong>sur-mesure</strong> et donc totalement <strong>personnalisables</strong>, vous pouvez
+                  <strong>adapter vos fenêtres et baies vitrées</strong>
+                  selon vos attentes et votre architecture, en choisissant la taille, la forme, la couleur et les
+                  finitions.
+                  <strong>Baies vitrées coulissantes, fenêtres battantes</strong>, double ou triple vitrage, avec volet
+                  roulant intégré… Nos
+                  produits haut de gamme s'intègrent parfaitement à l’environnement, effaçant les barrières entre
+                  intérieur et
+                  extérieur.
+                </div>
+
+                <strong class="mb-2 mt-11 block text-left text-[16px] font-extrabold">
+                  Menuiserie aluminium minimaliste pour maison contemporaine et villa d’architecte à Lyon
+                </strong>
+
+                <div>
+                  Pour un intérieur encore plus minimaliste, STBN <strong>Menuiserie Aluminium à Lyon</strong> s'est
+                  associé <strong>Technal</strong> et
+                  Keller
+                  <strong>Minimal Windows</strong>, pour vous offrir des <strong>fenêtres et baies vitrées aux structures
+                    invisibles</strong>. Grande
+                  tendance
+                  architecturale, les <strong> menuiseries minimalistes en aluminium</strong> se traduisent par des
+                  <strong>fenêtres et baies
+                    vitrées
+                    XXL</strong>, qui inondent votre intérieur de lumière naturelle tout en maximisant votre espace.
+                  Les <strong>structures en aluminium</strong> aux lignes fines d’une grande élégance sont quasiment
+                  imperceptibles, pour
+                  laisser place à d’immenses vitrages. Profitez d’une vue panoramique exceptionnelle grâce à nos
+                  <strong>fenêtres
+                    et
+                    baies vitrées</strong> très grandes dimensions.
+                </div>
+                <div class="mt-10 inline-block h-0.75 w-15 bg-[#003f5e]" />
+              </div>
+            </div>
           </div>
-          <div class="mb-5 text-5xl text-white font-bold leading-15">
-            sur-mesure
+          <div class="sticky top-5 h-screen max-w-[55%] w-[55%] overflow-hidden">
+            <img
+              src="../assets/sectionImages/image-1.jpg"
+              alt="Image"
+              class="h-188 w-full bg-no-repeat object-cover pl-10 grayscale"
+            >
           </div>
         </div>
       </div>
@@ -158,7 +231,51 @@ const headlines = ref({
   </div>
 </template>
 
-<style></style>
+<style scoped>
+.section-4 {
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  color: #000;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 85%;
+  max-width: 85%;
+  z-index: 3;
+}
+
+.section-4-content::before {
+  position: absolute;
+  display: block;
+  content: '';
+  background-image: url(../../src/assets/bg-graphics.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.section-4-content::after {
+  position: absolute;
+  display: block;
+  content: '';
+  background: #003f5e;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  opacity: 0.65;
+}
+</style>
 
 <route lang="yaml">
 meta:
