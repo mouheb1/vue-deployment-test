@@ -1,0 +1,29 @@
+button:
+  about: À propos
+  back: Retour
+  go: Essayer
+  home: Accueil
+  toggle_dark: Basculer en mode sombre
+  toggle_langs: Changer de langue
+components:
+  navBar:
+    item1: Accueil
+    item2: Fenêtres & baies vitrées alu
+    item3: Volets alu & occultants
+    item4: Menuiseries minimalistes
+    item5: Garde corps minimaliste
+    item6: Portes & portails alu
+    item7: Nos réalisations
+    item8: Guide local
+    item9: Contact
+    subItem31: Volets roulants
+    subItem32: BSO
+general:
+  title: Delta Solution
+intro:
+  aka: Aussi connu sous le nom de
+  desc: Exemple d'application Vite
+  dynamic-route: Démo de route dynamique
+  hi: 'Salut, {name}!'
+  whats-your-name: Comment t'appelles-tu ?
+not-found: Page non trouvée

@@ -1,0 +1,29 @@
+button:
+  about: About
+  back: Back
+  go: GO
+  home: Home
+  toggle_dark: Toggle dark mode
+  toggle_langs: Change languages
+components:
+  navBar:
+    item1: Welcome
+    item2: Windows
+    item3: Aluminum shutters
+    item4: Minimalist joinery
+    item5: Minimalist bodyguard
+    item6: Doors
+    item7: Our achievements
+    item8: Local guide
+    item9: Contact
+    subItem31: Rolling shutters
+    subItem32: BSO
+general:
+  title: Delta Solution
+intro:
+  aka: Also known as
+  desc: Opinionated Vite Starter Template
+  dynamic-route: Demo of dynamic route
+  hi: Hi, {name}!
+  whats-your-name: What's your name?
+not-found: Not found
