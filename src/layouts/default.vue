@@ -11,11 +11,9 @@ onMounted(async () => {
 </script>
 
 <template>
-  <main
-    text="center"
-  >
-    <TheHeader />
+  <TheHeader />
+  <main text="center">
     <RouterView />
-    <TheFooter />
   </main>
+  <TheFooter />
 </template>
