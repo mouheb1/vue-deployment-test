@@ -12,7 +12,7 @@ onMounted(async () => {
 
 <template>
   <TheHeader />
-  <main text="center">
+  <main class="flex flex-col bg-white text-center">
     <RouterView />
   </main>
   <TheFooter />
