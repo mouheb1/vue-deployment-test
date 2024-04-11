@@ -17,5 +17,6 @@ declare module 'vue' {
     TheHeader: typeof import('./components/TheHeader.vue')['default']
     TheInput: typeof import('./components/TheInput.vue')['default']
     TopBar: typeof import('./components/TopBar.vue')['default']
+    WideArticleCard: typeof import('./components/cards/WideArticleCard.vue')['default']
   }
 }

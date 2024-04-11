@@ -5,19 +5,19 @@ defineOptions({
 
 const images = ref([
   {
-    itemImageSrc: 'src/assets/galleryImages/image-1.jpg',
+    itemImageSrc: '/images/galleryImages/image-2.jpg',
     alt: 'Image 1',
   },
   {
-    itemImageSrc: 'src/assets/galleryImages/image-2.jpg',
+    itemImageSrc: '/images/galleryImages/image-1.jpg',
     alt: 'Image 2',
   },
   {
-    itemImageSrc: 'src/assets/galleryImages/image-3.jpg',
+    itemImageSrc: '/images/galleryImages/image-3.jpg',
     alt: 'Image 3',
   },
   {
-    itemImageSrc: 'src/assets/galleryImages/image-4.jpg',
+    itemImageSrc: '/images/galleryImages/image-4.jpg',
     alt: 'Image 4',
   },
 ])
@@ -26,6 +26,67 @@ const headlines = ref({
   up: 'STBN ALUMINIUM SUR-MESURE',
   down: 'Menuiserie aluminium minimaliste sur-mesure à Lyon',
 })
+
+const topArticles = ref([
+  {
+    articleId: '1',
+    title: 'Fenêtres & Baies vitrées en aluminium à Lyon',
+    image: '/images/articlesImages/image-1.jpg',
+  },
+  {
+    articleId: '2',
+    title: 'Portails aluminium à Lyon',
+    image: '/images/articlesImages/image-2.jpg',
+
+  },
+  {
+    articleId: '3',
+    title: 'Volets roulants en aluminium à Lyon',
+    image: '/images/articlesImages/image-3.jpg',
+
+  },
+  {
+    articleId: '4',
+    title: 'Menuiseries minimalistes à Lyon',
+    image: '/images/articlesImages/image-4.jpg',
+
+  },
+  {
+    articleId: '5',
+    title: 'Pergolas bioclimatiques à Lyon',
+    image: '/images/articlesImages/image-5.jpg',
+
+  },
+  {
+    articleId: '6',
+    title: 'Nos réalisations en menuiserie aluminium à Lyon',
+    image: '/images/articlesImages/image-6.jpg',
+
+  },
+])
+
+const bottomArticles = ref([
+  {
+    articleId: '1',
+    title: 'Maximisez Confort et Esthétique avec les Brises Soleil Orientables de STBN en Rhône-Alpes',
+    description: 'À mi-chemin entre la tradition des jalousies à la Lyonnaise et la modernité d\'un store e...',
+    image: '/images/articlesImages/image-7.png',
+  },
+  {
+    articleId: '2',
+    title: 'Portails aluminium à Lyon',
+    description: 'Découvrez l\'univers des portes déco avec STBN, votre spécialiste en menuiserie al...',
+    image: '/images/articlesImages/image-8.jpeg',
+
+  },
+  {
+    articleId: '3',
+    title: 'Volets roulants en aluminium à Lyon',
+    description: 'Vous êtes à la recherche d\'une manière élégante de permettre à la lumière naturelle d\'en...',
+    image: '/images/articlesImages/image-9.jpg',
+
+  },
+])
 </script>
 
 <template>
@@ -80,7 +141,7 @@ const headlines = ref({
   >
     <div
       class="mr-20 w-1/2 bg-cover bg-center bg-no-repeat"
-      style="background-image: url('src/assets/galleryImages/image-1.jpg');"
+      style="background-image: url('/images/galleryImages/image-1.jpg');"
     />
     <div class="mr-20 w-1/2 flex flex-col items-center text-justify">
       <div class="w-155 flex flex-col px-20 pr-30">
@@ -112,7 +173,7 @@ const headlines = ref({
         <div
           class="animate-clipToTop mt-10 h-100 w-100 duration-600 delay-250 ease-in-out"
           title="Menuiserie haut de gamme en aluminium et sur-mesure à Lyon"
-          style=" background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('src/assets/galleryImages/image-2.jpg');"
+          style=" background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('/images/galleryImages/image-2.jpg');"
         />
       </div>
     </div>
@@ -133,7 +194,7 @@ const headlines = ref({
       </div>
     </div>
     <div class="mx-20 flex flex-wrap justify-center">
-      <ArticleSection />
+      <ArticleSection :articles="topArticles" />
     </div>
   </section>
   <section
@@ -151,7 +212,7 @@ const headlines = ref({
           </div>
           <div class="aspect-square max-w-[85%]">
             <img
-              src="/src/assets/sectionImages/image-2.jpg"
+              src="/images/sectionImages/image-1.jpg"
               alt="Image"
               class="h-full w-full overflow-hidden object-cover"
             >
@@ -217,14 +278,166 @@ const headlines = ref({
             </div>
           </div>
         </div>
-        <div class="sticky top-5 h-screen max-w-[55%] w-[55%] overflow-hidden">
+        <div class="sticky top-5 aspect-auto h-screen max-w-[55%] overflow-hidden">
           <img
-            src="/src/assets/sectionImages/image-1.jpg"
+            src="/images/sectionImages/image-2.jpg"
             alt="Image"
-            class="h-188 w-full bg-no-repeat object-cover pl-10 grayscale"
+            class="h-full w-full overflow-hidden bg-no-repeat object-cover pl-10 grayscale"
           >
+          <div class="max-w-[15%]" />
         </div>
       </div>
+    </div>
+  </section>
+  <section
+    id="section-5"
+    class="section-5-content relative min-h-max flex justify-center pt-20 text-black"
+  >
+    <div class="relative z-3 flex justify-center">
+      <div class="sticky top-5 mr-20 mt-10 aspect-square h-screen max-w-[50%] overflow-hidden">
+        <img
+          src="/images/sectionImages/image-3.jpg"
+          alt="Image"
+          class="h-full w-full overflow-hidden bg-no-repeat object-cover"
+        >
+      </div>
+      <div class="max-w-[50%] flex flex-col items-end">
+        <div class="mr-30 p-x-20 pt-20 text-left">
+          <div class="mb-5 pt-20 text-[1.8em]">
+            CONCEPTION DE VOLETS ROULANTS OU BATTANTS POUR BIENS D’EXCEPTION À ANNECY ET MEGÈVE (74)
+          </div>
+          <div class="text-justify text-[14px] leading-7">
+            <div class="mb-5">
+              De fabrication française, nos <strong>volets et brise-soleil orientables</strong> (BSO) en
+              <strong>aluminium</strong> sont pensés et conçus
+              par nos artisans expérimentés dans notre atelier en région lyonnaise. Grâce à <strong>l’aluminium</strong>
+              doté de hautes
+              technologies, tous nos <strong>volets battants, volets roulants et brise-soleil orientables</strong> sont
+              ultra résistants et
+              respectueux de l’environnement. En effet, <strong>l’aluminium</strong> est recyclable, et procure une
+              longévité à nos
+              produits car résistent aux conditions climatiques extrêmes, ne se déforme pas, ne rouille pas et ne
+              nécessite pas d’entretien. Grâce à leur structure et lames orientables en <strong>aluminium</strong>, nos
+              produits vous
+              garantissent isolation, étanchéité et sécurité. Si vous optez pour des volets motorisés, vous gagnerez
+              également en confort de vie au quotidien. Combinés à nos <strong>fenêtres et baies vitrées en
+                aluminium</strong>, vous
+              bénéficiez de <strong>menuiseries haut de gamme</strong> s’intégrant parfaitement à votre maison, tout en
+              adoptant un style
+              contemporain. Très esthétique, le brise-soleil orientable vous offre l’avantage supplémentaire de pouvoir
+              gérer l’apport de lumière naturelle dans votre villa tout en maîtrisant la température grâce à ses lames
+              orientables en <strong>aluminium</strong>.
+            </div>
+
+            <strong class="mb-2 mt-11 block text-left text-[16px] font-extrabold">
+              Des fermetures : portes et portails en aluminium Made in Lyon grâce à STBN Menuiserie Aluminium
+            </strong>
+
+            <div>
+              Première impression que les visiteurs ont de votre maison, les <strong>portes et portails</strong>
+              reflètent
+              l’identité de
+              votre bien. Adoptez un style contemporain en optant pour des portes et portails en
+              <strong>aluminium</strong> de très grande
+              qualité, fabriqués par l’équipe STBN <strong>Menuiserie alu à Lyon</strong>. D’une grande solidité,
+              <strong>nos portes et portails en
+                aluminium</strong> vous assurent résistance, isolation et sécurité. D’abord fonctionnelles, les
+              <strong>fermetures : portes
+                et portails en aluminium</strong> apportent également un style, une identité à votre maison. Grâce à
+              l’<strong>aluminium</strong>ng,
+              matériau malléable, vous pouvez laisser parler votre imagination tant sur la forme que sur les nombreuses
+              couleurs disponibles avec sa peinture thermolaquée. Que vous optiez pour une <strong>porte en
+                aluminium</strong> pleine, une
+              porte semi-vitrée ou une porte vitrée, notre savoir-faire allié à notre expertise vous permet de vous
+              procurer toute la sécurité dont vous avez besoin grâce à nos vitrages spécifiques et des systèmes de
+              fermetures ultra sécurisés. Côté <strong>portails</strong>, les fabrications STBN vous certifient sécurité
+              et solidité. Nous
+              proposons également des <strong>portails motorisés</strong> et avec éclairage intégré pour maximiser votre
+              confort.
+            </div>
+            <div class="mt-10 inline-block h-0.75 w-15 bg-[#003f5e]" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    id="section-6"
+    class="section-6-content relative min-h-max flex justify-center py-20 text-black"
+  >
+    <div class="relative z-3 flex justify-center">
+      <div class="max-w-[50%] flex flex-col items-end">
+        <div class="mr-30 p-x-20 pt-20 text-left">
+          <div class="mb-5 pt-20 text-[1.8em]">
+            PERGOLAS ALUMINIUM À LYON
+          </div>
+          <div class="text-justify text-[14px] leading-7">
+            <div>
+              Vous recherchez un <strong class="text-[#003f5e]">fabricant de pergola aluminium à Lyon</strong> et sa
+              région ? STBN Aluminium conçoit et installe
+              selon les réglementations professionnelles vos <strong>pergolas bioclimatiques en aluminium. La pergola en
+                aluminium</strong>
+              est l’élément architectural qui apportera une touche contemporaine à votre maison tout en vous permettant
+              de
+              couvrir votre terrasse ou votre jardin. Personnalisable, vous pouvez choisir une <strong>pergola
+                auto-portée</strong> ou
+              adossée à votre maison. Sa peinture thermolaquée vous offre un grand choix de couleurs qui vous permettra
+              d’adapter votre <strong>pergola</strong> à votre décoration. Pour plus de confort, choisissez une
+              <strong>pergola bioclimatique</strong>.
+              Équipée de lames orientables, vous aurez alors la possibilité de maîtriser l’ensoleillement sur votre
+              terrasse tout en bénéficiant d’un espace supplémentaire. Besoin d’un système pour protéger votre véhicule
+              ?
+              STBN <strong>Menuiserie Aluminium</strong> est spécialisé dans la <strong>pergola sur-mesure à
+                Lyon</strong>, pour s'intégrer au mieux à votre
+              habitat.
+            </div>
+            <div class="mb-15">
+              STBN Aluminium propose désormais également ses services pour de la <strong class="text-[#003f5e]">location
+                de pergola bioclimatique à Lyon</strong>
+              pour les professionnels de l'événementiel.
+            </div>
+
+            <div>
+              Toute l’équipe de STBN <strong>Menuiserie Aluminium à Lyon</strong> est à votre disposition pour vous
+              accompagner dans la
+              réalisation de vos plus beaux projets en <strong>aluminium sur-mesure</strong>. N’hésitez pas à nous
+              contacter pour toute
+              demande d’informations complémentaires.
+            </div>
+            <div class="mt-10 inline-block h-0.75 w-15 bg-[#003f5e]" />
+          </div>
+        </div>
+      </div>
+
+      <div class="sticky top-5 mr-20 mt-10 aspect-square h-screen max-w-[50%] overflow-hidden">
+        <img
+          src="/images/sectionImages/image-4.jpeg"
+          alt="Image"
+          class="h-full w-full overflow-hidden bg-no-repeat object-cover"
+        >
+      </div>
+    </div>
+  </section>
+  <section
+    id="section-7"
+    class="mt-15 pt-10"
+  >
+    <div class="w-full">
+      <div class="relative mb-10 border-1 border-black border-opacity-15 border-solid">
+        <div class="absolute left-0 h-2 w-50 bg-[#003f5e] -top-1" />
+      </div>
+      <div class="mb-3 text-sm text-[#003f5e] tracking-[0.5em] uppercase">
+        DÉCOUVRIR
+      </div>
+      <div class="mb-5 text-5xl text-black font-bold leading-15">
+        également...
+      </div>
+    </div>
+    <div class="box-border flex flex-wrap justify-center">
+      <ArticleSection
+        :articles="bottomArticles"
+        :wide="true"
+      />
     </div>
   </section>
 </template>
@@ -252,7 +465,7 @@ const headlines = ref({
   position: absolute;
   display: block;
   content: '';
-  background-image: url(/src/assets/bg-graphics.jpg);
+  background-image: url(/images/bg-graphics.jpg);
   background-size: cover;
   width: 100%;
   height: 100%;
@@ -272,6 +485,17 @@ const headlines = ref({
   top: 0;
   left: 0;
   opacity: 0.65;
+}
+
+.section-5-content::before {
+  position: absolute;
+  content: '';
+  display: block;
+  background-color: #003f5e;
+  height: 200px;
+  width: 8px;
+  right: 0;
+  top: 0;
 }
 </style>
 

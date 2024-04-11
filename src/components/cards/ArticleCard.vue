@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import imageUnavailablePath from '@/assets/no-image.png'
+import imageUnavailablePath from '/images/no-image.png'
 
 defineProps({
   title: {
