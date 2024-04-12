@@ -420,7 +420,7 @@ const bottomArticles = ref([
   </section>
   <section
     id="section-7"
-    class="mt-15 pt-10"
+    class="mb-30 mt-15 pt-10"
   >
     <div class="w-full">
       <div class="relative mb-10 border-1 border-black border-opacity-15 border-solid">

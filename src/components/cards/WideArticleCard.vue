@@ -18,7 +18,7 @@ const showDescription = ref(true)
 
 <template>
   <div
-    class="mb-2 w-120 duration-900 hover:cursor-pointer"
+    class="mb-2 min-h-100 w-120 duration-900 hover:cursor-pointer"
     @mouseover="showDescription = true"
     @mouseout="showDescription = false"
   >
