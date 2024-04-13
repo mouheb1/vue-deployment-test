@@ -1,74 +1,48 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
 import { isActiveNavItem } from '@/utils/helpers'
-
-defineProps({
-  hasScrolled: {
-    type: Boolean,
-    default: false,
-  },
-})
+import { navElements } from '@/assets/json/config.json'
 
 const route = useRoute()
-
-const items = ref([
-  {
-    index: 1,
-    label: 'Accueil',
-  },
-  {
-    index: 2,
-    label: 'Fenêtres & baies vitrées',
-  },
-  {
-    index: 3,
-    label: 'Volets alu & occultants',
-    items: [
-      {
-        label: 'Volets roulants',
-      },
-      {
-        label: 'BSO',
-      },
-    ],
-  },
-  {
-    index: 5,
-    label: 'Garde corps minimaliste',
-  },
-  {
-    index: 6,
-    label: 'Portes & portails alu',
-  },
-  {
-    index: 7,
-    label: 'Nos réalisations',
-  },
-  {
-    index: 9,
-    label: 'Contact',
-  },
-])
+const globalStore = useGlobalStore()
+const { hasScrolled } = storeToRefs(globalStore)
 </script>
 
 <template>
   <div class="bg-transparent-menu-bar box-border">
     <Menubar
-      :model="items"
+      :mobile-active="false"
+      :model="navElements"
       breakpoint="768px"
-      class="border-none bg-transparent pb-0 hover:bg-transparent"
+      class="border-none bg-transparent hover:bg-transparent"
     >
       <template #item="{ item, props }">
-        <a
-          v-ripple
-          class="flex items-center border-x-0 border-t-0 border-[#003f5e] border-solid"
-          :class="[isActiveNavItem(item.index, route.path) ? 'border-b-2' : 'border-b-0']"
-          v-bind="props.action"
+        <router-link
+          v-slot="{ href, navigate }"
+          :to="item.route"
+          custom
         >
-          <span
-            class="ml-0"
-            :class="[hasScrolled ? 'text-black' : 'md:text-white']"
-          >{{ item.label }}</span>
-        </a>
+          <a
+            v-ripple
+            class="nav-underline flex items-center justify-center"
+            :style="isActiveNavItem(item.index, route.path) ? { 'background-size': '60% 3px' } : { }"
+            v-bind="props.action"
+            :href="href"
+            @click="navigate"
+          >
+
+            <span
+              class="ml-0"
+              :class="[hasScrolled ? 'text-black' : 'md:text-white']"
+            >{{ item.label }}</span>
+          </a>
+        </router-link>
+      </template>
+      <template #menubuttonicon="">
+        <i
+          class="pi pi-bars color-white hover:color-[#003f5e]"
+          style="font-size: 1rem"
+        />
       </template>
     </Menubar>
   </div>
@@ -77,5 +51,19 @@ const items = ref([
 <style>
 .p-menuitem-content {
   background-color: transparent !important;
+}
+
+.nav-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#003f5e, #003f5e);
+  background-size: 0 3px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.nav-underline:hover {
+  background-size: 60% 3px;
 }
 </style>

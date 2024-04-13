@@ -23,43 +23,43 @@ const images = ref([
 ])
 
 const headlines = ref({
-  up: 'STBN ALUMINIUM SUR-MESURE',
-  down: 'Menuiserie aluminium minimaliste sur-mesure à Lyon',
+  up: 'DELTA SOLUTION SUR-MESURE',
+  down: 'Menuiserie aluminium minimaliste sur-mesure',
 })
 
 const topArticles = ref([
   {
     articleId: '1',
-    title: 'Fenêtres & Baies vitrées en aluminium à Lyon',
+    title: 'Fenêtres & Baies vitrées en aluminium',
     image: '/images/articlesImages/image-1.jpg',
   },
   {
     articleId: '2',
-    title: 'Portails aluminium à Lyon',
+    title: 'Portails aluminium',
     image: '/images/articlesImages/image-2.jpg',
 
   },
   {
     articleId: '3',
-    title: 'Volets roulants en aluminium à Lyon',
+    title: 'Volets roulants en aluminium',
     image: '/images/articlesImages/image-3.jpg',
 
   },
   {
     articleId: '4',
-    title: 'Menuiseries minimalistes à Lyon',
+    title: 'Menuiseries minimalistes',
     image: '/images/articlesImages/image-4.jpg',
 
   },
   {
     articleId: '5',
-    title: 'Pergolas bioclimatiques à Lyon',
+    title: 'Pergolas bioclimatiques',
     image: '/images/articlesImages/image-5.jpg',
 
   },
   {
     articleId: '6',
-    title: 'Nos réalisations en menuiserie aluminium à Lyon',
+    title: 'Nos réalisations en menuiserie aluminium',
     image: '/images/articlesImages/image-6.jpg',
 
   },
@@ -68,20 +68,20 @@ const topArticles = ref([
 const bottomArticles = ref([
   {
     articleId: '1',
-    title: 'Maximisez Confort et Esthétique avec les Brises Soleil Orientables de STBN en Rhône-Alpes',
-    description: 'À mi-chemin entre la tradition des jalousies à la Lyonnaise et la modernité d\'un store e...',
+    title: 'Maximisez Confort et Esthétique avec les Brises Soleil Orientables de DELTA Solution',
+    description: 'À mi-chemin entre la tradition des jalousies et la modernité d\'un store e...',
     image: '/images/articlesImages/image-7.png',
   },
   {
     articleId: '2',
-    title: 'Portails aluminium à Lyon',
-    description: 'Découvrez l\'univers des portes déco avec STBN, votre spécialiste en menuiserie al...',
+    title: 'Portails aluminium',
+    description: 'Découvrez l\'univers des portes déco avec DELTA Solution, votre spécialiste en menuiserie al...',
     image: '/images/articlesImages/image-8.jpeg',
 
   },
   {
     articleId: '3',
-    title: 'Volets roulants en aluminium à Lyon',
+    title: 'Volets roulants en aluminium',
     description: 'Vous êtes à la recherche d\'une manière élégante de permettre à la lumière naturelle d\'en...',
     image: '/images/articlesImages/image-9.jpg',
 
@@ -107,11 +107,11 @@ const bottomArticles = ref([
             style="display: block;"
             class="h-screen min-h-screen min-w-full object-cover opacity-50"
           >
-          <div class="absolute">
+          <div class="absolute translate-y-10 px-5 lg:translate-y-0 lg:px-0">
             <div class="mb-3 text-sm text-white tracking-[0.5em] uppercase">
               {{ headlines.up }}
             </div>
-            <div class="text-6xl font-bold leading-20">
+            <div class="text-5xl font-bold leading-17 lg:text-6xl lg:leading-20">
               {{ headlines.down }}
             </div>
           </div>
@@ -131,10 +131,10 @@ const bottomArticles = ref([
     >
       <div class="lg:w-[40%]">
         <div class="mb-3 text-sm text-[#003f5e] tracking-[0.5em] uppercase">
-          STBN ALUMINIUM
+          DELTA SOLUTION
         </div>
         <div class="text-5xl text-black font-bold leading-15">
-          Fabricant installateur de menuiseries ALU haut de gamme sur la région de Lyon
+          Fabricant installateur de menuiseries ALU haut de gamme
         </div>
         <div />
       </div>
@@ -148,16 +148,16 @@ const bottomArticles = ref([
         style="background-image: url('/images/galleryImages/image-1.jpg');"
       />
       <div class="w-1/2 flex flex-col items-center text-justify lg:mr-20">
-        <div class="w-155 flex flex-col px-10 lg:px-20 lg:pr-30">
+        <div class="max-w-min w-155 flex flex-col px-10 lg:px-20 lg:pr-30">
           <div class="mb-3 mb-5 pt-20 text-left text-2xl text-black font-normal tracking-[0.01em] uppercase">
-            MENUISERIE ALUMINIUM À LYON
+            MENUISERIE ALUMINIUM
           </div>
           <div class="text-[14px] text-black leading-7">
-            <span> STBN Menuiserie Aluminium, est un </span>
-            <b>fabricant de menuiserie aluminium à Lyon et Rhône-alpes.</b>
+            <span> DESLTA Solution, est un </span>
+            <b>fabricant de menuiserie aluminium et Rhône-alpes.</b>
             <br>
             <br>
-            <span>Entreprise familiale, STBN <strong>Menuiserie Aluminium</strong> est <strong>spécialiste de
+            <span>Entreprise familiale, <strong>DELTA Solution</strong> est <strong>spécialiste de
               menuiseries
               en aluminium sur-mesure.</strong> Fabriquées dans notre atelier, nous installons nos <strong>menuiseries
               alu sur-mesure haut de gamme</strong> en région Rhône-Alpes, principalement dans l’Ain (01) et autour de
@@ -167,19 +167,19 @@ const bottomArticles = ref([
             <span>Nos artisans experts réalisent une étude de votre projet de construction de maison contemporaine,
               villa
               d’architecte ou rénovation de bâtisse ancienne et conçoivent pour vous la solution la plus adaptée à vos
-              besoins. Design et innovantes, nos <strong>menuiseries alu à Lyon</strong> sont performantes en termes
+              besoins. Design et innovantes, nos <strong>menuiseries alu</strong> sont performantes en termes
               d’isolation et
               d’étanchéité. Engagés dans une démarche globale de qualité, nos produits vous assurent durabilité et
               respect
               de l’environnement grâce à l'<strong>aluminium</strong>.</span>
             <br>
             <br>
-            STBN Aluminium, <strong>menuiserie en alu sur-mesure à Lyon</strong>
+            Delta Solution, <strong>menuiserie en alu sur-mesure</strong>
           </div>
           <div class="mt-10 inline-block h-0.5 w-15 bg-[#003f5e]" />
           <div
             class="animate-clipToTop mt-10 h-100 w-100 duration-600 delay-250 ease-in-out"
-            title="Menuiserie haut de gamme en aluminium et sur-mesure à Lyon"
+            title="Menuiserie haut de gamme en aluminium et sur-mesure"
             style=" background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('/images/galleryImages/image-2.jpg');"
           />
         </div>
@@ -231,7 +231,7 @@ const bottomArticles = ref([
             </div>
             <div class="max-w-[85%] text-left text-white">
               <strong class="mb-2.5 mt-10 block leading-6">
-                Menuiserie aluminium sur-mesure à Lyon
+                Menuiserie aluminium sur-mesure
               </strong>
               <div class="text-justify text-[14px] leading-7">
                 <div class="mb-5">
@@ -261,11 +261,11 @@ const bottomArticles = ref([
                 </div>
 
                 <strong class="mb-2 mt-11 block text-left text-[16px] font-extrabold">
-                  Menuiserie aluminium minimaliste pour maison contemporaine et villa d’architecte à Lyon
+                  Menuiserie aluminium minimaliste pour maison contemporaine et villa d’architecte
                 </strong>
 
                 <div>
-                  Pour un intérieur encore plus minimaliste, STBN <strong>Menuiserie Aluminium à Lyon</strong> s'est
+                  Pour un intérieur encore plus minimaliste, <strong>DELTA Solution</strong> s'est
                   associé <strong>Technal</strong> et
                   Keller
                   <strong>Minimal Windows</strong>, pour vous offrir des <strong>fenêtres et baies vitrées aux
@@ -287,7 +287,7 @@ const bottomArticles = ref([
               </div>
             </div>
           </div>
-          <div class="sticky top-5 hidden aspect-auto h-screen max-w-[55%] overflow-hidden lg:block">
+          <div class="sticky top-42 hidden aspect-auto h-screen max-w-[55%] overflow-hidden lg:block">
             <img
               src="/images/sectionImages/image-2.jpg"
               alt="Image"
@@ -303,7 +303,7 @@ const bottomArticles = ref([
       class="section-5-content relative min-h-max flex justify-center pt-20 text-black"
     >
       <div class="relative z-3 flex justify-center">
-        <div class="sticky top-5 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block">
+        <div class="sticky top-42 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block">
           <img
             src="/images/sectionImages/image-3.jpg"
             alt="Image"
@@ -344,7 +344,7 @@ const bottomArticles = ref([
               </div>
 
               <strong class="mb-2 mt-11 block text-left text-[16px] font-extrabold">
-                Des fermetures : portes et portails en aluminium Made in Lyon grâce à STBN Menuiserie Aluminium
+                Des fermetures : portes et portails en aluminium Made in Lyon grâce à DESLTA Solution
               </strong>
 
               <div>
@@ -353,7 +353,7 @@ const bottomArticles = ref([
                 l’identité de
                 votre bien. Adoptez un style contemporain en optant pour des portes et portails en
                 <strong>aluminium</strong> de très grande
-                qualité, fabriqués par l’équipe STBN <strong>Menuiserie alu à Lyon</strong>. D’une grande solidité,
+                qualité, fabriqués par l’équipe <strong>DELTA Solution</strong>. D’une grande solidité,
                 <strong>nos portes et portails en
                   aluminium</strong> vous assurent résistance, isolation et sécurité. D’abord fonctionnelles, les
                 <strong>fermetures : portes
@@ -365,7 +365,8 @@ const bottomArticles = ref([
                   aluminium</strong> pleine, une
                 porte semi-vitrée ou une porte vitrée, notre savoir-faire allié à notre expertise vous permet de vous
                 procurer toute la sécurité dont vous avez besoin grâce à nos vitrages spécifiques et des systèmes de
-                fermetures ultra sécurisés. Côté <strong>portails</strong>, les fabrications STBN vous certifient
+                fermetures ultra sécurisés. Côté <strong>portails</strong>, les fabrications DELTA Solution vous
+                certifient
                 sécurité
                 et solidité. Nous
                 proposons également des <strong>portails motorisés</strong> et avec éclairage intégré pour maximiser
@@ -386,12 +387,12 @@ const bottomArticles = ref([
         <div class="flex flex-col items-end lg:max-w-[50%]">
           <div class="p-x-20 pt-20 text-left lg:mr-30">
             <div class="mb-5 pt-20 text-[1.8em]">
-              PERGOLAS ALUMINIUM À LYON
+              PERGOLAS ALUMINIUM
             </div>
             <div class="text-justify text-[14px] leading-7">
               <div>
-                Vous recherchez un <strong class="text-[#003f5e]">fabricant de pergola aluminium à Lyon</strong> et sa
-                région ? STBN Aluminium conçoit et installe
+                Vous recherchez un <strong class="text-[#003f5e]">fabricant de pergola aluminium</strong> et sa
+                région ? Delta Solution conçoit et installe
                 selon les réglementations professionnelles vos <strong>pergolas bioclimatiques en aluminium. La pergola
                   en
                   aluminium</strong>
@@ -408,20 +409,20 @@ const bottomArticles = ref([
                 terrasse tout en bénéficiant d’un espace supplémentaire. Besoin d’un système pour protéger votre
                 véhicule
                 ?
-                STBN <strong>Menuiserie Aluminium</strong> est spécialisé dans la <strong>pergola sur-mesure à
+                <strong>DELTA Solution</strong> est spécialisé dans la <strong>pergola sur-mesure à
                   Lyon</strong>, pour s'intégrer au mieux à votre
                 habitat.
               </div>
               <div class="mb-15">
-                STBN Aluminium propose désormais également ses services pour de la <strong
+                Delta Solution propose désormais également ses services pour de la <strong
                   class="text-[#003f5e]"
                 >location
-                  de pergola bioclimatique à Lyon</strong>
+                  de pergola bioclimatique</strong>
                 pour les professionnels de l'événementiel.
               </div>
 
               <div>
-                Toute l’équipe de STBN <strong>Menuiserie Aluminium à Lyon</strong> est à votre disposition pour vous
+                Toute l’équipe de <strong>DELTA Solution</strong> est à votre disposition pour vous
                 accompagner dans la
                 réalisation de vos plus beaux projets en <strong>aluminium sur-mesure</strong>. N’hésitez pas à nous
                 contacter pour toute
@@ -432,7 +433,7 @@ const bottomArticles = ref([
           </div>
         </div>
 
-        <div class="sticky top-5 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block">
+        <div class="sticky top-42 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block">
           <img
             src="/images/sectionImages/image-4.jpeg"
             alt="Image"

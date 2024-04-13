@@ -1,14 +1,9 @@
 <script setup lang="ts">
-defineProps({
-  hasScrolled: {
-    type: Boolean,
-    default: false,
-  },
-})
+import { storeToRefs } from 'pinia'
+import { contact } from '@/assets/json/config.json'
 
-const contact = ref({
-  phone: '+216 98 405 053',
-})
+const globalStore = useGlobalStore()
+const { hasScrolled, isMobile } = storeToRefs(globalStore)
 </script>
 
 <template>
@@ -18,22 +13,26 @@ const contact = ref({
       alt="Delta Logo"
       class="w-16"
     >
-    <div class="flex items-center gap-x-2">
-      <PhoneIcon
-        fill="#003f5e"
-        :width="1.5"
-      />
-      <a
-        href="https://wa.me/21698405053"
-        target="_blank"
-      >
-        <Button
-          :label="contact.phone"
-          link
-          class="p-0 font-extrabold"
-          :class="[hasScrolled ? 'text-black' : 'text-white']"
+    <div class="flex items-center gap-x-7">
+      <div v-if="!isMobile" class="flex items-center gap-x-2">
+        <PhoneIcon
+          fill="#003f5e"
+          :width="1.5"
         />
-      </a>
+        <a
+          :href="contact.whatsapp"
+          target="_blank"
+        >
+          <Button
+            :label="contact.phone"
+            link
+            class="p-0 font-extrabold"
+            :class="[hasScrolled ? 'text-black' : 'text-white']"
+          />
+        </a>
+      </div>
+      <SocialLinks :fill="hasScrolled ? 'color-[#003f5e]' : 'color-white'" />
+      <LocationButton v-if="!isMobile" />
     </div>
   </div>
 </template>

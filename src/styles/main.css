@@ -27,3 +27,14 @@ html.dark {
   width: 100%;
   height: 2px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.hover-animation {
+  transition:
+    color 0.33s linear 0.3s,
+    border-color ease-out 0.3s,
+    background-color 0.33s linear 0s;
+}

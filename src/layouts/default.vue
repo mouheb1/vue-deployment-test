@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import { loadLanguageAsync } from '@/modules/i18n'
+import { storeToRefs } from 'pinia'
 
-async function setLangToFrench() {
-  await loadLanguageAsync('fr')
-}
-
-onMounted(async () => {
-  await setLangToFrench()
-})
+const globalStore = useGlobalStore()
+const { isMobile } = storeToRefs(globalStore)
 </script>
 
 <template>
@@ -16,4 +11,5 @@ onMounted(async () => {
     <RouterView />
   </main>
   <TheFooter />
+  <FloatingFooter v-if="isMobile" />
 </template>

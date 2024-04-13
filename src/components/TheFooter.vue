@@ -1,12 +1,14 @@
 <script setup lang="ts">
-
+import { contact } from '@/assets/json/config.json'
 </script>
 
 <template>
   <footer
     class="mx-auto box-border overflow-hidden border-0 border-t-1 border-black border-opacity-25 border-solid bg-white text-black"
   >
-    <div class="h-80 flex items-start justify-around pb-15 pt-20 text-left text-sm">
+    <div
+      class="min-h-80 flex flex-col items-center justify-around pb-15 pt-20 text-center text-sm md:flex-row md:items-start md:text-left"
+    >
       <div class="p-5">
         <img
           src="/images/logo.png"
@@ -20,25 +22,22 @@
           NOUS TROUVER
         </div>
         <div class="mb-2.5 block">
-          16 chemin des Mûriers <br>
-          69740 Genas
+          {{ contact.address.city }} <br>
+          {{ contact.address.street }}
         </div>
-        <Button
-          class="border-2 border-[#003f5e] rounded-none bg-transparent px-5 py-[13.3333px] text-sm text-[#003f5e] duration-300 hover:bg-[#003f5e] hover:text-white"
-        >
-          Plan d'accès
-        </Button>
+
+        <LocationButton />
       </div>
 
-      <div class="p-5">
+      <div class="flex flex-col items-center p-5 md:block">
         <div class="my-2.5 block tracking-[6px]">
           NOUS CONTACTER
         </div>
         <div class="block">
-          contact@stbnaluminium.com
+          {{ contact.email }}
         </div>
         <a
-          href="https://wa.me/21698405053"
+          :href="contact.whatsapp"
           target="_blank"
         >
           <Button
@@ -50,40 +49,7 @@
         <div class="my-2.5 block tracking-[6px]">
           NOUS SUIVRE:
         </div>
-        <div
-          id="socials"
-          class="flex justify-start gap-x-5"
-        >
-          <a
-            href="https://www.facebook.com/ste.deltasolution"
-            target="_blank"
-          >
-            <i
-              class="pi pi-facebook color-[#003f5e]"
-              style="font-size: 1.6rem"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/deltasolution/"
-            target="_blank"
-          >
-            <i
-              class="pi pi-instagram color-[#003f5e]"
-              style="font-size: 1.6rem"
-            />
-          </a>
-
-          <a
-            href="https://tn.linkedin.com/company/frameconcept"
-            target="_blank"
-          >
-            <i
-              class="pi pi-linkedin color-[#003f5e]"
-              style="font-size: 1.6rem"
-            />
-
-          </a>
-        </div>
+        <SocialLinks />
       </div>
     </div>
 

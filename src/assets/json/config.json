@@ -1,0 +1,93 @@
+{
+  "contact": {
+    "phone": "+216 98 405 053",
+    "email": "contact@ste-deltasolution.com",
+    "location": "https://www.google.com/maps/place/STE+DELTA+SOLUTION/@35.6091666,10.7571099,15z/data=!4m6!3m5!1s0x13020fc332aa2c33:0xf66d6669e52f08e0!8m2!3d35.6091666!4d10.7571099!16s%2Fg%2F11llt2d32s?entry=ttu",
+    "whatsapp": "https://wa.me/21698405053",
+    "address": {
+      "city": "Cité El Fatah",
+      "street": "5020 Jemmal, Tunisie"
+    }
+  },
+  "socials": [
+    {
+      "icon": "pi-facebook",
+      "url": "https://www.facebook.com/ste.deltasolution"
+    },
+    {
+      "icon": "pi-instagram",
+      "url": "https://www.instagram.com/deltasolution/"
+    },
+    {
+      "icon": "pi-linkedin",
+      "url": "https://tn.linkedin.com/company/frameconcept"
+    }
+  ],
+  "navElements": [
+    {
+      "index": 1,
+      "label": "Accueil",
+      "route": "/"
+    },
+    {
+      "index": 2,
+      "label": "Fenêtres & baies vitrées",
+      "route": "/windows"
+    },
+    {
+      "index": 3,
+      "label": "shutters",
+      "route": "/",
+      "items": [
+        {
+          "label": "Volets roulants",
+          "route": "/"
+        },
+        {
+          "label": "BSO",
+          "route": "/"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "Garde corps minimaliste",
+      "route": "/guardrail"
+    },
+    {
+      "index": 6,
+      "label": "Portes & portails alu",
+      "route": "/doors"
+    },
+    {
+      "index": 7,
+      "label": "Nos réalisations",
+      "route": "/works"
+    },
+    {
+      "index": 9,
+      "label": "Contact",
+      "route": "/contact"
+    }
+  ],
+  "footerElements": [
+    {
+      "id": 1,
+      "title": "Où nous trouver ?",
+      "url": "https://www.google.com/maps/place/STE+DELTA+SOLUTION/@35.6091666,10.7571099,15z/data=!4m6!3m5!1s0x13020fc332aa2c33:0xf66d6669e52f08e0!8m2!3d35.6091666!4d10.7571099!16s%2Fg%2F11llt2d32s?entry=ttu",
+      "icon": "pi-map-marker"
+    },
+    {
+      "id": 2,
+      "title": "Contactez nous",
+      "url": "mailto:contact@ste-deltasolution.com",
+      "icon": "pi-envelope"
+    },
+    {
+      "id": 3,
+      "title": "+216 98 405 053",
+      "url": "https://wa.me/21698405053",
+      "icon": "pi-phone"
+    }
+  ]
+}
