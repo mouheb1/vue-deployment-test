@@ -4,7 +4,7 @@
 
 <template>
   <footer
-    class="mx-auto box-border border-0 border-t-1 border-black border-opacity-25 border-solid bg-white text-black"
+    class="mx-auto box-border overflow-hidden border-0 border-t-1 border-black border-opacity-25 border-solid bg-white text-black"
   >
     <div class="h-80 flex items-start justify-around pb-15 pt-20 text-left text-sm">
       <div class="p-5">

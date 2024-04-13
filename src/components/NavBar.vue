@@ -1,6 +1,13 @@
 <script setup lang="ts">
 import { isActiveNavItem } from '@/utils/helpers'
 
+defineProps({
+  hasScrolled: {
+    type: Boolean,
+    default: false,
+  },
+})
+
 const route = useRoute()
 
 const items = ref([
@@ -10,7 +17,7 @@ const items = ref([
   },
   {
     index: 2,
-    label: 'Fenêtres & baies vitrées alu',
+    label: 'Fenêtres & baies vitrées',
   },
   {
     index: 3,
@@ -25,10 +32,6 @@ const items = ref([
     ],
   },
   {
-    index: 4,
-    label: 'Menuiseries minimalistes',
-  },
-  {
     index: 5,
     label: 'Garde corps minimaliste',
   },
@@ -41,10 +44,6 @@ const items = ref([
     label: 'Nos réalisations',
   },
   {
-    index: 8,
-    label: 'Guide local',
-  },
-  {
     index: 9,
     label: 'Contact',
   },
@@ -52,29 +51,23 @@ const items = ref([
 </script>
 
 <template>
-  <div class="bg-transparent-menu-bar">
+  <div class="bg-transparent-menu-bar box-border">
     <Menubar
       :model="items"
-      class="border-none bg-transparent hover:bg-transparent"
+      breakpoint="768px"
+      class="border-none bg-transparent pb-0 hover:bg-transparent"
     >
       <template #item="{ item, props }">
         <a
           v-ripple
-          class="align-items-center flex border-x-0 border-t-0 border-[#003f5e] border-solid"
-          :class="[isActiveNavItem(item.index, route.path) ? 'border-b-1' : 'border-b-0']"
+          class="flex items-center border-x-0 border-t-0 border-[#003f5e] border-solid"
+          :class="[isActiveNavItem(item.index, route.path) ? 'border-b-2' : 'border-b-0']"
           v-bind="props.action"
         >
-          <span :class="item.icon" />
-          <span class="ml-0 text-white">{{ item.label }}</span>
-          <Badge
-            v-if="item.badge"
-            class="ml-0"
-            :value="item.badge"
-          />
           <span
-            v-if="item.shortcut"
-            class="surface-border surface-100 border-round ml-0 border-1 p-1 text-xs"
-          >{{ item.shortcut }}</span>
+            class="ml-0"
+            :class="[hasScrolled ? 'text-black' : 'md:text-white']"
+          >{{ item.label }}</span>
         </a>
       </template>
     </Menubar>

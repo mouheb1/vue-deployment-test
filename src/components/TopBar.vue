@@ -1,4 +1,11 @@
 <script setup lang="ts">
+defineProps({
+  hasScrolled: {
+    type: Boolean,
+    default: false,
+  },
+})
+
 const contact = ref({
   phone: '+216 98 405 053',
 })
@@ -23,7 +30,8 @@ const contact = ref({
         <Button
           :label="contact.phone"
           link
-          class="mb-5 p-0 color-white font-extrabold"
+          class="p-0 font-extrabold"
+          :class="[hasScrolled ? 'text-black' : 'text-white']"
         />
       </a>
     </div>
