@@ -41,7 +41,7 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
       <template #menubutton="{ toggleCallback }">
         <i
           v-if="isMobile"
-          class="pi pi-bars rounded-full p-2 duration-300 ease hover:cursor-pointer hover:bg-[#003f5e]"
+          class="pi pi-bars rounded-full p-2 duration-300 ease hover:cursor-pointer hover:bg-[#003f5e] hover:color-white"
           :class="[hasScrolled ? 'color-[#003f5e]' : 'color-white']"
           style="font-size: 1rem"
           @click="toggleCallback"

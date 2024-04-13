@@ -147,9 +147,9 @@ const bottomArticles = ref([
         class="hidden w-1/2 bg-cover bg-center bg-no-repeat lg:mr-20 lg:block"
         style="background-image: url('/images/galleryImages/image-1.jpg');"
       />
-      <div class="w-1/2 flex flex-col items-center text-justify lg:mr-20">
-        <div class="max-w-min w-155 flex flex-col px-10 lg:px-20 lg:pr-30">
-          <div class="mb-3 mb-5 pt-20 text-left text-2xl text-black font-normal tracking-[0.01em] uppercase">
+      <div class="flex flex-col items-center text-justify lg:mr-20 lg:w-1/2">
+        <div class="flex flex-col px-10 lg:max-w-min lg:px-20 lg:pr-30">
+          <div class="mb-5 pt-20 text-left text-2xl text-black font-normal tracking-[0.01em] uppercase">
             MENUISERIE ALUMINIUM
           </div>
           <div class="text-[14px] text-black leading-7">
@@ -178,7 +178,7 @@ const bottomArticles = ref([
           </div>
           <div class="mt-10 inline-block h-0.5 w-15 bg-[#003f5e]" />
           <div
-            class="animate-clipToTop mt-10 h-100 w-100 duration-600 delay-250 ease-in-out"
+            class="mt-10 aspect-square max-w-100 w-[80%] duration-600 delay-250 ease-in-out lg:w-100"
             title="Menuiserie haut de gamme en aluminium et sur-mesure"
             style=" background-size: cover; background-position: center center; background-repeat: no-repeat; background-image: url('/images/galleryImages/image-2.jpg');"
           />
