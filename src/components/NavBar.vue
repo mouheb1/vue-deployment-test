@@ -5,13 +5,15 @@ import { navElements } from '@/assets/json/config.json'
 
 const route = useRoute()
 const globalStore = useGlobalStore()
-const { hasScrolled } = storeToRefs(globalStore)
+const { hasScrolled, isMobile } = storeToRefs(globalStore)
 </script>
 
 <template>
   <div class="bg-transparent-menu-bar box-border">
     <Menubar
       :model="navElements"
+      breakpoint="768px"
+      :auto-display="false"
       class="border-none bg-transparent hover:bg-transparent"
     >
       <template #item="{ item, props }">
@@ -36,10 +38,12 @@ const { hasScrolled } = storeToRefs(globalStore)
           </a>
         </router-link>
       </template>
-      <template #menubuttonicon="">
+      <template #menubutton="{ toggleCallback }">
         <i
-          class="pi pi-bars color-white hover:color-[#003f5e]"
+          v-if="isMobile"
+          class="pi pi-bars rounded-full p-2 color-white duration-300 ease hover:cursor-pointer hover:bg-[#003f5e]"
           style="font-size: 1rem"
+          @click="toggleCallback"
         />
       </template>
     </Menubar>

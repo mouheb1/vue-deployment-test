@@ -7,7 +7,7 @@ const { hasScrolled } = storeToRefs(globalStore)
 
 <template>
   <header
-    class="absolute fixed top-0 z-100 max-h-min w-full px-4 pt-4 drop-shadow-md duration-600"
+    class="absolute fixed top-0 z-100 max-h-min w-full px-4 pt-4 drop-shadow-xl duration-600"
     :class="[hasScrolled ? 'bg-white' : 'bg-transparent']"
   >
     <TopBar />
