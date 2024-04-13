@@ -11,9 +11,7 @@ const { hasScrolled } = storeToRefs(globalStore)
 <template>
   <div class="bg-transparent-menu-bar box-border">
     <Menubar
-      :mobile-active="false"
       :model="navElements"
-      breakpoint="768px"
       class="border-none bg-transparent hover:bg-transparent"
     >
       <template #item="{ item, props }">
