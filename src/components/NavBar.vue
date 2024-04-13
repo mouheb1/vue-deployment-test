@@ -25,7 +25,7 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
           <a
             v-ripple
             class="nav-underline flex items-center justify-center"
-            :style="isActiveNavItem(item.index, route.path) ? { 'background-size': '60% 3px' } : { }"
+            :style="isActiveNavItem(item.index, route.path) ? { 'background-size': '60% 3px' } : {}"
             v-bind="props.action"
             :href="href"
             @click="navigate"
@@ -41,7 +41,8 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
       <template #menubutton="{ toggleCallback }">
         <i
           v-if="isMobile"
-          class="pi pi-bars rounded-full p-2 color-white duration-300 ease hover:cursor-pointer hover:bg-[#003f5e]"
+          class="pi pi-bars rounded-full p-2 duration-300 ease hover:cursor-pointer hover:bg-[#003f5e]"
+          :class="[hasScrolled ? 'color-[#003f5e]' : 'color-white']"
           style="font-size: 1rem"
           @click="toggleCallback"
         />
@@ -67,5 +68,9 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
 
 .nav-underline:hover {
   background-size: 60% 3px;
+}
+
+.p-menubar-root-list {
+  display: revert-layer !important;
 }
 </style>
