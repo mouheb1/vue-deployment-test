@@ -5,6 +5,7 @@ import Button from 'primevue/button'
 import PrimeVue from 'primevue/config'
 import Menubar from 'primevue/menubar'
 import Galleria from 'primevue/galleria'
+import Ripple from 'primevue/ripple'
 
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
@@ -28,6 +29,7 @@ export const createApp = ViteSSG(
       .component('Button', Button)
       .component('Menubar', Menubar)
       .component('Galleria', Galleria)
+      .directive('ripple', Ripple)
 
     // install all modules under `modules/`
     Object.values(import.meta.glob<{ install: UserModule }>('./modules/*.ts', { eager: true }))

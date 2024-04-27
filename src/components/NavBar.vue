@@ -6,11 +6,17 @@ import { navElements } from '@/assets/json/config.json'
 const route = useRoute()
 const globalStore = useGlobalStore()
 const { hasScrolled, isMobile } = storeToRefs(globalStore)
+const hasMounted = ref(false)
+
+onMounted(() => {
+  hasMounted.value = true
+})
 </script>
 
 <template>
   <div class="bg-transparent-menu-bar box-border">
     <Menubar
+      v-if="hasMounted"
       :model="navElements"
       breakpoint="768px"
       :auto-display="false"
@@ -19,7 +25,7 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
       <template #item="{ item, props }">
         <router-link
           v-slot="{ href, navigate }"
-          :to="item.route"
+          :to="item.route || '/'"
           custom
         >
           <a
@@ -33,7 +39,7 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
 
             <span
               class="ml-0"
-              :class="[hasScrolled ? 'text-black' : 'md:text-white']"
+              :class="[hasScrolled ? 'text-black' : 'text-[#334155] md:text-white']"
             >{{ item.label }}</span>
           </a>
         </router-link>
@@ -54,6 +60,15 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
 <style>
 .p-menuitem-content {
   background-color: transparent !important;
+  color: white !important;
+}
+
+.p-menubar-root-list {
+  display: revert-layer !important;
+}
+
+ul.p-submenu-list {
+  background-color: #003f5e;
 }
 
 .nav-underline {
@@ -68,9 +83,5 @@ const { hasScrolled, isMobile } = storeToRefs(globalStore)
 
 .nav-underline:hover {
   background-size: 60% 3px;
-}
-
-.p-menubar-root-list {
-  display: revert-layer !important;
 }
 </style>

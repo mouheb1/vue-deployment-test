@@ -1,7 +1,11 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
+
 defineOptions({
   name: 'IndexPage',
 })
+const globalStore = useGlobalStore()
+const { hasScrolled, isMobile } = storeToRefs(globalStore)
 
 const images = ref([
   {
@@ -90,7 +94,10 @@ const bottomArticles = ref([
 </script>
 
 <template>
-  <div class="overflow-x-clip">
+  <div
+    id="section-0"
+    class="overflow-x-clip"
+  >
     <section class="bg-black">
       <Galleria
         :value="images"
@@ -115,13 +122,7 @@ const bottomArticles = ref([
               {{ headlines.down }}
             </div>
           </div>
-          <div class="absolute bottom-0 flex items-center justify-center">
-            <div class="absolute mb-9 h-16 w-16 bg-black opacity-30" />
-            <i
-              class="pi pi-chevron-down z-1 mb-5 text-xs color-[#003f5e]"
-              style="font-size: 1.5rem"
-            />
-          </div>
+          <scrollDown />
         </template>
       </Galleria>
     </section>
@@ -464,10 +465,31 @@ const bottomArticles = ref([
         />
       </div>
     </section>
+    <ScrollUp
+      class="animate-duration-300"
+      :class="[hasScrolled && !isMobile ? 'animate-fade-in-up' : 'fade-out-down']"
+    />
   </div>
 </template>
 
 <style scoped>
+@keyframes fade-out-down {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+}
+
+.fade-out-down {
+  animation: fade-out-down 0.3s forwards;
+}
+
 .section-1-content::before {
   position: absolute;
   content: '';

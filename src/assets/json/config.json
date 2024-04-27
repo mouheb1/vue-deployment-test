@@ -36,14 +36,20 @@
     },
     {
       "index": 3,
-      "label": "shutters",
-      "route": "/",
+      "label": "Portes & portails alu",
+      "route": "/doors"
+    },
+    {
+      "index": 4,
+      "label": "Volets alu & occultants",
       "items": [
         {
+          "index": 8,
           "label": "Volets roulants",
           "route": "/"
         },
         {
+          "index": 9,
           "label": "BSO",
           "route": "/"
         }
@@ -54,18 +60,14 @@
       "label": "Garde corps minimaliste",
       "route": "/guardrail"
     },
+
     {
       "index": 6,
-      "label": "Portes & portails alu",
-      "route": "/doors"
-    },
-    {
-      "index": 7,
       "label": "Nos réalisations",
       "route": "/works"
     },
     {
-      "index": 9,
+      "index": 7,
       "label": "Contact",
       "route": "/contact"
     }
