@@ -371,7 +371,7 @@ defineOptions({
           également...
         </div>
       </div>
-      <div class="box-border flex flex-wrap scale-90 justify-center md:scale-100">
+      <div class="box-border flex flex-wrap scale-75 justify-center md:scale-100">
         <ArticleSection
           :articles="bottomArticles"
           :wide="true"
