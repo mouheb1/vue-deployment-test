@@ -4,8 +4,14 @@ const pathToIndex = (path: string) => {
       return 1
     case '/windows':
       return 2
-    case '/Aluminum-shutters':
+    case '/doors':
       return 3
+    case '/guardrail':
+      return 5
+    case '/works':
+      return 6
+    case '/contact':
+      return 7
     default:
       return 1
   }

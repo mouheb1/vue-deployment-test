@@ -38,3 +38,30 @@ a {
     border-color ease-out 0.3s,
     background-color 0.33s linear 0s;
 }
+
+.p-menuitem-content {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+.p-menubar-root-list {
+  display: revert-layer !important;
+}
+
+ul.p-submenu-list {
+  background-color: #003f5e;
+}
+
+.nav-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#003f5e, #003f5e);
+  background-size: 0 3px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.nav-underline:hover {
+  background-size: 60% 3px;
+}

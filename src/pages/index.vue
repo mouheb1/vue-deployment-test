@@ -1,96 +1,9 @@
 <script setup lang="ts">
-import { storeToRefs } from 'pinia'
+import { bottomArticles, galleryImages, headlines, topArticles } from '@/assets/json/config.json'
 
 defineOptions({
   name: 'IndexPage',
 })
-const globalStore = useGlobalStore()
-const { hasScrolled, isMobile } = storeToRefs(globalStore)
-
-const images = ref([
-  {
-    itemImageSrc: '/images/galleryImages/image-2.jpg',
-    alt: 'Image 1',
-  },
-  {
-    itemImageSrc: '/images/galleryImages/image-1.jpg',
-    alt: 'Image 2',
-  },
-  {
-    itemImageSrc: '/images/galleryImages/image-3.jpg',
-    alt: 'Image 3',
-  },
-  {
-    itemImageSrc: '/images/galleryImages/image-4.jpg',
-    alt: 'Image 4',
-  },
-])
-
-const headlines = ref({
-  up: 'DELTA SOLUTION SUR-MESURE',
-  down: 'Menuiserie aluminium minimaliste sur-mesure',
-})
-
-const topArticles = ref([
-  {
-    articleId: '1',
-    title: 'Fenêtres & Baies vitrées en aluminium',
-    image: '/images/articlesImages/image-1.jpg',
-  },
-  {
-    articleId: '2',
-    title: 'Portails aluminium',
-    image: '/images/articlesImages/image-2.jpg',
-
-  },
-  {
-    articleId: '3',
-    title: 'Volets roulants en aluminium',
-    image: '/images/articlesImages/image-3.jpg',
-
-  },
-  {
-    articleId: '4',
-    title: 'Menuiseries minimalistes',
-    image: '/images/articlesImages/image-4.jpg',
-
-  },
-  {
-    articleId: '5',
-    title: 'Pergolas bioclimatiques',
-    image: '/images/articlesImages/image-5.jpg',
-
-  },
-  {
-    articleId: '6',
-    title: 'Nos réalisations en menuiserie aluminium',
-    image: '/images/articlesImages/image-6.jpg',
-
-  },
-])
-
-const bottomArticles = ref([
-  {
-    articleId: '1',
-    title: 'Maximisez Confort et Esthétique avec les Brises Soleil Orientables de DELTA Solution',
-    description: 'À mi-chemin entre la tradition des jalousies et la modernité d\'un store e...',
-    image: '/images/articlesImages/image-7.png',
-  },
-  {
-    articleId: '2',
-    title: 'Portails aluminium',
-    description: 'Découvrez l\'univers des portes déco avec DELTA Solution, votre spécialiste en menuiserie al...',
-    image: '/images/articlesImages/image-8.jpeg',
-
-  },
-  {
-    articleId: '3',
-    title: 'Volets roulants en aluminium',
-    description: 'Vous êtes à la recherche d\'une manière élégante de permettre à la lumière naturelle d\'en...',
-    image: '/images/articlesImages/image-9.jpg',
-
-  },
-])
 </script>
 
 <template>
@@ -100,7 +13,7 @@ const bottomArticles = ref([
   >
     <section class="bg-black">
       <Galleria
-        :value="images"
+        :value="galleryImages"
         :num-visible="5"
         :circular="true"
         :show-item-navigators="false"
@@ -447,7 +360,7 @@ const bottomArticles = ref([
       id="section-7"
       class="mb-30 mt-15 pt-10"
     >
-      <div class="w-full">
+      <div class="md:w-full">
         <div class="relative mb-10 border-1 border-black border-opacity-15 border-solid">
           <div class="absolute left-0 h-2 w-50 bg-[#003f5e] -top-1" />
         </div>
@@ -458,38 +371,17 @@ const bottomArticles = ref([
           également...
         </div>
       </div>
-      <div class="box-border flex flex-wrap justify-center">
+      <div class="box-border flex flex-wrap scale-90 justify-center md:scale-100">
         <ArticleSection
           :articles="bottomArticles"
           :wide="true"
         />
       </div>
     </section>
-    <ScrollUp
-      class="animate-duration-300"
-      :class="[hasScrolled && !isMobile ? 'animate-fade-in-up' : 'fade-out-down']"
-    />
   </div>
 </template>
 
 <style scoped>
-@keyframes fade-out-down {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(20px);
-    visibility: hidden;
-  }
-}
-
-.fade-out-down {
-  animation: fade-out-down 0.3s forwards;
-}
-
 .section-1-content::before {
   position: absolute;
   content: '';

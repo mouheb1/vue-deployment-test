@@ -33,7 +33,7 @@ const showDescription = ref(true)
       >
     </div>
     <div class="h-23 w-90 w-full flex flex-wrap items-center justify-between gap-y-5 p-5">
-      <div class="max-w-[85%] text-left text-[1.3em] text-black font-bold">
+      <div class="max-w-[85%] text-left text-[1.3em] text-black font-bold" :class="[!showDescription ? 'overflow-hidden text-ellipsis whitespace-nowrap' : '']">
         {{ title }}
       </div>
       <i

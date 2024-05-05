@@ -10,6 +10,7 @@ declare module 'vue' {
     ArticleCard: typeof import('./components/cards/ArticleCard.vue')['default']
     ArticleSection: typeof import('./components/ArticleSection.vue')['default']
     copy: typeof import('./components/ScrollUp copy.vue')['default']
+    CustomMenuBar: typeof import('./components/CustomMenuBar.vue')['default']
     FloatingFooter: typeof import('./components/FloatingFooter.vue')['default']
     LocationButton: typeof import('./components/LocationButton.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']

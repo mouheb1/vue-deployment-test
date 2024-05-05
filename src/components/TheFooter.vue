@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia'
 import { contact } from '@/assets/json/config.json'
+
+const globalStore = useGlobalStore()
+const { isAtContactPage } = storeToRefs(globalStore)
 </script>
 
 <template>
@@ -7,6 +11,7 @@ import { contact } from '@/assets/json/config.json'
     class="mx-auto box-border overflow-hidden border-0 border-t-1 border-black border-opacity-25 border-solid bg-white text-black"
   >
     <div
+      v-if="!isAtContactPage "
       class="min-h-80 flex flex-col items-center justify-around pb-15 pt-20 text-center text-sm md:flex-row md:items-start md:text-left"
     >
       <div class="p-5">
@@ -52,6 +57,10 @@ import { contact } from '@/assets/json/config.json'
         <SocialLinks />
       </div>
     </div>
+    <div
+      v-else
+      class="h-15"
+    />
 
     <div
       class="mx-10 flex justify-between border-0 border-t-1 border-black border-opacity-25 border-solid py-2.5 text-xs"
@@ -74,7 +83,7 @@ import { contact } from '@/assets/json/config.json'
         target="_blank"
       >
         <Button
-          class="max-w-min border-none bg-transparent text-nowrap text-black hover:cursor-pointer hover:text-[#003f5e]"
+          class="mr-5 max-w-min border-none bg-transparent text-nowrap text-black hover:cursor-pointer hover:text-[#003f5e]"
           link
           unstyled
         >

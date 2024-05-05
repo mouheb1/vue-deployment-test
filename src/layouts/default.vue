@@ -2,7 +2,7 @@
 import { storeToRefs } from 'pinia'
 
 const globalStore = useGlobalStore()
-const { isMobile } = storeToRefs(globalStore)
+const { hasScrolled, isMobile } = storeToRefs(globalStore)
 </script>
 
 <template>
@@ -12,4 +12,27 @@ const { isMobile } = storeToRefs(globalStore)
   </main>
   <TheFooter />
   <FloatingFooter v-if="isMobile" />
+  <ScrollUp
+    class="animate-duration-300"
+    :class="[hasScrolled && !isMobile ? 'animate-fade-in-up' : 'fade-out-down']"
+  />
 </template>
+
+<style scoped>
+@keyframes fade-out-down {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+  }
+}
+
+.fade-out-down {
+  animation: fade-out-down 0.3s forwards;
+}
+</style>

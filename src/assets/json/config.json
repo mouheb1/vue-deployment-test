@@ -60,7 +60,6 @@
       "label": "Garde corps minimaliste",
       "route": "/guardrail"
     },
-
     {
       "index": 6,
       "label": "Nos réalisations",
@@ -90,6 +89,80 @@
       "title": "+216 98 405 053",
       "url": "https://wa.me/21698405053",
       "icon": "pi-phone"
+    }
+  ],
+  "galleryImages": [
+    {
+      "itemImageSrc": "/images/galleryImages/image-2.jpg",
+      "alt": "Image 1"
+    },
+    {
+      "itemImageSrc": "/images/galleryImages/image-1.jpg",
+      "alt": "Image 2"
+    },
+    {
+      "itemImageSrc": "/images/galleryImages/image-3.jpg",
+      "alt": "Image 3"
+    },
+    {
+      "itemImageSrc": "/images/galleryImages/image-4.jpg",
+      "alt": "Image 4"
+    }
+  ],
+  "headlines": {
+    "up": "DELTA SOLUTION SUR-MESURE",
+    "down": "Menuiserie aluminium minimaliste sur-mesure"
+  },
+  "topArticles": [
+    {
+      "articleId": "1",
+      "title": "Fenêtres & Baies vitrées en aluminium",
+      "image": "/images/articlesImages/image-1.jpg"
+    },
+    {
+      "articleId": "2",
+      "title": "Portails aluminium",
+      "image": "/images/articlesImages/image-2.jpg"
+    },
+    {
+      "articleId": "3",
+      "title": "Volets roulants en aluminium",
+      "image": "/images/articlesImages/image-3.jpg"
+    },
+    {
+      "articleId": "4",
+      "title": "Menuiseries minimalistes",
+      "image": "/images/articlesImages/image-4.jpg"
+    },
+    {
+      "articleId": "5",
+      "title": "Pergolas bioclimatiques",
+      "image": "/images/articlesImages/image-5.jpg"
+    },
+    {
+      "articleId": "6",
+      "title": "Nos réalisations en menuiserie aluminium",
+      "image": "/images/articlesImages/image-6.jpg"
+    }
+  ],
+  "bottomArticles": [
+    {
+      "articleId": "1",
+      "title": "Maximisez Confort et Esthétique avec les Brises Soleil Orientables de DELTA Solution",
+      "description": "À mi-chemin entre la tradition des jalousies et la modernité d'un store e...",
+      "image": "/images/articlesImages/image-7.png"
+    },
+    {
+      "articleId": "2",
+      "title": "Portails aluminium",
+      "description": "Découvrez l'univers des portes déco avec DELTA Solution, votre spécialiste en menuiserie al...",
+      "image": "/images/articlesImages/image-8.jpeg"
+    },
+    {
+      "articleId": "3",
+      "title": "Volets roulants en aluminium",
+      "description": "Vous êtes à la recherche d'une manière élégante de permettre à la lumière naturelle d'en...",
+      "image": "/images/articlesImages/image-9.jpg"
     }
   ]
 }
