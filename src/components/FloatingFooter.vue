@@ -9,7 +9,7 @@ import { footerElements } from '@/assets/json/config.json'
     <li
       v-for="(element, index) of footerElements"
       :key="element.id"
-      class="border-0 border-white border-opacity-25 border-solid p-4 text-center duration-300 ease hover:cursor-pointer hover:bg-[#002a3f]"
+      class="border-0 border-white border-opacity-25 border-solid p-4 text-center text-white duration-300 ease hover:cursor-pointer hover:bg-[#002a3f]"
       :class="[(index === footerElements.length - 1) ? 'border-r-0' : 'border-r-1']"
     >
       <a

@@ -7,6 +7,7 @@ export default antfu(
     formatters: true,
     rules: {
       'antfu/top-level-function': 'off',
+      'no-console': 'off',
     },
   },
 )

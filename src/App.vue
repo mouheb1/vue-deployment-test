@@ -11,14 +11,16 @@ useHead({
     },
     {
       name: 'theme-color',
-      content: () => isDark.value ? '#00aba9' : '#ffffff',
+      // content: () => isDark.value ? '#00aba9' : '#ffffff',
+      content: '#ffffff',
     },
   ],
   link: [
     {
       rel: 'icon',
       type: 'image/svg+xml',
-      href: () => preferredDark.value ? '/favicon-dark.ico' : '/favicon.ico',
+      // href: () => preferredDark.value ? '/favicon-dark.ico' : '/favicon.ico',
+      href: '/favicon.ico',
     },
   ],
 })

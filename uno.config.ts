@@ -5,7 +5,6 @@ import {
   presetTypography,
   presetUno,
   presetWebFonts,
-  presetWind,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -30,13 +29,13 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
-    presetWind({
-      important: '#app',
-    }),
   ],
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
   ],
   safelist: 'prose m-auto text-left'.split(' '),
+  rules: [
+    ['bg-contact-image', { 'background-image': 'url(/images/galleryImages/image-1.jpg)' }],
+  ],
 })

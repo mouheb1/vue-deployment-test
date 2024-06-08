@@ -6,6 +6,7 @@ import PrimeVue from 'primevue/config'
 import Menubar from 'primevue/menubar'
 import Galleria from 'primevue/galleria'
 import Ripple from 'primevue/ripple'
+import ToastService from 'primevue/toastservice'
 
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
@@ -26,6 +27,7 @@ export const createApp = ViteSSG(
   (ctx) => {
     ctx.app
       .use(PrimeVue)
+      .use(ToastService)
       .component('Button', Button)
       .component('Menubar', Menubar)
       .component('Galleria', Galleria)
