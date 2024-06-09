@@ -26,7 +26,7 @@ const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
       <template #item="{ item, props }">
         <router-link
           v-slot="{ href, navigate }"
-          :to="item.route || '/'"
+          :to="item.route || '#'"
           custom
         >
           <a
@@ -40,7 +40,7 @@ const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
 
             <span
               class="ml-0"
-              :class="[hasScrolled || !isAtHomePage ? 'text-black' : 'text-[#334155] md:text-white']"
+              :class="[(hasScrolled || !isAtHomePage) && !item.isChild ? 'text-black' : 'text-[#334155] md:text-white', item.isChild ? 'text-white' : '']"
             >{{ item.label }}</span>
           </a>
         </router-link>

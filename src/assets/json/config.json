@@ -47,12 +47,14 @@
         {
           "index": 8,
           "label": "Volets roulants",
-          "route": "/"
+          "route": "/rolling-shutters",
+          "isChild": true
         },
         {
           "index": 9,
           "label": "BSO",
-          "route": "/"
+          "route": "/bso",
+          "isChild": true
         }
       ]
     },

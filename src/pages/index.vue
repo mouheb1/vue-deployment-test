@@ -68,14 +68,14 @@ defineOptions({
           </div>
           <div class="text-[14px] text-black leading-7">
             <span> DESLTA Solution, est un </span>
-            <b>fabricant de menuiserie aluminium et Rhône-alpes.</b>
+            <b>fabricant de menuiserie aluminium à jemmel.</b>
             <br>
             <br>
             <span>Entreprise familiale, <strong>DELTA Solution</strong> est <strong>spécialiste de
               menuiseries
               en aluminium sur-mesure.</strong> Fabriquées dans notre atelier, nous installons nos <strong>menuiseries
-              alu sur-mesure haut de gamme</strong> en région Rhône-Alpes, principalement dans l’Ain (01) et autour de
-              <strong>Valence, Vienne 38, Grenoble, Chambéry, Lyon</strong> et <strong>Annecy</strong>.</span>
+              alu sur-mesure haut de gamme</strong> en région de Monastir, principalement dans l’Ain (01) et autour de
+              <strong>Valence, Vienne 38, Grenoble, Chambéry, Jemmel</strong> et <strong>Annecy</strong>.</span>
             <br>
             <br>
             <span>Nos artisans experts réalisent une étude de votre projet de construction de maison contemporaine,
@@ -141,7 +141,7 @@ defineOptions({
             </div>
             <div class="mb-5 mt-2.5 h-auto w-full bg-white p-5 text-left text-[1.7em] leading-10">
               FABRICANT DE FENÊTRES ET BAIES VITRÉES
-              SUR-MESURE HAUT DE GAMME EN RHÔNE-ALPES
+              SUR-MESURE HAUT DE GAMME À JEMMEL
             </div>
             <div class="max-w-[85%] text-left text-white">
               <strong class="mb-2.5 mt-10 block leading-6">
@@ -153,7 +153,7 @@ defineOptions({
                     aluminium</strong> pour vos
                   projets de construction ou rénovation de maison pour particuliers, professionnels et architectes
                   proche
-                  d’ <strong>Aix-les-Bains</strong> (73) ou des <strong>Monts d’Or</strong>, près de Lyon (69). Notre
+                  d’ <strong>Aix-les-Bains</strong> (73) ou des <strong>Monts d’Or</strong>, près de Jemmel (69). Notre
                   savoir-faire nous permet de vous offrir des
                   <strong>fenêtres et baies vitrées en aluminium</strong> aux structures épurées et aux grandes
                   performances d’isolation
@@ -233,7 +233,7 @@ defineOptions({
               <div class="mb-5">
                 De fabrication française, nos <strong>volets et brise-soleil orientables</strong> (BSO) en
                 <strong>aluminium</strong> sont pensés et conçus
-                par nos artisans expérimentés dans notre atelier en région lyonnaise. Grâce à
+                par nos artisans expérimentés dans notre atelier en région de Monastir. Grâce à
                 <strong>l’aluminium</strong>
                 doté de hautes
                 technologies, tous nos <strong>volets battants, volets roulants et brise-soleil orientables</strong>
@@ -258,7 +258,7 @@ defineOptions({
               </div>
 
               <strong class="mb-2 mt-11 block text-left text-[16px] font-extrabold">
-                Des fermetures : portes et portails en aluminium Made in Lyon grâce à DESLTA Solution
+                Des fermetures : portes et portails en aluminium Made in Jemmel grâce à DESLTA Solution
               </strong>
 
               <div>
@@ -324,7 +324,7 @@ defineOptions({
                 véhicule
                 ?
                 <strong>DELTA Solution</strong> est spécialisé dans la <strong>pergola sur-mesure à
-                  Lyon</strong>, pour s'intégrer au mieux à votre
+                  Jemmel</strong>, pour s'intégrer au mieux à votre
                 habitat.
               </div>
               <div class="mb-15">

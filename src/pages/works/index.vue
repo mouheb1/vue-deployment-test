@@ -1,51 +1,46 @@
 <template>
-  <div class="relative top-0 h-125 bg-cover bg-center bg-no-repeat bg-windows-image">
+  <div
+    class="relative top-0 h-125 bg-cover bg-center bg-no-repeat bg-works-image before:absolute before:inset-0 before:bg-black before:opacity-40 before:content-['']"
+  >
     <div
       class="relative top-37 mx-10 text-4xl text-white font-extrabold leading-17 -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
-      Pose de fenêtres aluminium sur mesure à Jemmel
+      Réalisations sur mesure par Delta Solution
     </div>
   </div>
   <div class="style1">
     <div class="style2">
-      Fenêtres et baies vitrées en alu sur-mesure à Jemmel
+      MENUISERIES ALUMINIUM SUR-MESURE HAUT DE GAMME À JEMMEL
     </div>
 
     <div class="style3">
       <p>
-        <span style="font-weight: 400;">Vous recherchez un fabriquant de <strong>menuiserie alu sur-mesure à
-          Lyon</strong>, et notamment fabriquant des <strong>fenêtres et baies vitrées haut de gamme</strong> pour
-          votre maison ou une <strong>villa d’architecte</strong> ? Delta Solution s’occupe de la <strong>fabrication
-            sur-mesure</strong> et l’installation de vos <strong>fenêtres et baies vitrées en aluminium.</strong></span>
+        <span style="font-weight: 400;">Delta Solution fabrique et installe vos <strong>menuiseries en aluminium sur
+          mesure</strong> et personnalisables à Jemmel, <strong>Vienne 38</strong>, Grenoble, et Valence.&nbsp;</span>
       </p>
       <br>
-      <h2><strong>Des fenêtres et baies vitrées en aluminium sur-mesure à Jemmel</strong></h2>
       <p>
-        <span style="font-weight: 400;">Grande tendance de l’architecture contemporaine, les <strong>fenêtres et baies
-          vitrées en aluminium</strong> vous offrent un style ultra minimaliste alliant esthétique et performance. En
-          effet, l’aluminium optimise l’isolation thermique et les apports de chaleur. <strong>Sur-mesure et haut de
-            gamme</strong>, nos créations sont fabriquées en France dans notre atelier en <strong>région
-            lyonnaise.&nbsp;</strong></span>
-      </p>
-      <br>
-      <h2><strong>Une personnalisation sans limite de vos fenêtres et baies vitrées en aluminium à Jemmel</strong></h2>
-      <p>
-        <span style="font-weight: 400;">Nos créations de <strong>fenêtres et baies vitrées en aluminium</strong> sont
-          <strong>sur-mesure</strong>. Vous pouvez donc choisir la taille, la forme, la couleur, et les finitions. Baies
-          vitrées coulissantes, pose en tunnel ou en applique d’une fenêtre, double ou triple vitrage, aluminium
-          bicolore, avec volets roulants intégrés… Nos <strong>fenêtres et baies vitrées en aluminium</strong> sont
-          personnalisables selon vos attentes et les spécificités de votre maison. Delta Solution collabore en
-          partenariat avec deux grandes marques&nbsp;: Technal et de Keller Minimal Windows,</span>
+        <strong>Des menuiseries aluminium sur mesure pour particuliers, professionnels et villa d’architecte</strong>
       </p>
       <p>
-        <span style="font-weight: 400;">Des questions sur la fabrication et l’installation de <strong>menuiseries
-          aluminium à Vienne 38</strong>, de&nbsp;<a
-          href="../details-menuiserie+en+aluminium+a+ecully-83.html"
-        ><strong>fenêtres en aluminium à
-          Ecully</strong></a> proche des Monts d’Or ? Besoin de conseils pour <strong>personnaliser sa baie vitrée
-          sur-mesure</strong> à <strong>Villefranche sur Saône ou Annecy</strong> ? Faites le choix de la qualité et
-          du made in France. N’hésitez pas à contacter Delta Solution pour vos projets de construction ou rénovation de
-          maison ou <strong>villa d’architecte</strong>.<br> </span>
+        <span style="font-weight: 400;">Nous intervenons dans des projets de construction ou rénovation de maisons et
+          appartements d’exception, en tant qu'artisans spécialisés sur les <strong>menuiseries haut de gamme
+            sur-mesure</strong>&nbsp;<strong>à Jemmel</strong> dans les Monts d’Or, à
+          <strong>Villefranche-sur-Saône</strong> ou même à <strong>Annecy</strong>.<br><br> <strong>Menuisier</strong>
+          certifié Profils Systèmes, nous fabriquons et installons vos <strong>menuiseries en alu</strong> telles que <a
+            href="../details-fenetres+en+aluminium+sur-mesure+a+jemmel-46.html"
+          ><strong>fenêtres en aluminium</strong></a>, <strong>baies vitrées coulissantes</strong> ou encore <a
+            href="../details-pergola+bioclimatique+pas+cher+a+jemmel-92.html"
+          ><strong>pergola bioclimatique</strong></a>. Nos produits sont faits par nos artisans dans notre atelier en
+          région de monastir, et vous promettent une rénovation énergétique et durable, en plus d’être
+          esthétique.&nbsp;</span>
+      </p>
+      <p>
+        <span style="font-weight: 400;">Baie vitrée coulissante, fenêtres battantes en double ou triple vitrage,
+          disponibles en plusieurs couleurs, nos <strong>menuiseries haut de gamme et sur-mesure</strong> s'intègrent
+          parfaitement à votre intérieur quel que soit votre style de décoration. Pour en savoir plus et trouver de
+          l’inspiration, découvrez nos réalisations dans les <strong>Monts d'Or</strong> à <strong>Jemmel</strong>,
+          <strong>Annecy</strong>, <strong>Valence</strong>, <strong>Villefranche-sur-Saône.</strong></span>
       </p>
     </div>
   </div>
@@ -53,10 +48,6 @@
 </template>
 
 <style scoped>
-.bg-windows-image::before {
-  @apply absolute inset-0 bg-black opacity-40 content-[""];
-}
-
 .style1 {
   -webkit-text-size-adjust: 100%;
   font-size: 14px;

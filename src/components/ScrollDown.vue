@@ -9,7 +9,7 @@ import { scrollTo } from '@/utils/helpers'
   >
     <div class="absolute mb-6 h-16 w-16 bg-black opacity-30" />
     <i
-      class="pi pi-chevron-down z-1 mb-5 text-xs color-[#003f5e]"
+      class="pi pi-chevron-down z-1 mb-6 text-xs color-[#003f5e]"
       style="font-size: 1.5rem"
     />
   </div>

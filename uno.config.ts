@@ -5,6 +5,7 @@ import {
   presetTypography,
   presetUno,
   presetWebFonts,
+  presetWind,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
@@ -29,6 +30,9 @@ export default defineConfig({
         mono: 'DM Mono',
       },
     }),
+    presetWind({
+      important: '#app',
+    }),
   ],
   transformers: [
     transformerDirectives(),
@@ -37,7 +41,11 @@ export default defineConfig({
   safelist: 'prose m-auto text-left'.split(' '),
   rules: [
     ['bg-contact-image', { 'background-image': 'url(/images/galleryImages/image-1.jpg)' }],
+    ['bg-works-image', { 'background-image': 'url(/images/galleryImages/image-4.jpg)' }],
     ['bg-windows-image', { 'background-image': 'url(/images/sectionImages/image-1.jpg)' }],
     ['bg-doors-image', { 'background-image': 'url(/images/sectionImages/image-5.jpeg)' }],
+    ['bg-guardrail-image', { 'background-image': 'url(/images/sectionImages/image-6.jpg)' }],
+    ['bg-shutters-image', { 'background-image': 'url(/images/sectionImages/image-7.jpg)' }],
+    ['bg-bso-image', { 'background-image': 'url(/images/sectionImages/image-8.jpg)' }],
   ],
 })

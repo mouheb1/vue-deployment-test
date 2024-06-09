@@ -8,6 +8,10 @@ defineProps({
     type: String,
     default: 'default',
   },
+  loading: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const emit = defineEmits(['click'])
@@ -16,10 +20,17 @@ const emit = defineEmits(['click'])
 <template>
   <Button
     :type="type"
-    class="hover-animation border-2 rounded-none bg-transparent px-5 py-[13.3333px] text-sm font-semibold duration-300 hover:bg-[#003f5e] hover:text-white"
+    class="h-12.5 w-24 border-2 rounded-none bg-transparent px-5 py-[13.3333px] text-sm font-semibold"
     :class="[theme === 'alternative' ? 'border-[#003f5e] text-[#003f5e]' : 'border-white text-white']"
     @click="emit('click')"
   >
-    <slot>Envoyer</slot>
+    <ProgressSpinner
+      v-if="loading"
+      stroke-width="4"
+      class="h-10 w-10"
+    />
+    <slot v-else>
+      Envoyer
+    </slot>
   </Button>
 </template>

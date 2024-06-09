@@ -1,5 +1,5 @@
 <template>
-  <div class="relative top-0 h-125 bg-cover bg-center bg-no-repeat bg-windows-image">
+  <div class="relative top-0 h-125 bg-cover bg-center bg-no-repeat bg-windows-image before:absolute before:inset-0 before:bg-black before:opacity-40 before:content-['']">
     <div
       class="relative top-37 mx-10 text-4xl text-white font-extrabold leading-17 -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
@@ -14,7 +14,7 @@
     <div class="style3">
       <p>
         <span style="font-weight: 400;">Vous recherchez un fabriquant de <strong>menuiserie alu sur-mesure à
-          Lyon</strong>, et notamment fabriquant des <strong>fenêtres et baies vitrées haut de gamme</strong> pour
+          Jemmel</strong>, et notamment fabriquant des <strong>fenêtres et baies vitrées haut de gamme</strong> pour
           votre maison ou une <strong>villa d’architecte</strong> ? Delta Solution s’occupe de la <strong>fabrication
             sur-mesure</strong> et l’installation de vos <strong>fenêtres et baies vitrées en aluminium.</strong></span>
       </p>
@@ -25,7 +25,7 @@
           vitrées en aluminium</strong> vous offrent un style ultra minimaliste alliant esthétique et performance. En
           effet, l’aluminium optimise l’isolation thermique et les apports de chaleur. <strong>Sur-mesure et haut de
             gamme</strong>, nos créations sont fabriquées en France dans notre atelier en <strong>région
-            lyonnaise.&nbsp;</strong></span>
+            de Monastir.&nbsp;</strong></span>
       </p>
       <br>
       <h2><strong>Une personnalisation sans limite de vos fenêtres et baies vitrées en aluminium à Jemmel</strong></h2>
@@ -53,10 +53,6 @@
 </template>
 
 <style scoped>
-.bg-windows-image::before {
-  @apply absolute inset-0 bg-black opacity-40 content-[""];
-}
-
 .style1 {
   -webkit-text-size-adjust: 100%;
   font-size: 14px;
