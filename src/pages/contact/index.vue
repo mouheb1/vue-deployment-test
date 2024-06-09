@@ -22,6 +22,18 @@ const validateForm = () => {
   isFormValid.value = Boolean(email && message && name && surname && phone && acceptedTerms)
 }
 
+const resetForm = () => {
+  formState.value = {
+    email: '',
+    subject: 'contact delta solution',
+    name: '',
+    surname: '',
+    message: '',
+    phone: '',
+    acceptedTerms: false,
+  }
+}
+
 const messageCount = ref(0)
 const message = ref<any>(null)
 
@@ -58,6 +70,7 @@ const sendMail = async () => {
     })
 
     showMessage('info', 'Votre message a été envoyé avec succès')
+    resetForm()
   }
   catch (error) {
     console.error('error:', error)
@@ -70,7 +83,9 @@ const sendMail = async () => {
 </script>
 
 <template>
-  <div class="relative top-0 h-150 bg-cover bg-center bg-no-repeat bg-contact-image before:absolute before:inset-0 before:bg-black before:opacity-40 before:content-['']" />
+  <div
+    class="relative top-0 h-150 bg-cover bg-center bg-no-repeat bg-contact-image before:absolute before:inset-0 before:bg-black before:opacity-40 before:content-['']"
+  />
   <div class="absolute mx-3.5 mt-68 max-w-[95%] w-[95%] pb-20 md:mx-7">
     <div class="text-left text-[3em] text-white font-extrabold">
       Contact Delta Solution
