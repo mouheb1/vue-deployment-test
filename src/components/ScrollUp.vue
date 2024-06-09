@@ -5,7 +5,7 @@ import { scrollTo } from '@/utils/helpers'
 <template>
   <div
     class="absolute fixed bottom-0 right-0 z-100 mr-5 flex items-center justify-center hover:cursor-pointer"
-    @click="scrollTo('section-0')"
+    @click="scrollTo()"
   >
     <div class="absolute h-16 w-16 bg-[#003f5e]" />
     <i

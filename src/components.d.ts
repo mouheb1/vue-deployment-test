@@ -9,6 +9,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     ArticleCard: typeof import('./components/cards/ArticleCard.vue')['default']
     ArticleSection: typeof import('./components/ArticleSection.vue')['default']
+    ArticlesSection: typeof import('./components/sections/ArticlesSection.vue')['default']
     copy: typeof import('./components/LocationButton copy.vue')['default']
     CustomMenuBar: typeof import('./components/CustomMenuBar.vue')['default']
     FloatingFooter: typeof import('./components/FloatingFooter.vue')['default']

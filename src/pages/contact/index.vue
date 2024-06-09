@@ -25,7 +25,7 @@ const validateForm = () => {
 }
 
 const showToast = (success = true, detail: string) => {
-  toast.add({ severity: success ? 'success' : 'error', summary: 'Success Message', detail, group: 'br', life: 3000 })
+  toast.add({ severity: success ? 'success' : 'error', summary: success ? 'Success' : 'Error', detail, life: 3000 })
 }
 
 const sendMail = () => {
@@ -35,12 +35,13 @@ const sendMail = () => {
   }
 
   const { email, message, name, surname, subject, phone } = formState.value
-  const fullMessage = `${message}\nNom: ${surname} Prenom: ${name}\n Phone: ${phone}`
+  const fullMessage = `${message}\nNom: ${surname} Prénom: ${name}\n Téléphone: ${phone}`
 
   fetch(contactEndpoint, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'Access-Control-Allow-Origin': '*',
     },
     body: JSON.stringify({
       email,
@@ -50,7 +51,7 @@ const sendMail = () => {
   })
     .then(response => response.json())
     .then(() => showToast(true, 'Votre message a été envoyé avec succès'))
-    .catch(error => showToast(false, error))
+    .catch(error => showToast(false, error.message || 'Une erreur s\'est produite'))
 }
 </script>
 
@@ -58,6 +59,8 @@ const sendMail = () => {
   <div class="relative top-0 h-150 bg-cover bg-center bg-no-repeat bg-contact-image" />
 
   <div class="absolute mx-3.5 mt-68 max-w-[95%] w-[95%] pb-20 md:mx-7">
+    <Toast />
+
     <div class="text-left text-[3em] text-white font-extrabold">
       Contact Delta Solution
     </div>
@@ -128,7 +131,6 @@ const sendMail = () => {
 
         <div class="mt-4">
           <PrimaryButton
-            :disabled="!isFormValid"
             type="submit"
             @click="sendMail"
           />

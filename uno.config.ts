@@ -37,5 +37,7 @@ export default defineConfig({
   safelist: 'prose m-auto text-left'.split(' '),
   rules: [
     ['bg-contact-image', { 'background-image': 'url(/images/galleryImages/image-1.jpg)' }],
+    ['bg-windows-image', { 'background-image': 'url(/images/sectionImages/image-1.jpg)' }],
+    ['bg-doors-image', { 'background-image': 'url(/images/sectionImages/image-5.jpeg)' }],
   ],
 })
