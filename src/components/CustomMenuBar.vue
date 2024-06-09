@@ -57,7 +57,3 @@ const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
     </Menubar>
   </div>
 </template>
-
-<style scoped>
-
-</style>

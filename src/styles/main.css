@@ -49,7 +49,7 @@ a {
 }
 
 ul.p-submenu-list {
-  background-color: #003f5e;
+  background-color: #003f5e !important;
 }
 
 .nav-underline {
