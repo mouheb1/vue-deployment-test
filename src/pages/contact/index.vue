@@ -5,7 +5,7 @@ import { contact } from '@/assets/json/config.json'
 
 const toast = useToast()
 
-const contactEndpoint = import.meta.env.VITE_CONTACT_ENDPOINT ?? ''
+// const contactEndpoint = import.meta.env.VITE_CONTACT_ENDPOINT ?? ''
 
 const formState = ref({
   email: '',
@@ -37,7 +37,7 @@ const sendMail = () => {
   const { email, message, name, surname, subject, phone } = formState.value
   const fullMessage = `${message}\nNom: ${surname} Prénom: ${name}\n Téléphone: ${phone}`
 
-  fetch(contactEndpoint, {
+  fetch('https://deltasolution-express.netlify.app/.netlify/functions/api', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
