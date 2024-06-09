@@ -16,7 +16,7 @@ import 'uno.css'
 import './styles/main.css'
 import 'primeicons/primeicons.css'
 import 'primevue/resources/themes/aura-light-green/theme.css'
-import 'primevue/resources/primevue.min.css'
+// import 'primevue/resources/primevue.min.css'
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
