@@ -10,10 +10,12 @@ declare module 'vue' {
     ArticleCard: typeof import('./components/cards/ArticleCard.vue')['default']
     ArticleSection: typeof import('./components/ArticleSection.vue')['default']
     ArticlesSection: typeof import('./components/sections/ArticlesSection.vue')['default']
+    CloseIcon: typeof import('./components/icons/CloseIcon.vue')['default']
     CustomMenuBar: typeof import('./components/CustomMenuBar.vue')['default']
     FloatingFooter: typeof import('./components/FloatingFooter.vue')['default']
     LocationButton: typeof import('./components/LocationButton.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
+    Newsletter: typeof import('./components/modals/Newsletter.vue')['default']
     PhoneIcon: typeof import('./components/icons/PhoneIcon.vue')['default']
     PrimaryButton: typeof import('./components/PrimaryButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -26,5 +28,6 @@ declare module 'vue' {
     TheInput: typeof import('./components/TheInput.vue')['default']
     TopBar: typeof import('./components/TopBar.vue')['default']
     WideArticleCard: typeof import('./components/cards/WideArticleCard.vue')['default']
+    WorksGallery: typeof import('./components/works/WorksGallery.vue')['default']
   }
 }

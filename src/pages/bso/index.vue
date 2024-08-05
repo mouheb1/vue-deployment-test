@@ -5,17 +5,17 @@
     <div
       class="relative top-37 mx-10 text-4xl text-white font-extrabold leading-17 -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
-      Pose de Brise-Soleil Orientable BSO aluminium à Jemmel
+      Pose de Brise-Soleil Orientable BSO Aluminium
     </div>
   </div>
   <div class="style1">
     <div class="style2">
-      FABRICATION ET INSTALLATION DE BRISE-SOLEIL ORIENTABLE (BSO) EN ALUMINIUM À JEMMEL
+      FABRICATION ET INSTALLATION DE BRISE-SOLEIL ORIENTABLE (BSO) EN Aluminium
     </div>
 
     <div class="style3">
       <p>
-        <span style="font-weight: 400;">Spécialiste en <strong>menuiserie aluminium</strong>, STBN Aluminium a
+        <span style="font-weight: 400;">Spécialiste en <strong>menuiserie Aluminium</strong>, Delta Solution a
           développé un savoir-faire reconnu en fabrication et <strong>installation de brise-soleil orientables</strong>.
           Alliant style minimaliste et praticité, le <strong>brise-soleil orientable</strong> est un élément
           architectural de plus en plus prisé des maisons contemporaines et villas d’architecte.</span>
@@ -29,12 +29,12 @@
       </p>
       <p><span style="font-weight: 400;">&nbsp;</span></p>
       <h2>
-        <strong>Fabrication sur-mesure et installation de brise-soleil orientable à Valence (26) ou Annecy
+        <strong>Fabrication sur mesure et installation de brise-soleil orientable à Valence (26) ou Annecy
           (74)</strong>
       </h2>
       <p>
-        <span style="font-weight: 400;">Nous vous proposons des <strong>BSO en aluminium</strong> de très haute
-          qualité. Ses <strong>lames orientables en aluminium</strong> vous apportent robustesse, longévité et
+        <span style="font-weight: 400;">Nous vous proposons des <strong>BSO en Aluminium</strong> de très haute
+          qualité. Ses <strong>lames orientables en Aluminium</strong> vous apportent robustesse, longévité et
           minimalisme, ce qui vous assure une amélioration de votre confort de vie au quotidien.&nbsp;</span>
       </p>
       <p><span style="font-weight: 400;">&nbsp;</span></p>

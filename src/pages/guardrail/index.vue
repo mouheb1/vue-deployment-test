@@ -3,12 +3,12 @@
     <div
       class="relative top-37 mx-10 text-4xl text-white font-extrabold leading-17 -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
-      Installation de garde corps minimaliste haut de gamme à Jemmel
+      Installation de garde corps
     </div>
   </div>
   <div class="style1">
     <div class="style2">
-      FABRICANT ET INSTALLATEUR DE GARDE CORPS MINIMALISTE
+      FABRICANT ET INSTALLATEUR DE GARDE CORPS
     </div>
 
     <div class="style3">

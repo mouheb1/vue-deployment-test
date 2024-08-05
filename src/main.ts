@@ -8,6 +8,8 @@ import Galleria from 'primevue/galleria'
 import Ripple from 'primevue/ripple'
 import Message from 'primevue/message'
 import ProgressSpinner from 'primevue/progressspinner'
+import Dialog from 'primevue/dialog'
+import InputText from 'primevue/inputtext'
 
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
@@ -17,7 +19,7 @@ import 'uno.css'
 import './styles/main.css'
 import 'primeicons/primeicons.css'
 import 'primevue/resources/themes/aura-light-green/theme.css'
-import 'primevue/resources/primevue.min.css'
+// import 'primevue/resources/primevue.min.css'
 
 // https://github.com/antfu/vite-ssg
 export const createApp = ViteSSG(
@@ -34,6 +36,8 @@ export const createApp = ViteSSG(
       .component('Galleria', Galleria)
       .component('Message', Message)
       .component('ProgressSpinner', ProgressSpinner)
+      .component('Dialog', Dialog)
+      .component('InputText', InputText)
       .directive('ripple', Ripple)
 
     // install all modules under `modules/`

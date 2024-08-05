@@ -15,3 +15,12 @@ export class Article {
     this.description = description
   }
 }
+
+export interface Document {
+  exitFullscreen: any
+  mozCancelFullScreen: any
+  webkitExitFullscreen: any
+  fullscreenElement: any
+  mozFullScreenElement: any
+  webkitFullscreenElement: any
+}
