@@ -10,6 +10,7 @@ import Message from 'primevue/message'
 import ProgressSpinner from 'primevue/progressspinner'
 import Dialog from 'primevue/dialog'
 import InputText from 'primevue/inputtext'
+import InputMask from 'primevue/inputmask'
 
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
@@ -17,6 +18,7 @@ import type { UserModule } from './types'
 
 import 'uno.css'
 import './styles/main.css'
+import './styles/animations.css'
 import 'primeicons/primeicons.css'
 import 'primevue/resources/themes/aura-light-green/theme.css'
 // import 'primevue/resources/primevue.min.css'
@@ -27,6 +29,11 @@ export const createApp = ViteSSG(
   {
     routes: setupLayouts(routes),
     base: import.meta.env.BASE_URL,
+    scrollBehavior() {
+      return {
+        top: 0,
+      }
+    },
   },
   (ctx) => {
     ctx.app
@@ -38,6 +45,7 @@ export const createApp = ViteSSG(
       .component('ProgressSpinner', ProgressSpinner)
       .component('Dialog', Dialog)
       .component('InputText', InputText)
+      .component('InputMask', InputMask)
       .directive('ripple', Ripple)
 
     // install all modules under `modules/`

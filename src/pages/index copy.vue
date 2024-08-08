@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { vElementVisibility } from '@vueuse/components'
+import { useScroll } from '@vueuse/core'
 import {
   galleryImages,
   headlines,
@@ -8,10 +10,35 @@ import {
 defineOptions({
   name: 'IndexPage',
 })
+
+const el = ref<HTMLElement | null>(null)
+const { y } = useScroll(el)
+
+const lastY = ref(0)
+const target = ref(null)
+const currentVisibleItem = ref('')
+const onVisibilityChange = (isVisible: boolean, newVisibleItem: string) => {
+  setTimeout(() => {
+    if (currentVisibleItem.value === newVisibleItem || lastY.value === y.value) {
+      return
+    }
+
+    // if (!isVisible) {
+    //   return currentVisibleItem.value = ''
+    // }
+    currentVisibleItem.value = newVisibleItem
+  }, 300)
+}
+
+watch(y, (oldY, newY) => {
+  if (oldY !== newY) {
+    lastY.value = oldY
+  }
+})
 </script>
 
 <template>
-  <div id="section-0" class="overflow-x-clip">
+  <div id="section-0" ref="el" class="overflow-x-clip">
     <section class="bg-black">
       <Galleria
         :value="galleryImages"
@@ -59,7 +86,14 @@ defineOptions({
     </section>
     <section id="section-2" class="flex justify-center pt-10">
       <div
-        class="hidden w-1/2 bg-cover bg-center bg-no-repeat lg:mr-20 lg:block"
+        ref="target"
+        v-element-visibility="[(isVisible) => onVisibilityChange(isVisible, 'section-2'), { scrollTarget: target }]"
+        class="hidden w-1/2 animate-duration-300 bg-cover bg-center bg-no-repeat lg:mr-20 lg:block"
+        :class="[
+          currentVisibleItem === 'section-2'
+            ? 'animate-fade-in-up'
+            : 'fade-out-down',
+        ]"
         style="
           background-image: url(&quot;/images/galleryImages/image-1.jpg&quot;);
         "
@@ -88,7 +122,14 @@ defineOptions({
           </div>
           <div class="mt-10 inline-block h-0.5 w-15 bg-[#003f5e]" />
           <div
-            class="mt-10 aspect-square max-w-100 w-[80%] duration-600 delay-250 ease-in-out lg:w-100"
+            v-element-visibility="[(isVisible) => onVisibilityChange(isVisible, 'section-2'), { scrollTarget: target }]"
+
+            class="mt-10 aspect-square max-w-100 w-[80%] animate-duration-300 duration-600 delay-250 ease-in-out lg:w-100"
+            :class="[
+              currentVisibleItem === 'section-2'
+                ? 'animate-fade-in-up'
+                : 'fade-out-down',
+            ]"
             title="Menuiserie haut de gamme en Aluminium et sur mesure"
             style="
               background-size: cover;
@@ -133,9 +174,16 @@ defineOptions({
             </div>
             <div class="aspect-square max-w-[85%]">
               <img
+                v-element-visibility="[(isVisible) => onVisibilityChange(isVisible, 'section-4'), { scrollTarget: target }]"
+
                 src="/images/sectionImages/image-1.jpg"
                 alt="Image"
-                class="h-full w-full overflow-hidden object-cover"
+                class="h-full w-full animate-duration-300 overflow-hidden object-cover"
+                :class="[
+                  currentVisibleItem === 'section-4'
+                    ? 'animate-fade-in-up'
+                    : 'fade-out-down',
+                ]"
               >
               <div class="max-w-[15%]" />
             </div>
@@ -206,9 +254,16 @@ defineOptions({
             class="sticky top-42 hidden aspect-auto h-screen max-w-[60%] overflow-hidden lg:block"
           >
             <img
+              v-element-visibility="[(isVisible) => onVisibilityChange(isVisible, 'section-4'), { scrollTarget: target }]"
+
               src="/images/sectionImages/image-2.jpg"
               alt="Image"
-              class="h-full w-full overflow-hidden bg-no-repeat object-cover pl-10 grayscale"
+              class="h-full w-full animate-duration-300 overflow-hidden bg-no-repeat object-cover pl-10 grayscale"
+              :class="[
+                currentVisibleItem === 'section-4'
+                  ? 'animate-fade-in-up'
+                  : 'fade-out-down',
+              ]"
             >
           </div>
         </div>
@@ -223,9 +278,16 @@ defineOptions({
           class="sticky top-42 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block"
         >
           <img
+            v-element-visibility="[(isVisible) => onVisibilityChange(isVisible, 'section-5'), { scrollTarget: target }]"
+
             src="/images/sectionImages/image-3.jpg"
             alt="Image"
-            class="h-full w-full overflow-hidden bg-no-repeat object-cover lg:h-[80%]"
+            class="h-full w-full animate-duration-300 overflow-hidden bg-no-repeat object-cover lg:h-[80%]"
+            :class="[
+              currentVisibleItem === 'section-5'
+                ? 'animate-fade-in-up'
+                : 'fade-out-down',
+            ]"
           >
         </div>
         <div class="flex flex-col items-end lg:max-w-[50%]">
@@ -283,10 +345,11 @@ defineOptions({
     >
       <div class="relative flex justify-center">
         <div class="flex flex-col items-end lg:max-w-[45%]">
-          <div class="mb-20 p-x-5 pt-20 text-left lg:mr-30 md:mb-20 md:p-x-20">
+          <div class="pl-10 pt-20 text-left lg:mr-30 md:p-x-20">
             <div class="text-[1.8em]">
               <div class="uppercase">
-                Pourquoi choisir <br> DELTA SOLUTION ?
+                Pourquoi choisir <br>
+                DELTA SOLUTION ?
               </div>
 
               <div class="text-justify text-[14px] leading-7">
@@ -298,21 +361,23 @@ defineOptions({
                   </li>
                   <li>
                     <strong class="block">Qualité et fiabilité</strong>
-                    <span>Notre équipe de techniciens qualifiés se charge de la pose
-                      de vos menuiseries avec précision et efficacité. Nous
-                      veillons à ce que chaque installation soit réalisée dans les
-                      règles de l’art, en respectant les délais et en assurant un
-                      résultat impeccable.
+                    <span>Notre équipe de techniciens qualifiés se charge de la
+                      pose de vos menuiseries avec précision et efficacité. Nous
+                      veillons à ce que chaque installation soit réalisée dans
+                      les règles de l’art, en respectant les délais et en
+                      assurant un résultat impeccable.
                     </span>
                   </li>
                   <li>
                     <strong class="block">Solutions sur mesure</strong>
-                    <span>Des produits adaptés à vos besoins spécifiques et à vos projets.
+                    <span>Des produits adaptés à vos besoins spécifiques et à vos
+                      projets.
                     </span>
                   </li>
                   <li>
                     <strong class="block">Service client irréprochable</strong>
-                    <span>Un accompagnement personnalisé de la conception à la réalisation de vos projets.
+                    <span>Un accompagnement personnalisé de la conception à la
+                      réalisation de vos projets.
                     </span>
                   </li>
                 </ul>
@@ -321,14 +386,19 @@ defineOptions({
           </div>
         </div>
 
-        <!-- a3teha akther 3ordh -->
         <div
           class="sticky mt-10 hidden h-screen max-w-[55%] overflow-hidden lg:block"
         >
           <img
+            v-element-visibility="[(isVisible) => onVisibilityChange(isVisible, 'section-6'), { scrollTarget: target }]"
             src="/images/sectionImages/image-4.jpg"
             alt="Image"
-            class="max-h-min w-full overflow-hidden bg-no-repeat object-cover"
+            class="max-h-min w-full animate-duration-300 overflow-hidden bg-no-repeat object-cover"
+            :class="[
+              currentVisibleItem === 'section-6'
+                ? 'animate-fade-in-up'
+                : 'fade-out-down',
+            ]"
           >
         </div>
       </div>

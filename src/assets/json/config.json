@@ -32,44 +32,244 @@
     },
     {
       "index": 2,
-      "label": "Fenêtres & baies vitrées",
-      "route": "/windows"
-    },
-    {
-      "index": 3,
-      "label": "Portes & portails alu",
-      "route": "/doors"
-    },
-    {
-      "index": 4,
-      "label": "Volets alu & occultants",
+      "label": "Fenêtres",
+      "route": "/windows",
       "items": [
         {
-          "index": 8,
-          "label": "Volets roulants",
-          "route": "/rolling-shutters",
+          "index": 1,
+          "label": "Fenêtres Aluminium",
+          "route": "/windows/aluminum",
           "isChild": true
         },
         {
-          "index": 9,
-          "label": "BSO",
-          "route": "/bso",
+          "index": 2,
+          "label": "Fenêtres PVC",
+          "route": "/windows/pvc",
           "isChild": true
         }
       ]
     },
     {
+      "index": 3,
+      "label": "Portes",
+      "route": "/doors",
+      "items": [
+        {
+          "index": 1,
+          "label": "Portes Aluminium",
+          "route": "/doors/aluminum",
+          "isChild": true
+        },
+        {
+          "index": 2,
+          "label": "Portes PVC",
+          "route": "/doors/pvc",
+          "isChild": true
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "Protection Solaire",
+      "route": "/solar-protection",
+      "items": [
+        {
+          "index": 1,
+          "label": "Volée Extérieur",
+          "route": "/solar-protection/exterior-shutters",
+          "isChild": true,
+          "items": [
+            {
+              "index": 1,
+              "label": "Volet Roulant Sous Enduit",
+              "route": "/solar-protection/exterior-shutters/under-plaster",
+              "isChild": true
+            },
+            {
+              "index": 2,
+              "label": "Volet Roulant Extérieur de Renovation",
+              "route": "/solar-protection/exterior-shutters/renovation",
+              "isChild": true
+            },
+            {
+              "index": 3,
+              "label": "Volet Roulant Mono Block",
+              "route": "/solar-protection/exterior-shutters/mono-block",
+              "isChild": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "label": "Brises Soleil",
+          "route": "/solar-protection/solar-shading",
+          "isChild": true
+        },
+        {
+          "index": 3,
+          "label": "Volet Battants",
+          "route": "/solar-protection/swing-shutters",
+          "isChild": true
+        },
+        {
+          "index": 4,
+          "label": "Store D’intérieur",
+          "route": "/solar-protection/interior-blinds",
+          "isChild": true,
+          "items": [
+            {
+              "index": 1,
+              "label": "Store Vénitien",
+              "route": "/solar-protection/interior-blinds/venetian",
+              "isChild": true
+            },
+            {
+              "index": 2,
+              "label": "Store Verticale",
+              "route": "/solar-protection/interior-blinds/vertical",
+              "isChild": true
+            },
+            {
+              "index": 3,
+              "label": "Store Rouleau",
+              "route": "/solar-protection/interior-blinds/roller",
+              "isChild": true
+            },
+            {
+              "index": 4,
+              "label": "Store Double Jeu",
+              "route": "/solar-protection/interior-blinds/double-roller",
+              "isChild": true
+            }
+          ]
+        }
+      ]
+    },
+    {
       "index": 5,
-      "label": "Garde corps minimaliste",
-      "route": "/guardrail"
+      "label": "Garde Corps",
+      "route": "/guardrails"
     },
     {
       "index": 6,
+      "label": "Clotures",
+      "route": "/fences"
+    },
+    {
+      "index": 7,
+      "label": "Portails",
+      "route": "/gates",
+      "items": [
+        {
+          "index": 1,
+          "label": "Portails En Aluminium",
+          "route": "/gates/aluminum",
+          "isChild": true
+        },
+        {
+          "index": 2,
+          "label": "Portails En Acier",
+          "route": "/gates/steel",
+          "isChild": true
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "label": "Porte des Garages",
+      "route": "/garage-doors",
+      "items": [
+        {
+          "index": 1,
+          "label": "Porte Sectionnelle",
+          "route": "/garage-doors/sectional",
+          "isChild": true
+        },
+        {
+          "index": 2,
+          "label": "Porte Basculante",
+          "route": "/garage-doors/tilt",
+          "isChild": true
+        },
+        {
+          "index": 3,
+          "label": "Rideau Métallique",
+          "route": "/garage-doors/metal-shutters",
+          "isChild": true,
+          "items": [
+            {
+              "index": 1,
+              "label": "Rideau Métallique à Lame Simple",
+              "route": "/garage-doors/metal-shutters/simple-slat",
+              "isChild": true
+            },
+            {
+              "index": 2,
+              "label": "Rideau Métallique à Lame Injecté",
+              "route": "/garage-doors/metal-shutters/injected-slat",
+              "isChild": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "label": "Moustiquaires",
+      "route": "/mosquito-nets",
+      "items": [
+        {
+          "index": 1,
+          "label": "Moustiquaires Enroulable",
+          "route": "/mosquito-nets/roller",
+          "isChild": true
+        },
+        {
+          "index": 2,
+          "label": "Moustiquaires Coulissante",
+          "route": "/mosquito-nets/sliding",
+          "isChild": true
+        },
+        {
+          "index": 3,
+          "label": "Moustiquaires Fixe",
+          "route": "/mosquito-nets/fixed",
+          "isChild": true
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "label": "Pergolas",
+      "route": "/pergolas",
+      "items": [
+        {
+          "index": 1,
+          "label": "Pergolas En Aluminium",
+          "route": "/pergolas/aluminum",
+          "isChild": true
+        },
+        {
+          "index": 2,
+          "label": "Pergolas à Toile",
+          "route": "/pergolas/canvas",
+          "isChild": true
+        },
+        {
+          "index": 3,
+          "label": "Pergolas Bioclimatique",
+          "route": "/pergolas/bioclimatic",
+          "isChild": true
+        }
+      ]
+    },
+    {
+      "index": 11,
       "label": "Nos réalisations",
       "route": "/works"
     },
     {
-      "index": 7,
+      "index": 12,
       "label": "Contact",
       "route": "/contact"
     }
@@ -113,8 +313,8 @@
     }
   ],
   "headlines": {
-    "up": "",
-    "down": "Menuiserie sur mesure"
+    "up": "DELTA SOLUTION",
+    "down": "Votre Menuiserie sur mesure"
   },
   "topArticles": [
     {

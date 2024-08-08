@@ -13,6 +13,36 @@ defineProps({
 const route = useRoute()
 const globalStore = useGlobalStore()
 const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
+
+let intv = 0
+let ctx = {}
+
+const enter = (event, instance, context) => {
+  if (isMobile.value)
+    return
+
+  ctx = context
+
+  clearTimeout(intv)
+  if (context && !context.item.level && !context.active) {
+    intv = setTimeout(() => {
+      instance.onItemClick(event, context.item)
+    }, 100)
+  }
+}
+
+const leave = (event, instance, context) => {
+  if (isMobile.value)
+    return
+
+  clearTimeout(intv)
+  if (!context || (!context.item.level && context.active)) {
+    intv = setTimeout(() => {
+      instance.onItemClick(event, (context || ctx).item)
+      instance.$emit('blur')
+    }, 100)
+  }
+}
 </script>
 
 <template>
@@ -22,6 +52,13 @@ const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
       :breakpoint="breakpoint"
       :auto-display="false"
       class="border-none bg-transparent hover:bg-transparent"
+      :pt="{
+        content: ({ instance, context }) => ({
+          onmouseenter: (event: any) => enter(event, instance, context),
+          onmouseleave: (event: any) => leave(event, instance, context),
+        }),
+
+      }"
     >
       <template #item="{ item, props }">
         <router-link
@@ -39,9 +76,15 @@ const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
           >
 
             <span
-              class="ml-0"
+              class="ml-0 text-center"
               :class="[(hasScrolled || !isAtHomePage) && !item.isChild ? 'text-black' : 'text-[#334155] md:text-white', item.isChild ? 'text-white' : '']"
-            >{{ item.label }}</span>
+            >{{ item.label }}
+              <i
+                v-if="item.isChild && item.items && item.items.length "
+                class="pi pi-chevron-right"
+                style="font-size: 0.5rem"
+              />
+            </span>
           </a>
         </router-link>
       </template>

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
 import { contact } from '@/assets/json/config.json'
 
 const apiUrl = 'https://deltasolution-express.netlify.app/.netlify/functions/api' // TODO: gotta make it into an env

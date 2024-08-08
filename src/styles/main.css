@@ -65,3 +65,7 @@ ul.p-submenu-list {
 .nav-underline:hover {
   background-size: 60% 3px;
 }
+
+.p-inputtext:enabled:focus {
+  outline: 1px solid #003f5e !important;
+}

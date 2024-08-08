@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PhotoService } from '@/service/photoService'
+import { PhotoService } from '@/services/photoService'
 
 const worksGalleries = ref()
 

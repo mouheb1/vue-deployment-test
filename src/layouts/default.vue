@@ -19,22 +19,3 @@ const visible = ref(true)
     :class="[hasScrolled && !isMobile ? 'animate-fade-in-up' : 'fade-out-down']"
   />
 </template>
-
-<style scoped>
-@keyframes fade-out-down {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(20px);
-    visibility: hidden;
-  }
-}
-
-.fade-out-down {
-  animation: fade-out-down 0.3s forwards;
-}
-</style>

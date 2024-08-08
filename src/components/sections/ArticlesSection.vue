@@ -6,7 +6,7 @@ import { bottomArticles } from '@/assets/json/config.json'
   <div>
     <section
       id="section-7"
-      class="mt-15 pt-10 md:mb-30"
+      class="md:mb-30"
     >
       <div class="md:w-full">
         <div class="relative mb-10 border-1 border-black border-opacity-15 border-solid">

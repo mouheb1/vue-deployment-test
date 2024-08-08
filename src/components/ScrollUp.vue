@@ -14,5 +14,3 @@ import { scrollTo } from '@/utils/helpers'
     />
   </div>
 </template>
-
-<style scoped></style>
