@@ -17,6 +17,7 @@ declare module 'vue' {
     LocationButton: typeof import('./components/LocationButton.vue')['default']
     NavBar: typeof import('./components/NavBar.vue')['default']
     Newsletter: typeof import('./components/modals/Newsletter.vue')['default']
+    PageLoader: typeof import('./components/loaders/PageLoader.vue')['default']
     PhoneIcon: typeof import('./components/icons/PhoneIcon.vue')['default']
     PrimaryButton: typeof import('./components/PrimaryButton.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

@@ -8,6 +8,7 @@ export default antfu(
     rules: {
       'antfu/top-level-function': 'off',
       'no-console': 'off',
+      'vue/no-unused-refs': 'off',
     },
   },
 )

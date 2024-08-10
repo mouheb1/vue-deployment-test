@@ -24,7 +24,6 @@ declare module 'vue-router/auto-routes' {
     '/contact/': RouteRecordInfo<'/contact/', '/contact', Record<never, never>, Record<never, never>>,
     '/doors/': RouteRecordInfo<'/doors/', '/doors', Record<never, never>, Record<never, never>>,
     '/guardrail/': RouteRecordInfo<'/guardrail/', '/guardrail', Record<never, never>, Record<never, never>>,
-    '/index copy': RouteRecordInfo<'/index copy', '/index copy', Record<never, never>, Record<never, never>>,
     '/rolling-shutters/': RouteRecordInfo<'/rolling-shutters/', '/rolling-shutters', Record<never, never>, Record<never, never>>,
     '/windows/': RouteRecordInfo<'/windows/', '/windows', Record<never, never>, Record<never, never>>,
     '/works/': RouteRecordInfo<'/works/', '/works', Record<never, never>, Record<never, never>>,

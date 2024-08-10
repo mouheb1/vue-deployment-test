@@ -14,3 +14,14 @@
 .fade-out-down {
   animation: fade-out-down 0.3s forwards;
 }
+
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-in;
+}
+
+.section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

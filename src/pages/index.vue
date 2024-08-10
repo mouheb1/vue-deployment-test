@@ -8,11 +8,37 @@ import {
 defineOptions({
   name: 'IndexPage',
 })
+
+// Function to handle intersection
+const animateSection = (entries: any[]) => {
+  entries.forEach((entry: { isIntersecting: any, target: { classList: { add: (arg0: string) => void } } }) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('animate') // Add animation class
+    }
+  })
+}
+
+// IntersectionObserver directive
+const intersectionObserver = new IntersectionObserver(animateSection, {
+  threshold: 0.1, // Trigger when 10% of the element is visible
+})
+
+// Custom directive
+const vIntersectionObserver = {
+  mounted(el: Element) {
+    intersectionObserver.observe(el)
+  },
+  unmounted(el: Element) {
+    intersectionObserver.unobserve(el)
+  },
+}
 </script>
 
 <template>
   <div id="section-0" class="overflow-x-clip">
-    <section class="bg-black">
+    <section
+      class="bg-black"
+    >
       <Galleria
         :value="galleryImages"
         :num-visible="5"
@@ -44,7 +70,9 @@ defineOptions({
     </section>
     <section
       id="section-1"
-      class="section-1-content relative ml-10 px-10 py-20 text-left lg:ml-20 lg:px-0"
+      ref="section1"
+      v-intersection-observer="animateSection"
+      class="section-1-content section relative ml-10 px-10 py-20 text-left lg:ml-20 lg:px-0"
     >
       <div class="lg:w-[40%]">
         <div class="mb-3 text-sm text-[#003f5e] tracking-[0.5em] uppercase">
@@ -57,7 +85,12 @@ defineOptions({
         <div />
       </div>
     </section>
-    <section id="section-2" class="flex justify-center pt-10">
+    <section
+      id="section-2"
+      ref="section2"
+      v-intersection-observer="animateSection"
+      class="section flex justify-center pt-10"
+    >
       <div
         class="hidden w-1/2 bg-cover bg-center bg-no-repeat lg:mr-20 lg:block"
         style="
@@ -100,14 +133,16 @@ defineOptions({
         </div>
       </div>
     </section>
-    <section id="section-3" class="mt-30 pt-10">
+    <section
+      id="section-3"
+      ref="section3"
+      v-intersection-observer="animateSection"
+      class="section mt-30 pt-10"
+    >
       <div class="w-full">
         <div class="text-md mb-8 text-[#003f5e] tracking-[0.5em] uppercase">
           DÉCOUVRIR
         </div>
-        <!-- <div class="mb-5 text-5xl text-black font-bold leading-15">
-          Nos services
-        </div> -->
         <div
           class="relative mb-10 border-1 border-black border-opacity-15 border-solid"
         >
@@ -120,7 +155,9 @@ defineOptions({
     </section>
     <section
       id="section-4"
-      class="relative mt-30 min-h-max flex justify-center bg-[#003f5e] bg-opacity-40 pt-10 text-black"
+      ref="section4"
+      v-intersection-observer="animateSection"
+      class="section relative mt-30 min-h-max flex justify-center bg-[#003f5e] bg-opacity-40 pt-10 text-black"
     >
       <div class="section-4-content max-w-[95%] w-[95%] pt-25">
         <div class="relative z-3 flex justify-center">
@@ -144,63 +181,6 @@ defineOptions({
             >
               FABRICANT DE FENÊTRES ET BAIES VITRÉES SUR MESURE HAUT DE GAMME
             </div>
-            <!-- <div class="max-w-[85%] text-left text-white">
-              <strong class="mb-2.5 mt-10 block leading-6">
-                Menuiserie Aluminium sur mesure
-              </strong>
-              <div class="text-justify text-[14px] leading-7">
-                <div class="mb-5">
-                  Nous intervenons sur l’étude, la conception et la pose de <strong>fenêtres et baies vitrées en
-                    Aluminium</strong> pour vos
-                  projets de construction ou rénovation de maison pour particuliers, professionnels et architectes
-                  proche
-                  d’ <strong>Aix-les-Bains</strong> (73) ou des <strong>Monts d’Or</strong>, près de Jemmel (69). Notre
-                  savoir-faire nous permet de vous offrir des
-                  <strong>fenêtres et baies vitrées en Aluminium</strong> aux structures épurées et aux grandes
-                  performances d’isolation
-                  thermique et phonique, qui renforcent votre sentiment de sécurité tout en apportant un style
-                  contemporain et
-                  minimaliste à votre bien d’exception.
-                </div>
-
-                <div class="mb-5">
-                  Conçues <strong>sur mesure</strong> et donc totalement <strong>personnalisables</strong>, vous pouvez
-                  <strong>adapter vos fenêtres et baies vitrées</strong>
-                  selon vos attentes et votre architecture, en choisissant la taille, la forme, la couleur et les
-                  finitions.
-                  <strong>Baies vitrées coulissantes, fenêtres battantes</strong>, double ou triple vitrage, avec volet
-                  roulant intégré… Nos
-                  produits haut de gamme s'intègrent parfaitement à l’environnement, effaçant les barrières entre
-                  intérieur et
-                  extérieur.
-                </div>
-
-                <strong class="mb-2 mt-11 block text-left text-[16px] font-extrabold">
-                  Menuiserie Aluminium minimaliste pour maison contemporaine et villa d’architecte
-                </strong>
-
-                <div>
-                  Pour un intérieur encore plus minimaliste, <strong>DELTA Solution</strong> s'est
-                  associé <strong>Technal</strong> et
-                  Keller
-                  <strong>Minimal Windows</strong>, pour vous offrir des <strong>fenêtres et baies vitrées aux
-                    structures
-                    invisibles</strong>. Grande
-                  tendance
-                  architecturale, les <strong> menuiseries minimalistes en Aluminium</strong> se traduisent par des
-                  <strong>fenêtres et baies
-                    vitrées
-                    XXL</strong>, qui inondent votre intérieur de lumière naturelle tout en maximisant votre espace.
-                  Les <strong>structures en Aluminium</strong> aux lignes fines d’une grande élégance sont quasiment
-                  imperceptibles, pour
-                  laisser place à d’immenses vitrages. Profitez d’une vue panoramique exceptionnelle grâce à nos
-                  <strong>fenêtres
-                    et
-                    baies vitrées</strong> très grandes dimensions.
-                </div>
-                <div class="mt-10 inline-block h-0.75 w-15 bg-[#003f5e]" />
-              </div>
-            </div> -->
           </div>
           <div
             class="sticky top-42 hidden aspect-auto h-screen max-w-[60%] overflow-hidden lg:block"
@@ -216,7 +196,9 @@ defineOptions({
     </section>
     <section
       id="section-5"
-      class="section-5-content relative min-h-max flex justify-center pt-20 text-black"
+      ref="section5"
+      v-intersection-observer="animateSection"
+      class="section section-5-content relative min-h-max flex justify-center pt-20 text-black"
     >
       <div class="relative z-3 flex justify-center">
         <div
@@ -236,7 +218,7 @@ defineOptions({
             <div class="text-justify text-[14px] leading-7">
               <ul class="flex flex-col gap-y-12">
                 <li>
-                  <strong class="block">Fabrication sur mesure</strong>
+                  <strong class="block text-lg">Fabrication sur mesure</strong>
                   <span>Nous fabriquons des menuiseries en aluminium, PVC et
                     métallique selon vos spécifications exactes. Que ce soit
                     pour des fenêtres, des portes, bais vitrés, portails,
@@ -247,7 +229,7 @@ defineOptions({
                   </span>
                 </li>
                 <li>
-                  <strong class="block">Pose professionnelle</strong>
+                  <strong class="block text-lg">Pose professionnelle</strong>
                   <span>Notre équipe de techniciens qualifiés se charge de la pose
                     de vos menuiseries avec précision et efficacité. Nous
                     veillons à ce que chaque installation soit réalisée dans les
@@ -256,7 +238,7 @@ defineOptions({
                   </span>
                 </li>
                 <li>
-                  <strong class="block">Conseils personnalisés</strong>
+                  <strong class="block text-lg">Conseils personnalisés</strong>
                   <span>Nos experts sont à votre écoute pour vous conseiller sur le
                     choix des matériaux, des couleurs et des finitions. Nous
                     vous aiderons à définir la solution la plus adaptée à vos
@@ -264,7 +246,7 @@ defineOptions({
                   </span>
                 </li>
                 <li>
-                  <strong class="block">Entretien et réparation</strong>
+                  <strong class="block text-lg">Entretien et réparation</strong>
                   <span>Nous offrons également des services d'entretien et de
                     réparation pour garantir la longévité de vos installations.
                     Nos interventions sont rapides et efficaces pour vous
@@ -279,7 +261,9 @@ defineOptions({
     </section>
     <section
       id="section-6"
-      class="section-6-content relative flex justify-center pt-0 text-black !max-h-min"
+      ref="section6"
+      v-intersection-observer="animateSection"
+      class="section section-6-content relative flex justify-center pt-0 text-black !max-h-min"
     >
       <div class="relative flex justify-center">
         <div class="flex flex-col items-end lg:max-w-[45%]">
@@ -292,12 +276,12 @@ defineOptions({
               <div class="text-justify text-[14px] leading-7">
                 <ul class="mt-10 flex flex-col gap-y-12">
                   <li>
-                    <strong class="block">Expertise reconnue</strong>
+                    <strong class="block text-lg">Expertise reconnue</strong>
                     <span>Des années d’expérience dans le domaine de la menuiserie.
                     </span>
                   </li>
                   <li>
-                    <strong class="block">Qualité et fiabilité</strong>
+                    <strong class="block text-lg">Qualité et fiabilité</strong>
                     <span>Notre équipe de techniciens qualifiés se charge de la pose
                       de vos menuiseries avec précision et efficacité. Nous
                       veillons à ce que chaque installation soit réalisée dans les
@@ -306,12 +290,12 @@ defineOptions({
                     </span>
                   </li>
                   <li>
-                    <strong class="block">Solutions sur mesure</strong>
+                    <strong class="block text-lg">Solutions sur mesure</strong>
                     <span>Des produits adaptés à vos besoins spécifiques et à vos projets.
                     </span>
                   </li>
                   <li>
-                    <strong class="block">Service client irréprochable</strong>
+                    <strong class="block text-lg">Service client irréprochable</strong>
                     <span>Un accompagnement personnalisé de la conception à la réalisation de vos projets.
                     </span>
                   </li>
@@ -321,7 +305,6 @@ defineOptions({
           </div>
         </div>
 
-        <!-- a3teha akther 3ordh -->
         <div
           class="sticky mt-10 hidden h-screen max-w-[55%] overflow-hidden lg:block"
         >
