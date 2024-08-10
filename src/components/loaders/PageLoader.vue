@@ -2,7 +2,7 @@
   <div class="h-screen flex items-center justify-center">
     <div class="anim-logo relative h-32 w-32">
       <img
-        src="/images/logo.png"
+        src="/images/logo-low-res.png"
         alt="Delta Logo"
         class="absolute h-full w-full"
       >

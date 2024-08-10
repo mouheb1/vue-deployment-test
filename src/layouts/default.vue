@@ -31,7 +31,7 @@ else {
 <template>
   <div>
     <PageLoader v-if="isLoading" />
-    <div v-else>
+    <div v-show="!isLoading">
       <TheHeader />
       <main class="flex flex-col bg-white text-center">
         <Newsletter v-model:visible="visible" />
