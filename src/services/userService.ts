@@ -1,8 +1,14 @@
+import type { AxiosResponse } from 'axios'
 import axiosInstance from './axiosInstance'
+import type { BaseApiResponse, RecordVisitorResponse } from '@/types'
 
-export const registerUser = async (orgId: string, email: string, phoneNumber: string) => {
+const registerUser = async (
+  orgId: string,
+  email: string,
+  phoneNumber: string,
+) => {
   try {
-    const response = await axiosInstance.post('/register-user.php', {
+    const response: AxiosResponse<BaseApiResponse> = await axiosInstance.post('/register-user.php', {
       org_id: orgId,
       email,
       phone_number: phoneNumber,
@@ -14,3 +20,18 @@ export const registerUser = async (orgId: string, email: string, phoneNumber: st
     throw error
   }
 }
+
+const recordVisitor = async () => {
+  try {
+    const response: AxiosResponse<RecordVisitorResponse> = await axiosInstance.post('/record-visitor.php', {
+      org_id: 'deltasolution',
+    })
+    return response.data
+  }
+  catch (error) {
+    console.error('Error recording visitor:', error)
+    throw error
+  }
+}
+
+export { registerUser, recordVisitor }

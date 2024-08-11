@@ -123,7 +123,7 @@ const hoveredStates = ref(props.images.map(() => false))
         <div class="absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center bg-black bg-opacity-40">
           <i
             v-if="hoveredStates[slotProps.index] && !fullScreen"
-            class="animate pi pi-eye animate-shock animate-duration-300 cursor-pointer color-white"
+            class="pi pi-eye cursor-pointer color-white"
             style="font-size: 1.2rem"
             @click="toggleFullScreen"
           />

@@ -11,6 +11,7 @@ const formState = ref({
 
 const loading = ref(false)
 const isFormValid = ref(false)
+const showSuccess = ref(false)
 
 const validateForm = () => {
   const { email, phoneNumber } = formState.value
@@ -25,17 +26,26 @@ const handleSubmit = async (closeCallback: () => void) => {
 
   try {
     const { orgId, email, phoneNumber } = formState.value
-    await registerUser(orgId, email, phoneNumber)
-    // showMessage('info', 'Merci de vous être inscrit(e) à notre newsletter')
+    const result = await registerUser(orgId, email, phoneNumber)
+    if (result.status === 'success') {
+      showSuccess.value = true
+      setTimeout(() => {
+        closeCallback()
+      }, 1500)
+    }
   }
   catch (error) {
     console.error('Error during registration:', error)
-    // showMessage('error', 'Une erreur s\'est produite')
   }
   finally {
-    loading.value = true
-    closeCallback()
+    loading.value = false
   }
+}
+
+const handleDialogHide = () => {
+  const currentDate = new Date()
+  const hideUntilDate = new Date(currentDate.getTime() + 24 * 60 * 60 * 1000) // 24 hours
+  hideNewsletterUntil.value = hideUntilDate.toISOString()
 }
 </script>
 
@@ -46,13 +56,14 @@ const handleSubmit = async (closeCallback: () => void) => {
     closable dismissable-mask modal
     style="
       border-radius: 0;
-      height: fit-content;
+      height: 360px;
       width: 600px;
       display: flex;
       flex-direction: row;
       padding: 0;
       margin: 0;
     "
+    @hide="handleDialogHide"
   >
     <template #container="{ closeCallback }">
       <CloseIcon
@@ -71,7 +82,15 @@ const handleSubmit = async (closeCallback: () => void) => {
         >
       </div>
 
-      <div style="padding: 12px 18px">
+      <div v-if="showSuccess">
+        <h1
+          class="animate-text"
+        >
+          Merci, Vous êtes maintenant inscrit
+        </h1>
+        />
+      </div>
+      <div v-else style="padding: 12px 18px">
         <h1 style="font-size: 30px; font-style: italic">
           S'inscrire dés maintenant
         </h1>
@@ -94,6 +113,7 @@ const handleSubmit = async (closeCallback: () => void) => {
           fluid
           slot-char=" "
           style="width: 100%; margin-bottom: 20px"
+          :auto-clear="false"
           @input="validateForm"
         />
         <div>
@@ -120,5 +140,27 @@ const handleSubmit = async (closeCallback: () => void) => {
 .image-style {
   max-width: 128px;
   object-fit: contain;
+}
+
+.animate-text {
+  font-size: 30px;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.35s ease-in-out;
+  /* Trigger animation on page load */
+  animation: fadeIn 0.35s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

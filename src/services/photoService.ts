@@ -3,15 +3,15 @@ export const PhotoService = {
     return [
       {
         itemImageSrc:
-          '/images/articlesImages/image-7.png',
+          '/images/articles/image-7.png',
         thumbnailImageSrc:
-          '/images/articlesImages/image-7.png',
+          '/images/articles/image-7.png',
         alt: 'Description for Image 1',
         title: 'Title 1',
         subImages: [
           {
             itemImageSrc:
-              '/images/articlesImages/image-7.png',
+              '/images/articles/image-7.png',
             thumbnailImageSrc:
               'https://primefaces.org/cdn/primevue/images/galleria/galleria1s.jpg',
             alt: 'Description for Image 1',
@@ -305,15 +305,15 @@ export const PhotoService = {
       },
       {
         itemImageSrc:
-          '/images/articlesImages/image-7.png',
+          '/images/articles/image-7.png',
         thumbnailImageSrc:
-          '/images/articlesImages/image-7.png',
+          '/images/articles/image-7.png',
         alt: 'Description for Image 1',
         title: 'Title 1',
         subImages: [
           {
             itemImageSrc:
-              '/images/articlesImages/image-7.png',
+              '/images/articles/image-7.png',
             thumbnailImageSrc:
               'https://primefaces.org/cdn/primevue/images/galleria/galleria1s.jpg',
             alt: 'Description for Image 1',
@@ -339,15 +339,15 @@ export const PhotoService = {
       },
       {
         itemImageSrc:
-          '/images/articlesImages/image-7.png',
+          '/images/articles/image-7.png',
         thumbnailImageSrc:
-          '/images/articlesImages/image-7.png',
+          '/images/articles/image-7.png',
         alt: 'Description for Image 1',
         title: 'Title 1',
         subImages: [
           {
             itemImageSrc:
-              '/images/articlesImages/image-7.png',
+              '/images/articles/image-7.png',
             thumbnailImageSrc:
               'https://primefaces.org/cdn/primevue/images/galleria/galleria1s.jpg',
             alt: 'Description for Image 1',

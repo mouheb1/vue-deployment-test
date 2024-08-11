@@ -1,12 +1,27 @@
 <script setup lang="ts">
 import { onMounted, ref } from 'vue'
 import { storeToRefs } from 'pinia'
+import { recordVisitor } from '@/services/userService'
 
 const globalStore = useGlobalStore()
 const { hasScrolled, isMobile } = storeToRefs(globalStore)
 const visible = ref(true)
-
 const isLoading = ref(true)
+
+const canShowNewsletter = computed(() => {
+  if (isLoading.value) {
+    return false
+  }
+
+  if (!hideNewsletterUntil.value) {
+    return true
+  }
+
+  const hideUntilDate = new Date(hideNewsletterUntil.value)
+  const currentDate = new Date()
+
+  return currentDate >= hideUntilDate
+})
 
 const handleLoad = () => {
   isLoading.value = false
@@ -26,6 +41,20 @@ else {
     }
   })
 }
+
+onMounted(async () => {
+  const userExpiresAtDate = new Date(userExpiresAt.value)
+  const currentDate = new Date()
+  // Checks if expiry date is falsy or has expired
+  if (!userExpiresAt.value || currentDate >= userExpiresAtDate) {
+    const result = await recordVisitor()
+    if (result.status === 'success') {
+      const currentDate = new Date()
+      const userExpiresAtDate = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000) // 7 days
+      userExpiresAt.value = userExpiresAtDate.toISOString()
+    }
+  }
+})
 </script>
 
 <template>
@@ -34,7 +63,7 @@ else {
     <div v-show="!isLoading">
       <TheHeader />
       <main class="flex flex-col bg-white text-center">
-        <Newsletter v-model:visible="visible" />
+        <Newsletter v-if="canShowNewsletter" v-model:visible="visible" />
         <RouterView />
       </main>
       <TheFooter />

@@ -5,6 +5,7 @@
         src="/images/logo-low-res.png"
         alt="Delta Logo"
         class="absolute h-full w-full"
+        loading="eager"
       >
     </div>
   </div>

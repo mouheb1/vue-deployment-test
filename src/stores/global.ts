@@ -11,3 +11,6 @@ export const useGlobalStore = defineStore('global', () => {
 
   return { hasScrolled, isMobile, isAtHomePage, isAtContactPage }
 })
+
+export const userExpiresAt = useStorage<string>('userExpiresAt', null)
+export const hideNewsletterUntil = useStorage<string>('hideNewsletterUntil', null)

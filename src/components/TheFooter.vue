@@ -78,17 +78,11 @@ const { isAtContactPage } = storeToRefs(globalStore)
       </div>
 
       <a
-        href="https://github.com/moetezbouazra"
-        class="py-[7px]"
+        href="https://www.incentino.com/"
+        class="flex items-center gap-x-2 py-[7px]"
         target="_blank"
       >
-        <Button
-          class="mr-5 max-w-min border-none bg-transparent text-nowrap text-black hover:cursor-pointer hover:text-[#003f5e]"
-          link
-          unstyled
-        >
-          © 2024 Moetez Dev
-        </Button>
+        <span>Powered by</span> <img src="/logo-incentino.png" alt="Incentino inc." class="mr-8 w-24 grayscale hover:grayscale-0">
       </a>
     </div>
   </footer>
