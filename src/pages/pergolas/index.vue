@@ -6,8 +6,21 @@ import { pergolas } from '@/assets/json/products.json'
 import { pergolas as pergolasImages } from '@/assets/json/scrollingImages.json'
 import {
   animateSection,
-  vIntersectionObserver,
 } from '@/utils/animations/section'
+
+// IntersectionObserver directive
+const intersectionObserver = new IntersectionObserver(animateSection, {
+  threshold: 0.1, // Trigger when 10% of the element is visible
+})
+
+const vIntersectionObserver = {
+  mounted(el: Element) {
+    intersectionObserver.observe(el)
+  },
+  unmounted(el: Element) {
+    intersectionObserver.unobserve(el)
+  },
+}
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger)

@@ -1,21 +1,31 @@
 <script setup lang="ts">
+import { gallery, headlines, topArticles } from '@/assets/json/config.json'
 import {
-  gallery,
-  headlines,
-  topArticles,
-} from '@/assets/json/config.json'
-import { animateSection, vIntersectionObserver } from '@/utils/animations/section'
+  animateSection,
+} from '@/utils/animations/section'
 
 defineOptions({
   name: 'IndexPage',
 })
+
+// IntersectionObserver directive
+const intersectionObserver = new IntersectionObserver(animateSection, {
+  threshold: 0.1, // Trigger when 10% of the element is visible
+})
+
+const vIntersectionObserver = {
+  mounted(el: Element) {
+    intersectionObserver.observe(el)
+  },
+  unmounted(el: Element) {
+    intersectionObserver.unobserve(el)
+  },
+}
 </script>
 
 <template>
   <div id="section-0" class="overflow-x-clip">
-    <section
-      class="bg-black"
-    >
+    <section class="bg-black">
       <Galleria
         :value="gallery"
         :num-visible="5"
@@ -70,9 +80,7 @@ defineOptions({
     >
       <div
         class="hidden w-1/2 bg-cover bg-center bg-no-repeat lg:mr-20 lg:block"
-        style="
-          background-image: url(&quot;/images/gallery/image-1.jpg&quot;);
-        "
+        style="background-image: url(&quot;/images/gallery/image-1.jpg&quot;)"
       />
       <div class="flex flex-col items-center text-justify lg:mr-20 lg:w-1/2">
         <div class="flex flex-col px-10 lg:max-w-min lg:px-20 lg:pr-30">
@@ -247,7 +255,8 @@ defineOptions({
           <div class="mb-20 p-x-5 pt-20 text-left lg:mr-30 md:mb-20 md:p-x-20">
             <div class="text-[1.8em]">
               <div class="uppercase">
-                Pourquoi choisir <br> DELTA SOLUTION ?
+                Pourquoi choisir <br>
+                DELTA SOLUTION ?
               </div>
 
               <div class="text-justify text-[14px] leading-7">
@@ -259,21 +268,23 @@ defineOptions({
                   </li>
                   <li>
                     <strong class="block text-lg">Qualité et fiabilité</strong>
-                    <span>Notre équipe de techniciens qualifiés se charge de la pose
-                      de vos menuiseries avec précision et efficacité. Nous
-                      veillons à ce que chaque installation soit réalisée dans les
-                      règles de l’art, en respectant les délais et en assurant un
-                      résultat impeccable.
+                    <span>Notre équipe de techniciens qualifiés se charge de la
+                      pose de vos menuiseries avec précision et efficacité. Nous
+                      veillons à ce que chaque installation soit réalisée dans
+                      les règles de l’art, en respectant les délais et en
+                      assurant un résultat impeccable.
                     </span>
                   </li>
                   <li>
                     <strong class="block text-lg">Solutions sur mesure</strong>
-                    <span>Des produits adaptés à vos besoins spécifiques et à vos projets.
+                    <span>Des produits adaptés à vos besoins spécifiques et à vos
+                      projets.
                     </span>
                   </li>
                   <li>
                     <strong class="block text-lg">Service client irréprochable</strong>
-                    <span>Un accompagnement personnalisé de la conception à la réalisation de vos projets.
+                    <span>Un accompagnement personnalisé de la conception à la
+                      réalisation de vos projets.
                     </span>
                   </li>
                 </ul>
