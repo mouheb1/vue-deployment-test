@@ -20,6 +20,7 @@ declare module 'vue' {
     PageLoader: typeof import('./components/loaders/PageLoader.vue')['default']
     PhoneIcon: typeof import('./components/icons/PhoneIcon.vue')['default']
     PrimaryButton: typeof import('./components/PrimaryButton.vue')['default']
+    ProductTwoCols: typeof import('./components/products/productTwoCols.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     ScrollDown: typeof import('./components/ScrollDown.vue')['default']

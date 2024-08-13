@@ -61,7 +61,7 @@ onMounted(async () => {
   <div>
     <PageLoader v-if="isLoading" />
     <div v-show="!isLoading">
-      <TheHeader />
+      <TheHeader class="!z-999999" />
       <main class="flex flex-col bg-white text-center">
         <Newsletter v-if="canShowNewsletter" v-model:visible="visible" />
         <RouterView />

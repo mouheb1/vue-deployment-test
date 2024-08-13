@@ -1,0 +1,183 @@
+{
+  "fenêtres": [
+    {
+      "id": "b8c9dd5b-11d8-4202-a43a-7e8c3e6932a0",
+      "name": "fenêtres aluminium",
+      "image": "",
+      "description": "",
+      "link": "/windows/aluminum"
+    },
+    {
+      "id": "e473a045-60cb-4784-95c0-75a7f9f89f7a",
+      "name": "fenêtres pvc",
+      "image": "",
+      "description": "",
+      "link": "/windows/pvc"
+    }
+  ],
+  "portes": [
+    {
+      "id": "9a3035a7-badf-4f94-9db0-4ec1c7028b68",
+      "name": "portes aluminium",
+      "image": "",
+      "description": "",
+      "link": "/doors/aluminum"
+    },
+    {
+      "id": "cefe8b8f-f8c8-4f1d-bbbf-2768d6ba15ee",
+      "name": "portes pvc",
+      "image": "",
+      "description": "",
+      "link": "/doors/pvc"
+    }
+  ],
+  "volet roulant": [
+    {
+      "id": "afca6cb0-8c4c-4e4f-81a8-91b62f795f45",
+      "name": "volet roulant sous enduit",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/exterior-shutters/under-plaster"
+    },
+    {
+      "id": "0d8a1af5-3502-4c34-8160-80a49fd1288f",
+      "name": "volet roulant extérieur de renovation",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/exterior-shutters/renovation"
+    },
+    {
+      "id": "6c60b2db-72a2-4fc5-9933-2120f9f8a3a8",
+      "name": "volet roulant mono block",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/exterior-shutters/mono-block"
+    }
+  ],
+  "brises": [
+    {
+      "id": "7b8d40b0-1db2-4c4d-b065-6f7c7d19d0fb",
+      "name": "brises soleil",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/solar-shading"
+    }
+  ],
+  "volets": [
+    {
+      "id": "362d047b-2bc7-42c8-9e65-efb53143e2f0",
+      "name": "volet battants",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/swing-shutters"
+    }
+  ],
+  "stores": [
+    {
+      "id": "4053f04b-442d-46bc-980f-4086f74e1f37",
+      "name": "store vénitien",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/interior-blinds/venetian"
+    },
+    {
+      "id": "ac6a7800-8dbb-46c2-bc16-0e58c885ec65",
+      "name": "store verticale",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/interior-blinds/vertical"
+    },
+    {
+      "id": "c6d04a07-d95c-4be3-bb4d-312d3dbb2e96",
+      "name": "store rouleau",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/interior-blinds/roller"
+    },
+    {
+      "id": "519f9c2b-2b43-4f7a-9c93-b09d38a7d548",
+      "name": "store double jeu",
+      "image": "",
+      "description": "",
+      "link": "/solar-protection/interior-blinds/double-roller"
+    }
+  ],
+  "rideau métallique": [
+    {
+      "id": "cc6f63f6-476e-4af4-9202-7c47d3a91f17",
+      "name": "rideau métallique à lame simple",
+      "image": "",
+      "description": "",
+      "link": "/garage-doors/metal-shutters/simple-slat"
+    },
+    {
+      "id": "481dcaba-f781-469f-b1ad-6b5e5df6e21e",
+      "name": "rideau métallique à lame injecté",
+      "image": "",
+      "description": "",
+      "link": "/garage-doors/metal-shutters/injected-slat"
+    }
+  ],
+  "moustiquaires": [
+    {
+      "id": "ecdf6d4a-e255-4f60-bd83-c5d53c215c10",
+      "name": "moustiquaires enroulable",
+      "image": "",
+      "description": "",
+      "link": "/mosquito-nets/roller"
+    },
+    {
+      "id": "97fc5b58-b0a7-4511-a8e2-d8b8e1a83cf4",
+      "name": "moustiquaires coulissante",
+      "image": "",
+      "description": "",
+      "link": "/mosquito-nets/sliding"
+    },
+    {
+      "id": "db234b79-fb3c-4d41-9e04-6d7cfc58ef2c",
+      "name": "moustiquaires fixe",
+      "image": "",
+      "description": "",
+      "link": "/mosquito-nets/fixed"
+    }
+  ],
+  "portails": [
+    {
+      "id": "117d5b2f-8bfb-4ed1-8228-4a3f905d5b9f",
+      "name": "portails en aluminium",
+      "image": "",
+      "description": "",
+      "link": "/gates/aluminum"
+    },
+    {
+      "id": "d1483a83-b11e-4c7b-a836-5e366856779e",
+      "name": "portails en acier",
+      "image": "",
+      "description": "",
+      "link": "/gates/steel"
+    }
+  ],
+  "pergolas": [
+    {
+      "id": "6604c3d8-0c10-4f3e-9c21-8b8b5a5c7b98",
+      "name": "Pergolas en aluminium",
+      "image": "/images/pergolas/pergolas-bioclimatique.png",
+      "description": "Fabriqué en profilés d'aluminium extrudé à revêtement de poudre.",
+      "link": "/pergolas/aluminum"
+    },
+    {
+      "id": "45b3b3c9-0b68-4b5f-8f2a-35c45629fd70",
+      "name": "Pergolas à toile",
+      "image": "/images/pergolas/pergolas-bioclimatique.png",
+      "description": "Fabriqué en profilés d'aluminium extrudé à revêtement de poudre.",
+      "link": "/pergolas/canvas"
+    },
+    {
+      "id": "b8b5a3cb-19e6-4e85-925b-bc5b5c3a59df",
+      "name": "Pergolas bioclimatique",
+      "image": "/images/pergolas/pergolas-bioclimatique.png",
+      "description": "Fabriqué en profilés d'aluminium extrudé à revêtement de poudre.",
+      "link": "/pergolas/bioclimatic"
+    }
+  ]
+}

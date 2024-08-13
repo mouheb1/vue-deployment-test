@@ -3,7 +3,7 @@
     class="relative top-0 h-125 bg-cover bg-center bg-no-repeat bg-shutters-image before:absolute before:inset-0 before:bg-black before:opacity-40 before:content-['']"
   >
     <div
-      class="relative top-37 mx-10 text-4xl text-white font-extrabold leading-17 -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
+      class="relative top-37 mx-10 text-4xl text-white font-extrabold leading-17 text-shadow-lg -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
       Pose de volets roulants Alu
     </div>

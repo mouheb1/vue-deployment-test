@@ -47,5 +47,6 @@ export default defineConfig({
     ['bg-guardrail-image', { 'background-image': 'url(/images/section/image-6.jpg)' }],
     ['bg-shutters-image', { 'background-image': 'url(/images/section/image-7.jpg)' }],
     ['bg-bso-image', { 'background-image': 'url(/images/section/image-8.jpg)' }],
+    ['bg-pergolas-image', { 'background-image': 'url(/images/pergolas/pergolas-cover.png)' }],
   ],
 })
