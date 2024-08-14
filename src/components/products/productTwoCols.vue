@@ -30,7 +30,7 @@ defineProps({
       :title
     ><img :src="image" :alt="image" class="max-h-[515px] w-full"></a>
 
-    <div class="flex flex-col gap-y-2 pr-12.5 text-left">
+    <div class="flex flex-col gap-y-2 text-left md:pr-12.5">
       <h2 class="m-0 text-[42px] font-700">
         {{ title }}
       </h2>

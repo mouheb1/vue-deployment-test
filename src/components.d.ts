@@ -11,6 +11,7 @@ declare module 'vue' {
     ArticleSection: typeof import('./components/ArticleSection.vue')['default']
     ArticlesSection: typeof import('./components/sections/ArticlesSection.vue')['default']
     CloseIcon: typeof import('./components/icons/CloseIcon.vue')['default']
+    copy: typeof import('./components/works/WorksGallery copy.vue')['default']
     CustomMenuBar: typeof import('./components/CustomMenuBar.vue')['default']
     FloatingFooter: typeof import('./components/FloatingFooter.vue')['default']
     LocationButton: typeof import('./components/LocationButton.vue')['default']

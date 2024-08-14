@@ -69,3 +69,19 @@ ul.p-submenu-list {
 .p-inputtext:enabled:focus {
   outline: 1px solid #003f5e !important;
 }
+
+.gsap-marker-start {
+  display: none !important;
+}
+
+.gsap-marker-end {
+  display: none !important;
+}
+
+.gsap-marker-scroller-end {
+  display: none !important;
+}
+
+.gsap-marker-scroller-start {
+  display: none !important;
+}
