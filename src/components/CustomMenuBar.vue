@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { isActiveNavItem } from '@/utils/helpers'
 import { navElements } from '@/assets/json/config.json'
 
 defineProps({
@@ -69,7 +68,7 @@ const leave = (event, instance, context) => {
           <a
             v-ripple
             class="nav-underline flex items-center justify-center"
-            :style="isActiveNavItem(item.index, route.path) ? { 'background-size': '60% 3px' } : {}"
+            :style="route.path === item.route ? { 'background-size': '60% 3px' } : {}"
             v-bind="props.action"
             :href="href"
             @click="navigate"

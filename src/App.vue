@@ -7,7 +7,7 @@ useHead({
   meta: [
     {
       name: 'description',
-      content: 'Opinionated Vite Starter Template',
+      content: 'Menuiserie sur mesure, de l’aluminium au métal',
     },
     {
       name: 'theme-color',

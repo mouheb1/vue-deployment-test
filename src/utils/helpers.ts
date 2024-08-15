@@ -1,24 +1,3 @@
-const pathToIndex = (path: string) => {
-  switch (path) {
-    case '/':
-      return 1
-    case '/windows':
-      return 2
-    case '/doors':
-      return 3
-    case '/guardrail':
-      return 5
-    case '/works':
-      return 6
-    case '/contact':
-      return 7
-    default:
-      return 1
-  }
-}
-
-const isActiveNavItem = (index: number, path: string) => pathToIndex(path) === index
-
 const scrollTo = (elementId?: string, offset = 0) => {
   if (elementId) {
     const target = document.getElementById(elementId)
@@ -40,4 +19,4 @@ const scrollTo = (elementId?: string, offset = 0) => {
   })
 }
 
-export { pathToIndex, isActiveNavItem, scrollTo }
+export { scrollTo }
