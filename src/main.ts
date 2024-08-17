@@ -11,6 +11,7 @@ import ProgressSpinner from 'primevue/progressspinner'
 import Dialog from 'primevue/dialog'
 import InputText from 'primevue/inputtext'
 import InputMask from 'primevue/inputmask'
+import Breadcrumb from 'primevue/breadcrumb'
 
 import { routes } from 'vue-router/auto-routes'
 import App from './App.vue'
@@ -46,6 +47,7 @@ export const createApp = ViteSSG(
       .component('Dialog', Dialog)
       .component('InputText', InputText)
       .component('InputMask', InputMask)
+      .component('Breadcrumb', Breadcrumb)
       .directive('ripple', Ripple)
 
     // install all modules under `modules/`

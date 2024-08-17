@@ -14,8 +14,6 @@ Showcase Web App for <b>Delta Solution</b><br>
 
 <br>
 
-## Usage
-
 ### Development
 
 Just run and visit http://localhost:3333
@@ -45,3 +43,8 @@ Run the image and specify port mapping with the `-p` flag.
 ```bash
 docker run --rm -it -p 8080:80 delta:latest
 ```
+
+## ❌ Known issues
+
+⚠️ bottom right sticky scroll to top isn't smooth
+⚠️ remove nav item hover dropdown upon mouse out

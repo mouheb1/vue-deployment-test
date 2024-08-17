@@ -99,3 +99,13 @@ const leave = (event, instance, context) => {
     </Menubar>
   </div>
 </template>
+
+<style>
+.p-submenu-list {
+  display: none !important;
+}
+
+.p-submenu-list:hover {
+  display: block !important;
+}
+</style>

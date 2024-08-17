@@ -48,5 +48,6 @@ export default defineConfig({
     ['bg-shutters-image', { 'background-image': 'url(/images/section/image-7.jpg)' }],
     ['bg-bso-image', { 'background-image': 'url(/images/section/image-8.jpg)' }],
     ['bg-pergolas-image', { 'background-image': 'url(/images/pergolas/pergolas-cover.png)' }],
+    ['cursor-360', { cursor: 'url(/images/cursor/cursor-360-drag.png), e-resize !important' }],
   ],
 })
