@@ -28,7 +28,7 @@ const vIntersectionObserver = {
     </div>
   </div>
   <div
-    class="font-poppins style1 mb-14 border-b-2 border-gray-200 border-solid"
+    class="style1 font-poppins mb-14 border-b-2 border-gray-200 border-solid"
   >
     <div class="max-w-[1100px]">
       <p>
@@ -37,14 +37,14 @@ const vIntersectionObserver = {
     </div>
   </div>
 
-  <div v-for="(pergola, index) in product.variations" :key="pergola.id">
+  <div v-for="(variation, index) in product.variations" :key="variation.id">
     <productTwoCols
       :ref="`section${index}`"
       v-intersection-observer="animateSection"
-      :image="pergola.image"
-      :title="pergola.name"
-      :description="pergola.description"
-      :link="pergola.link"
+      :image="variation.image"
+      :title="variation.name"
+      :description="variation.description"
+      :link="variation.link"
       class="section"
     />
   </div>

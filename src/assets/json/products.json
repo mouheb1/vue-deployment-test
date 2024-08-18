@@ -198,33 +198,35 @@
       {
         "id": "6604c3d8-0c10-4f3e-9c21-8b8b5a5c7b98",
         "name": "Pergolas en aluminium",
-        "image": "/images/pergolas/pergolas-bioclimatique.png",
-        "description": "Fabriqué en profilés d'aluminium extrudé à revêtement de poudre.",
+        "image": "/images/pergolas/pergolas-alu.jpg",
+        "description": "Elegant and durable, aluminum pergolas offer a modern solution for creating stylish outdoor living spaces with minimal maintenance.",
+        "fullDescription": "Les pergolas en aluminium sont un choix moderne et élégant pour aménager des espaces extérieurs confortables et fonctionnels. Construites en aluminium de haute qualité avec un revêtement en poudre résistant aux intempéries, ces pergolas sont robustes et nécessitent peu d'entretien. Elles sont idéales pour créer des espaces ombragés tout en offrant une protection contre la pluie grâce à des toits à lames rotatives ou fixes. Les pergolas en aluminium peuvent être personnalisées avec des options telles que des éclairages LED intégrés, des rideaux ou des panneaux en verre pour une meilleure protection contre les éléments. Faciles à assembler, elles apportent une touche contemporaine à n'importe quel jardin ou terrasse.",
         "link": "/pergolas/aluminum",
         "details": [
-          "Largeur 1,2–4,0 m",
-          "Projection maximale 6,8 m",
-          "Hauteur 2,2–3,0 m",
-          "Lames creuses NE103/NE104",
-          "Plage de rotation des lames 0° à 110°",
-          "Drainage latéral de l'eau dans la chambre fermée du poteau de support",
-          "Revêtement en poudre en couleurs RAL (Qualicoat)"
+          "Largeur 1,5–5,0 m",
+          "Projection maximale 7,0 m",
+          "Hauteur 2,2–3,2 m",
+          "Toit en lames fixes ou rotatives",
+          "Revêtement en poudre résistant aux intempéries",
+          "Structure robuste et durable",
+          "Disponible en couleurs personnalisées RAL"
         ]
       },
       {
         "id": "45b3b3c9-0b68-4b5f-8f2a-35c45629fd70",
         "name": "Pergolas à toile",
-        "image": "/images/pergolas/pergolas-bioclimatique.png",
-        "description": "Fabriqué en profilés d'aluminium extrudé à revêtement de poudre.",
-        "link": "/pergolas/canvas",
+        "image": "/images/pergolas/pergolas-canvas.webp",
+        "description": "Fabriqué avec une toile résistante aux intempéries pour une protection optimale.",
+        "fullDescription": "Les pergolas en toile sont une option polyvalente et élégante pour créer des espaces ombragés dans votre jardin ou sur votre terrasse. Conçues avec une structure en métal robuste et une toile résistante aux intempéries, ces pergolas offrent une protection contre le soleil tout en ajoutant une touche esthétique à votre espace extérieur. La toile peut être rétractable ou fixe, permettant de contrôler l'ombre en fonction de vos besoins. Faciles à installer et à entretenir, les pergolas en toile sont disponibles dans une variété de couleurs et de motifs pour s'harmoniser avec le style de votre jardin. Elles peuvent également être équipées de rideaux latéraux ou de moustiquaires pour une protection supplémentaire contre les éléments extérieurs.",
+        "link": "/pergolas/pvc",
         "details": [
-          "Largeur 1,2–4,0 m",
-          "Projection maximale 6,8 m",
-          "Hauteur 2,2–3,0 m",
-          "Lames creuses NE103/NE104",
-          "Plage de rotation des lames 0° à 110°",
-          "Drainage latéral de l'eau dans la chambre fermée du poteau de support",
-          "Revêtement en poudre en couleurs RAL (Qualicoat)"
+          "Largeur 1,5–4,5 m",
+          "Projection maximale 6,0 m",
+          "Hauteur 2,0–3,0 m",
+          "Toile rétractable ou fixe en tissu résistant aux UV et à l'eau",
+          "Structure en métal robuste",
+          "Disponible en plusieurs couleurs et motifs",
+          "Installation facile avec des options de personnalisation"
         ]
       },
       {

@@ -19,7 +19,7 @@ const props = defineProps({
 })
 
 const computedClass = computed(() => {
-  const defaultClass = 'swipe-hover-animation h-16 flex items-center justify-between bg-[#F1F4F8] px-7.5 text-[16px] color-[#003f5e] font-bold'
+  const defaultClass = 'swipe-hover-animation h-16 flex items-center justify-between bg-[#F1F4F8] px-7.5 text-[16px] color-[#003f5e] font-bold gap-x-4'
   return `${defaultClass} ${props.customClass}`
 })
 
@@ -34,6 +34,7 @@ const hoverStyle = computed(() => ({
     :title="title"
     :class="computedClass"
     :style="hoverStyle"
+    target="_blank"
   >
     <slot>En savoir plus</slot>
   </a>

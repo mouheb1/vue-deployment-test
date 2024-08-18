@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
+import type { MenubarContext } from 'primevue/menubar'
 import { navElements } from '@/assets/json/config.json'
 
 defineProps({
@@ -13,10 +14,10 @@ const route = useRoute()
 const globalStore = useGlobalStore()
 const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
 
-let intv = 0
+let intv: ReturnType<typeof setTimeout> | number = 0
 let ctx = {}
 
-const enter = (event, instance, context) => {
+const enter = (event: Event, instance: any, context: MenubarContext) => {
   if (isMobile.value)
     return
 
@@ -30,7 +31,7 @@ const enter = (event, instance, context) => {
   }
 }
 
-const leave = (event, instance, context) => {
+const leave = (event: Event, instance: any, context: MenubarContext) => {
   if (isMobile.value)
     return
 
@@ -99,13 +100,3 @@ const leave = (event, instance, context) => {
     </Menubar>
   </div>
 </template>
-
-<style>
-.p-submenu-list {
-  display: none !important;
-}
-
-.p-submenu-list:hover {
-  display: block !important;
-}
-</style>
