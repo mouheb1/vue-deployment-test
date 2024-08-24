@@ -1,4 +1,9 @@
 {
+  "general": {
+    "apiBaseUrl": "https://stumav.com/backend",
+    "imageProviderBaseUrl": "https://ik.imagekit.io/deltaSolution",
+    "noImagePath": "/images/no-image.png"
+  },
   "contact": {
     "phone": "+216 98 405 053",
     "email": "contact@ste-deltasolution.com",
@@ -367,5 +372,15 @@
       "description": "Vous êtes à la recherche d'une manière élégante de permettre à la lumière naturelle d'en...",
       "image": "/images/articles/image-9.jpg"
     }
-  ]
+  ],
+  "newsletter": {
+    "successMessage": "Merci, Vous êtes maintenant inscrit",
+    "form": {
+      "title": "S'inscrire dés maintenant",
+      "description": "Abonnez-vous à notre newsletter pour des mises à jour fraîches et des économies spéciales",
+      "emailPlaceholder": "Votre adresse email",
+      "phonePlaceholder": "+216 99 999 999",
+      "buttonLabel": "S'inscrire"
+    }
+  }
 }

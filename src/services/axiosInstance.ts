@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { general } from '@/assets/json/config.json'
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VUE_APP_API_BASE_URL || 'https://stumav.com/backend',
+  baseURL: general.apiBaseUrl,
   headers: {
     'Content-Type': 'application/json',
   },

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { pergolas as product } from '@/assets/json/products.json'
 import { animateSection } from '@/utils/animations/section'
+import { general } from '@/assets/json/config.json'
 
 // IntersectionObserver directive
 const intersectionObserver = new IntersectionObserver(animateSection, {
@@ -41,7 +42,7 @@ const vIntersectionObserver = {
     <productTwoCols
       :ref="`section${index}`"
       v-intersection-observer="animateSection"
-      :image="variation.image"
+      :image="`${general.imageProviderBaseUrl}${variation.image}`"
       :title="variation.name"
       :description="variation.description"
       :link="variation.link"
@@ -50,7 +51,7 @@ const vIntersectionObserver = {
   </div>
 
   <product3dScroll
-    :canvas-images-path="product.scrollingImagesPath"
+    :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
     :scroll-details="product.scrollDetails"
     :frame-count="61"
   />

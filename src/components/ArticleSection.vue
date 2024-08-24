@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Article } from '@/types'
+import { general } from '@/assets/json/config.json'
 
 defineProps({
   articles: {
@@ -22,13 +23,13 @@ defineProps({
       v-if="wide"
       :title="article.title"
       :description="article.description"
-      :image="article.image"
+      :image="`${general.imageProviderBaseUrl}${article.image}`"
     />
 
     <ArticleCard
       v-else
       :title="article.title"
-      :image="article.image"
+      :image="`${general.imageProviderBaseUrl}${article.image}`"
     />
   </div>
 </template>

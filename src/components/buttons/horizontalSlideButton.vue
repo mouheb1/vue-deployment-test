@@ -16,6 +16,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  openInNewTab: {
+    type: Boolean,
+    default: false,
+  },
 })
 
 const computedClass = computed(() => {
@@ -34,7 +38,7 @@ const hoverStyle = computed(() => ({
     :title="title"
     :class="computedClass"
     :style="hoverStyle"
-    target="_blank"
+    :target="openInNewTab ? '_blank' : ''"
   >
     <slot>En savoir plus</slot>
   </a>

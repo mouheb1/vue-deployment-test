@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { registerUser } from '@/services/userService'
+import { general, newsletter } from '@/assets/json/config.json'
 
 const visible = defineModel<boolean>('visible')
 
@@ -12,6 +13,8 @@ const formState = ref({
 const loading = ref(false)
 const isFormValid = ref(false)
 const showSuccess = ref(false)
+
+const { width } = useWindowSize()
 
 const validateForm = () => {
   const { email, phoneNumber } = formState.value
@@ -75,7 +78,7 @@ const handleDialogHide = () => {
 
       <div style="min-width: 180px">
         <img
-          src="/images/logo.png"
+          :src="`${general.imageProviderBaseUrl}/images/logo.png`"
           alt=""
           class="image-style"
           style="height: 100%; min-width: 100%; background-color: #2B2A29"
@@ -86,22 +89,21 @@ const handleDialogHide = () => {
         <h1
           class="animate-text"
         >
-          Merci, Vous êtes maintenant inscrit
+          {{ newsletter.successMessage }}
         </h1>
         />
       </div>
       <div v-else style="padding: 12px 18px">
         <h1 style="font-size: 30px; font-style: italic">
-          S'inscrire dés maintenant
+          {{ newsletter.form.title }}
         </h1>
-        <h3 style="font-size: 19px; font-weight: 400">
-          Abonnez-vous à notre newsletter pour des mises à jour fraîches et des
-          économies spéciales
+        <h3 v-if="width > 959" style="font-size: 19px; font-weight: 400">
+          {{ newsletter.form.description }}
         </h3>
         <InputText
           id="email"
           v-model="formState.email"
-          placeholder="Votre adresse email"
+          :placeholder="newsletter.form.emailPlaceholder"
           style="width: 100%; margin-bottom: 20px"
           @input="validateForm"
         />
@@ -109,7 +111,7 @@ const handleDialogHide = () => {
           id="phoneNumber"
           v-model="formState.phoneNumber"
           mask="+999 99 999 999"
-          placeholder="+216 99 999 999"
+          :placeholder="newsletter.form.phonePlaceholder"
           fluid
           slot-char=" "
           style="width: 100%; margin-bottom: 20px"
@@ -118,7 +120,7 @@ const handleDialogHide = () => {
         />
         <div>
           <Button
-            label="S'inscrire"
+            :label="newsletter.form.buttonLabel"
             text
             style="
               width: 100%;

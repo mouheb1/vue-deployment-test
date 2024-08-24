@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { pergolas as product } from '@/assets/json/products.json'
-import { contact } from '@/assets/json/config.json'
+import { contact, general } from '@/assets/json/config.json'
 
 const route = useRoute()
 const pergolasBio = product.variations.find(pergola => pergola.link === route.path)
@@ -13,7 +13,7 @@ const pergolasBio = product.variations.find(pergola => pergola.link === route.pa
     </h2>
     <div class="grid grid-cols-1 md:flex md:justify-center">
       <product3dHover
-        :canvas-images-path="product.scrollingImagesPath"
+        :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
         :scroll-details="product.scrollDetails"
         :frame-count="61"
       />
@@ -25,6 +25,7 @@ const pergolasBio = product.variations.find(pergola => pergola.link === route.pa
           class="mt-15"
           custom-class="!color-white !bg-[#0066B3] !rounded-md mx-10 !md:mx-25 !h-25 !text-2xl"
           hover-bg-color="#0066B3"
+          :open-in-new-tab="true"
         >
           Où acheter ?
           <i class="pi pi-map-marker color-white" style="font-size: 2rem" />

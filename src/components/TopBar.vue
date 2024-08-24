@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { contact } from '@/assets/json/config.json'
+import { contact, general } from '@/assets/json/config.json'
 
 const globalStore = useGlobalStore()
 const { hasScrolled, isMobile, isAtHomePage } = storeToRefs(globalStore)
@@ -19,9 +19,9 @@ const goHome = () => {
       class="absolute left-5 top-6 w-[60%]"
     />
     <img
-      src="/images/logo.png"
+      :src="`${general.imageProviderBaseUrl}/images/logo.png`"
       alt="Delta Logo"
-      class="w-16 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] hover:cursor-pointer"
+      class="z-100 w-16 shadow-[0_2.8px_2.2px_rgba(0,_0,_0,_0.034),_0_6.7px_5.3px_rgba(0,_0,_0,_0.048),_0_12.5px_10px_rgba(0,_0,_0,_0.06),_0_22.3px_17.9px_rgba(0,_0,_0,_0.072),_0_41.8px_33.4px_rgba(0,_0,_0,_0.086),_0_100px_80px_rgba(0,_0,_0,_0.12)] hover:cursor-pointer"
       :class="[isMobile ? 'ml-10' : '']"
       @click="goHome()"
     >

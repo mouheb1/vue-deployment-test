@@ -9,6 +9,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { general } from './src/assets/json/config.json'
 
 export default defineConfig({
   shortcuts: [
@@ -40,14 +41,14 @@ export default defineConfig({
   ],
   safelist: 'prose m-auto text-left'.split(' '),
   rules: [
-    ['bg-contact-image', { 'background-image': 'url(/images/gallery/image-1.jpg)' }],
-    ['bg-works-image', { 'background-image': 'url(/images/gallery/image-4.jpg)' }],
-    ['bg-windows-image', { 'background-image': 'url(/images/section/image-1.jpg)' }],
-    ['bg-doors-image', { 'background-image': 'url(/images/section/image-5.jpeg)' }],
-    ['bg-guardrail-image', { 'background-image': 'url(/images/section/image-6.jpg)' }],
-    ['bg-shutters-image', { 'background-image': 'url(/images/section/image-7.jpg)' }],
-    ['bg-bso-image', { 'background-image': 'url(/images/section/image-8.jpg)' }],
-    ['bg-pergolas-image', { 'background-image': 'url(/images/pergolas/pergolas-cover.png)' }],
-    ['cursor-360', { cursor: 'url(/images/cursor/cursor-360-drag.png), e-resize !important' }],
+    ['bg-contact-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/gallery/image-1.jpg)` }],
+    ['bg-works-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/gallery/image-4.jpg)` }],
+    ['bg-windows-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-1.jpg)` }],
+    ['bg-doors-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-5.jpeg)` }],
+    ['bg-guardrail-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-6.jpg)` }],
+    ['bg-shutters-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-7.jpg)` }],
+    ['bg-bso-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-8.jpg)` }],
+    ['bg-pergolas-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/pergolas/pergolas-cover.png)` }],
+    ['cursor-360', { cursor: `url(${general.imageProviderBaseUrl}/images/cursor/cursor-360-drag.png), e-resize !important` }],
   ],
 })

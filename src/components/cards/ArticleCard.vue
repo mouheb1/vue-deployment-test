@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import imageUnavailablePath from '/images/no-image.png'
+import { general } from '@/assets/json/config.json'
 
 defineProps({
   title: {
@@ -15,7 +15,7 @@ defineProps({
   <div class="mb-2 border-0 border-b-[1px] border-black border-opacity-25 border-solid hover:cursor-pointer">
     <div class="inline-block max-h-60 max-w-90 overflow-hidden duration-600 hover:scale-95">
       <img
-        :src="image || imageUnavailablePath"
+        :src="`${image || general.noImagePath}`"
         alt="Image unavailable"
         class="h-60 w-90 object-cover text-black grayscale duration-600 hover:scale-120 hover:grayscale-0"
       >

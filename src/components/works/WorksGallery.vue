@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { general } from '@/assets/json/config.json'
+
 const props = defineProps({
   images: {
     type: Array,
@@ -110,7 +112,7 @@ const hoveredStates = ref(props.images.map(() => false))
         @click="toggleFullScreen"
       >
         <img
-          :src="slotProps.item.itemImageSrc"
+          :src="`${general.imageProviderBaseUrl}${slotProps.item.itemImageSrc}`"
           :alt="slotProps.item.alt"
           :style="[
             {

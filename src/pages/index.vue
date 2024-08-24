@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { gallery, headlines, topArticles } from '@/assets/json/config.json'
+import { gallery, general, headlines, topArticles } from '@/assets/json/config.json'
 import {
   animateSection,
 } from '@/utils/animations/section'
@@ -36,7 +36,7 @@ const vIntersectionObserver = {
       >
         <template #item="slotProps">
           <img
-            :src="slotProps.item.itemImageSrc"
+            :src="`${general.imageProviderBaseUrl}${slotProps.item.itemImageSrc}`"
             :alt="slotProps.item.alt"
             style="display: block"
             class="h-screen min-h-screen min-w-full object-cover opacity-50"
@@ -80,7 +80,7 @@ const vIntersectionObserver = {
     >
       <div
         class="hidden w-1/2 bg-cover bg-center bg-no-repeat lg:mr-20 lg:block"
-        style="background-image: url(&quot;/images/gallery/image-1.jpg&quot;)"
+        :style="`background-image: url('${general.imageProviderBaseUrl}/images/gallery/image-1.jpg')`"
       />
       <div class="flex flex-col items-center text-justify lg:mr-20 lg:w-1/2">
         <div class="flex flex-col px-10 lg:max-w-min lg:px-20 lg:pr-30">
@@ -108,12 +108,12 @@ const vIntersectionObserver = {
           <div
             class="mt-10 aspect-square max-w-100 w-[80%] duration-600 delay-250 ease-in-out lg:w-100"
             title="Menuiserie haut de gamme en Aluminium et sur mesure"
-            style="
-              background-size: cover;
-              background-position: center center;
-              background-repeat: no-repeat;
-              background-image: url(&quot;/images/gallery/image-2.jpg&quot;);
-            "
+            :style="{
+              backgroundSize: 'cover',
+              backgroundPosition: 'center center',
+              backgroundRepeat: 'no-repeat',
+              backgroundImage: `url('${general.imageProviderBaseUrl}/images/gallery/image-2.jpg')`,
+            }"
           />
         </div>
       </div>
@@ -155,7 +155,7 @@ const vIntersectionObserver = {
             </div>
             <div class="aspect-square max-w-[85%]">
               <img
-                src="/images/section/image-1.jpg"
+                :src="`${general.imageProviderBaseUrl}/images/section/image-1.jpg`"
                 alt="Image"
                 class="h-full w-full overflow-hidden object-cover"
               >
@@ -171,7 +171,7 @@ const vIntersectionObserver = {
             class="sticky top-42 hidden aspect-auto h-screen max-w-[60%] overflow-hidden lg:block"
           >
             <img
-              src="/images/section/image-2.jpg"
+              :src="`${general.imageProviderBaseUrl}/images/section/image-2.jpg`"
               alt="Image"
               class="h-full w-full overflow-hidden bg-no-repeat object-cover pl-10 grayscale"
             >
@@ -190,7 +190,7 @@ const vIntersectionObserver = {
           class="sticky top-42 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block"
         >
           <img
-            src="/images/section/image-3.jpg"
+            :src="`${general.imageProviderBaseUrl}/images/section/image-3.jpg`"
             alt="Image"
             class="h-full w-full overflow-hidden bg-no-repeat object-cover lg:h-[80%]"
           >
@@ -204,7 +204,7 @@ const vIntersectionObserver = {
               <ul class="flex flex-col gap-y-12">
                 <li>
                   <strong class="block text-lg">Fabrication sur mesure</strong>
-                  <span>Nous fabriquons des menuiseries en aluminium, PVC et
+                  <span> Nous fabriquons des menuiseries en aluminium, PVC et
                     métallique selon vos spécifications exactes. Que ce soit
                     pour des fenêtres, des portes, bais vitrés, portails,
                     pergolas, volets roulants et des rideaux métalliques, nous
@@ -297,7 +297,7 @@ const vIntersectionObserver = {
           class="sticky mt-10 hidden h-screen max-w-[55%] overflow-hidden lg:block"
         >
           <img
-            src="/images/section/image-4.jpg"
+            :src="`${general.imageProviderBaseUrl}/images/section/image-4.jpg`"
             alt="Image"
             class="max-h-min w-full overflow-hidden bg-no-repeat object-cover"
           >

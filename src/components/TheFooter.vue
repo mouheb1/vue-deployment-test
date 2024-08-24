@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { contact } from '@/assets/json/config.json'
+import { contact, general } from '@/assets/json/config.json'
 
 const globalStore = useGlobalStore()
 const { isAtContactPage } = storeToRefs(globalStore)
@@ -16,7 +16,7 @@ const { isAtContactPage } = storeToRefs(globalStore)
     >
       <div class="p-5">
         <img
-          src="/images/logo.png"
+          :src="`${general.imageProviderBaseUrl}/images/logo.png`"
           alt="Delta Logo"
           class="h-auto w-28"
         >
@@ -82,7 +82,10 @@ const { isAtContactPage } = storeToRefs(globalStore)
         class="flex items-center gap-x-2 py-[7px]"
         target="_blank"
       >
-        <span>Powered by</span> <img src="/logo-incentino.png" alt="Incentino inc." class="mr-8 w-24 grayscale hover:grayscale-0">
+        <span>Powered by</span> <img
+          :src="`${general.imageProviderBaseUrl}/logo-incentino.png`"
+          alt="Incentino inc." class="mr-8 w-24 grayscale hover:grayscale-0"
+        >
       </a>
     </div>
   </footer>
