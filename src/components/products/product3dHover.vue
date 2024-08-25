@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Image as ResponsiveImage } from '@unpic/vue'
+
 const props = defineProps({
   canvasImagesPath: {
     type: String,
@@ -35,22 +37,24 @@ onMounted(() => {
 <template>
   <div class="mx-center relative cursor-360">
     <!-- Main image with the lowest z-index -->
-    <img
+    <ResponsiveImage
       :src="images[currentFrame]?.src"
-      alt=""
+      alt="Product Image"
+      layout="fullWidth"
       class="left-0 top-0 z-0 w-full md:absolute md:w-[920px]"
-    >
+    />
     <!-- Loop through images with a higher z-index -->
     <div class="hidden h-full w-[350px] md:w-[920px] md:flex">
-      <img
+      <ResponsiveImage
         v-for="(image, index) in images"
         :key="index"
         :src="image.src"
-        alt="Pergolas bioclimatique"
+        alt="Product Image"
+        layout="fullWidth"
         class="image-loop object-cover opacity-0"
         :style="{ width: `${100 / images.length}%` }"
         @mouseover="handleHover(index)"
-      >
+      />
     </div>
   </div>
 </template>

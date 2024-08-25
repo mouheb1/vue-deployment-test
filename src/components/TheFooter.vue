@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
+import { Image } from '@unpic/vue'
 import { contact, general } from '@/assets/json/config.json'
 
 const globalStore = useGlobalStore()
@@ -15,11 +16,11 @@ const { isAtContactPage } = storeToRefs(globalStore)
       class="min-h-80 flex flex-col items-center justify-around pb-15 pt-20 text-center text-sm md:flex-row md:items-start md:text-left"
     >
       <div class="p-5">
-        <img
+        <Image
           :src="`${general.imageProviderBaseUrl}/images/logo.png`"
           alt="Delta Logo"
-          class="h-auto w-28"
-        >
+          class="h-auto !w-28"
+        />
       </div>
 
       <div class="p-5">
@@ -70,11 +71,11 @@ const { isAtContactPage } = storeToRefs(globalStore)
         <span>Informations complémentaires</span>
         <span>Mentions légales</span>
         <span>Politique de confidentialité</span>
-        <span><img
+        <span><Image
           src="/rss.svg"
           alt="rss"
-          class="w-2.5"
-        > Flux RSS</span>
+          class="!w-2.5"
+        /> Flux RSS</span>
       </div>
 
       <a
@@ -82,10 +83,10 @@ const { isAtContactPage } = storeToRefs(globalStore)
         class="flex items-center gap-x-2 py-[7px]"
         target="_blank"
       >
-        <span>Powered by</span> <img
+        <span>Powered by</span> <Image
           :src="`${general.imageProviderBaseUrl}/logo-incentino.png`"
-          alt="Incentino inc." class="mr-8 w-24 grayscale hover:grayscale-0"
-        >
+          alt="Incentino inc." class="mr-8 grayscale !w-24 hover:grayscale-0"
+        />
       </a>
     </div>
   </footer>

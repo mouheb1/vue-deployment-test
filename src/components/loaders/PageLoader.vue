@@ -1,16 +1,18 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { general } from '@/assets/json/config.json'
 </script>
 
 <template>
   <div class="h-screen flex items-center justify-center">
     <div class="anim-logo relative h-32 w-32">
-      <img
+      <Image
         :src="`${general.imageProviderBaseUrl}/images/logo-low-res.png`"
         alt="Delta Logo"
+        priority
         class="absolute h-full w-full"
         loading="eager"
-      >
+      />
     </div>
   </div>
 </template>

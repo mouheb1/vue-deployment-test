@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { gallery, general, headlines, topArticles } from '@/assets/json/config.json'
 import {
   animateSection,
@@ -35,12 +36,13 @@ const vIntersectionObserver = {
         :auto-play="true"
       >
         <template #item="slotProps">
-          <img
+          <Image
             :src="`${general.imageProviderBaseUrl}${slotProps.item.itemImageSrc}`"
+            layout="fullWidth"
             :alt="slotProps.item.alt"
             style="display: block"
             class="h-screen min-h-screen min-w-full object-cover opacity-50"
-          >
+          />
           <div class="absolute translate-y-10 px-5 lg:translate-y-0 lg:px-0">
             <div class="mb-3 text-sm text-white tracking-[0.5em] uppercase">
               {{ headlines.up }}
@@ -154,11 +156,11 @@ const vIntersectionObserver = {
               sur mesure
             </div>
             <div class="aspect-square max-w-[85%]">
-              <img
+              <Image
                 :src="`${general.imageProviderBaseUrl}/images/section/image-1.jpg`"
                 alt="Image"
                 class="h-full w-full overflow-hidden object-cover"
-              >
+              />
               <div class="max-w-[15%]" />
             </div>
             <div
@@ -170,11 +172,11 @@ const vIntersectionObserver = {
           <div
             class="sticky top-42 hidden aspect-auto h-screen max-w-[60%] overflow-hidden lg:block"
           >
-            <img
+            <Image
               :src="`${general.imageProviderBaseUrl}/images/section/image-2.jpg`"
               alt="Image"
               class="h-full w-full overflow-hidden bg-no-repeat object-cover pl-10 grayscale"
-            >
+            />
           </div>
         </div>
       </div>
@@ -189,11 +191,11 @@ const vIntersectionObserver = {
         <div
           class="sticky top-42 mr-20 mt-10 hidden aspect-square h-screen max-w-[50%] overflow-hidden lg:block"
         >
-          <img
+          <Image
             :src="`${general.imageProviderBaseUrl}/images/section/image-3.jpg`"
             alt="Image"
             class="h-full w-full overflow-hidden bg-no-repeat object-cover lg:h-[80%]"
-          >
+          />
         </div>
         <div class="flex flex-col items-end lg:max-w-[50%]">
           <div class="p-x-10 pt-16 text-left lg:mr-30 md:p-x-20">
@@ -296,11 +298,11 @@ const vIntersectionObserver = {
         <div
           class="sticky mt-10 hidden h-screen max-w-[55%] overflow-hidden lg:block"
         >
-          <img
+          <Image
             :src="`${general.imageProviderBaseUrl}/images/section/image-4.jpg`"
             alt="Image"
             class="max-h-min w-full overflow-hidden bg-no-repeat object-cover"
-          >
+          />
         </div>
       </div>
     </section>

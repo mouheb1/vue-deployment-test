@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { general } from '@/assets/json/config.json'
 
 defineProps({
@@ -26,11 +27,11 @@ const showDescription = ref(true)
       class="h-78 overflow-hidden duration-600 hover:scale-95"
       :style="showDescription ? { height: '15rem' } : ''"
     >
-      <img
+      <Image
         :src="`${image || general.noImagePath}`"
         alt="Image unavailable"
         class="h-full w-full object-cover text-black grayscale duration-900 hover:scale-120 hover:grayscale-0"
-      >
+      />
     </div>
     <div class="h-23 w-90 w-full flex flex-wrap items-center justify-between gap-y-5 p-5">
       <div class="max-w-[85%] text-left text-[1.3em] text-black font-bold" :class="[!showDescription ? 'overflow-hidden text-ellipsis whitespace-nowrap' : '']">

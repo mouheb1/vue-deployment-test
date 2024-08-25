@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { general } from '@/assets/json/config.json'
 
 const props = defineProps({
@@ -111,7 +112,7 @@ const hoveredStates = ref(props.images.map(() => false))
         @mouseout="hoveredStates[slotProps.index] = false"
         @click="toggleFullScreen"
       >
-        <img
+        <Image
           :src="`${general.imageProviderBaseUrl}${slotProps.item.itemImageSrc}`"
           :alt="slotProps.item.alt"
           :style="[
@@ -121,7 +122,7 @@ const hoveredStates = ref(props.images.map(() => false))
             },
           ]"
           class="h-80 w-100 cursor-pointer object-cover"
-        >
+        />
         <div class="absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center bg-black bg-opacity-40">
           <i
             v-if="hoveredStates[slotProps.index] && !fullScreen"
@@ -134,11 +135,11 @@ const hoveredStates = ref(props.images.map(() => false))
     </template>
     <template #thumbnail="slotProps">
       <div class="grid-nogutter justify-content-center relative grid">
-        <img
+        <Image
           :src="slotProps.item.thumbnailImageSrc"
           :alt="slotProps.item.alt"
           style="display: block"
-        >
+        />
       </div>
     </template>
     <template #footer>

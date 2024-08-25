@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
+
 defineProps({
   image: {
     type: String,
@@ -28,7 +30,7 @@ defineProps({
     <a
       :href="link"
       :title
-    ><img :src="image" :alt="image" class="max-h-[515px] w-full object-cover"></a>
+    ><Image :src="image" :alt="image" class="max-h-[515px] w-full object-cover" /></a>
 
     <div class="flex flex-col gap-y-2 text-left md:pr-12.5">
       <h2 class="m-0 text-[42px] font-700">

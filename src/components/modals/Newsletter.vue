@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { registerUser } from '@/services/userService'
 import { general, newsletter } from '@/assets/json/config.json'
 
@@ -77,12 +78,13 @@ const handleDialogHide = () => {
       />
 
       <div style="min-width: 180px">
-        <img
+        <Image
           :src="`${general.imageProviderBaseUrl}/images/logo.png`"
           alt=""
+          layout="fixed"
           class="image-style"
-          style="height: 100%; min-width: 100%; background-color: #2B2A29"
-        >
+          style="height: 100%; min-width: 100% !important; background-color: #2B2A29"
+        />
       </div>
 
       <div v-if="showSuccess">
@@ -141,7 +143,7 @@ const handleDialogHide = () => {
 <style>
 .image-style {
   max-width: 128px;
-  object-fit: contain;
+  object-fit: contain !important;
 }
 
 .animate-text {

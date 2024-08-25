@@ -1,5 +1,5 @@
 <p align='center'>
-  <img src='https://i.ibb.co/LgGYXgh/delta-solutions-logo.jpg' alt='Delta Solution - Menuiserie sur mesure, de l’aluminium au métal.' width='150'/>
+  <Image src='https://i.ibb.co/LgGYXgh/delta-solutions-logo.jpg' alt='Delta Solution - Menuiserie sur mesure, de l’aluminium au métal.' width='150'/>
 </p>
 
 <p align='center'>
