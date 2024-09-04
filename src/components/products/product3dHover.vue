@@ -10,6 +10,14 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+  desktopWidth: {
+    type: String,
+    default: '920px',
+  },
+  mobileWidth: {
+    type: String,
+    default: '350px',
+  },
 })
 
 const images = ref<HTMLImageElement[]>([])
@@ -29,6 +37,8 @@ const handleHover = (index: number) => {
   currentFrame.value = index
 }
 
+const dynamicWidth = computed(() => `w-[${props.desktopWidth}] md:w-[${props.desktopWidth}]`)
+
 onMounted(() => {
   loadImages()
 })
@@ -44,7 +54,7 @@ onMounted(() => {
       class="left-0 top-0 z-0 w-full md:absolute md:w-[920px]"
     />
     <!-- Loop through images with a higher z-index -->
-    <div class="hidden h-full w-[350px] md:w-[920px] md:flex">
+    <div class="hidden h-full md:flex" :class="dynamicWidth">
       <ResponsiveImage
         v-for="(image, index) in images"
         :key="index"

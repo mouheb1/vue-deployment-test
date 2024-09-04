@@ -3,13 +3,13 @@ import { pergolas as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
 const route = useRoute()
-const pergolasBio = product.variations.find(pergola => pergola.link === route.path)
+const productVariation = product.variations.find(pergola => pergola.link === route.path)
 </script>
 
 <template>
   <pageContainer :show-breadcrumb="true">
     <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
-      {{ pergolasBio?.name }}
+      {{ productVariation?.name }}
     </h2>
     <div class="grid grid-cols-1 md:flex md:justify-center">
       <product3dHover
@@ -18,7 +18,7 @@ const pergolasBio = product.variations.find(pergola => pergola.link === route.pa
         :frame-count="61"
       />
       <div>
-        <productDetailsList :details="pergolasBio?.details" class="md:pl-10" />
+        <productDetailsList :details="productVariation?.details" class="md:pl-10" />
         <horizontalSlideButton
           :link="contact.location"
           title="where to buy button"
@@ -35,7 +35,7 @@ const pergolasBio = product.variations.find(pergola => pergola.link === route.pa
     <div
       class="mx-10 my-14 text-left text-xl text-gray-400 font-extralight leading-12 md:mx-40 md:my-30"
     >
-      {{ pergolasBio?.fullDescription }}
+      {{ productVariation?.fullDescription }}
     </div>
   </pageContainer>
 </template>

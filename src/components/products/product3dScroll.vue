@@ -17,6 +17,22 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+  bottomSpacing: {
+    type: String,
+    default: 'h-1750',
+  },
+  imageType: {
+    type: String,
+    default: 'jpg',
+  },
+  pin: {
+    type: Boolean,
+    default: true,
+  },
+  canvasStyle: {
+    type: String,
+    default: '',
+  },
 })
 
 // IntersectionObserver directive
@@ -61,7 +77,7 @@ const startCanvasAnimation = () => {
   const loadImage = (index: number): Promise<HTMLImageElement> => {
     return new Promise((resolve, reject) => {
       const img = new Image()
-      img.src = `${props.canvasImagesPath}${String(index).padStart(2, '0')}.jpg`
+      img.src = `${props.canvasImagesPath}${String(index).padStart(2, '0')}.${props.imageType}`
 
       img.onload = () => resolve(img)
       img.onerror = reject
@@ -97,7 +113,7 @@ const startCanvasAnimation = () => {
       start: isMobile.value ? 'top 20' : 'top 150',
       end: '+=7000',
       markers: true,
-      pin: true,
+      pin: props.pin,
       scrub: 0.1,
     },
     onUpdate: render,
@@ -125,13 +141,13 @@ onMounted(() => {
   <div
     class="canvas-container grid mx-auto mb-20 w-[80%] content-center md:relative md:mb-0 md:w-full"
   >
-    <canvas id="canvasElement" />
+    <canvas id="canvasElement" :class="canvasStyle" />
     <div
       class="grid grid-cols-1 mx-auto max-w-70 justify-items-start gap-y-12 md:m-0 md:block md:w-full md:gap-y-0"
     >
       <p
         v-intersection-observer="animateSection"
-        class="font-poppins section relative text-left text-sm text-gray-500 tracking-wider md:absolute md:left-[5%] md:top-30 md:max-w-60"
+        class="section font-poppins relative text-left text-sm text-gray-500 tracking-wider md:absolute md:left-[5%] md:top-30 md:max-w-60"
       >
         {{ scrollDetails && scrollDetails[0] }}
         <span
@@ -167,7 +183,7 @@ onMounted(() => {
       </p>
     </div>
   </div>
-  <div class="h-1750 bg-white" />
+  <div class="bg-white" :class="bottomSpacing" />
 </template>
 
 <style scoped>

@@ -7,8 +7,13 @@ const globalStore = useGlobalStore()
 const { hasScrolled, isMobile } = storeToRefs(globalStore)
 const visible = ref(true)
 const isLoading = ref(true)
+const passedTimeout = ref(false)
 
 const canShowNewsletter = computed(() => {
+  if (!passedTimeout.value) {
+    return false
+  }
+
   if (isLoading.value) {
     return false
   }
@@ -26,6 +31,10 @@ const canShowNewsletter = computed(() => {
 const handleLoad = () => {
   isLoading.value = false
 }
+
+setTimeout(() => {
+  passedTimeout.value = true
+}, 5000)
 
 // Check if page has already loaded
 if (document.readyState === 'complete') {

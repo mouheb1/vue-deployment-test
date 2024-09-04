@@ -42,6 +42,7 @@ const vIntersectionObserver = {
             :alt="slotProps.item.alt"
             style="display: block"
             class="h-screen min-h-screen min-w-full object-cover opacity-50"
+            background="auto"
           />
           <div class="absolute translate-y-10 px-5 lg:translate-y-0 lg:px-0">
             <div class="mb-3 text-sm text-white tracking-[0.5em] uppercase">
@@ -61,7 +62,7 @@ const vIntersectionObserver = {
       id="section-1"
       ref="section1"
       v-intersection-observer="animateSection"
-      class="section-1-content section relative ml-10 px-10 py-20 text-left lg:ml-20 lg:px-0"
+      class="section section-1-content relative ml-10 px-10 py-20 text-left lg:ml-20 lg:px-0"
     >
       <div class="lg:w-[40%]">
         <div class="mb-3 text-sm text-[#003f5e] tracking-[0.5em] uppercase">

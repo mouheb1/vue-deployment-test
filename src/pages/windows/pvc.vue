@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { pergolas as product } from '@/assets/json/products.json'
+import { windows as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
 const route = useRoute()
-const productVariation = product.variations.find(pergola => pergola.link === route.path)
+const productVariation = product.variations.find(variation => variation.link === route.path)
 </script>
 
 <template>
@@ -13,9 +13,10 @@ const productVariation = product.variations.find(pergola => pergola.link === rou
     </h2>
     <div class="grid grid-cols-1 md:flex md:justify-center">
       <product3dHover
-        :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
+        :canvas-images-path="`${general.imageProviderBaseUrl}${productVariation?.['3dHoverImagesPath']}`"
         :scroll-details="product.scrollDetails"
-        :frame-count="61"
+        :frame-count="19"
+        desktop-width="700px"
       />
       <div>
         <productDetailsList :details="productVariation?.details" class="md:pl-10" />

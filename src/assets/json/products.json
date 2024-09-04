@@ -1,186 +1,370 @@
 {
-  "fenêtres": {
+  "windows": {
     "name": "Fenêtres",
+    "description": "Nos fenêtres offrent une combinaison parfaite de design moderne et de haute performance énergétique. Disponibles en différents matériaux, elles assurent isolation, sécurité et confort.",
+    "scrollDetails": [
+      "Design épuré et moderne",
+      "Excellente isolation thermique et acoustique",
+      "Sécurité renforcée avec verres et ferrures de haute qualité",
+      "Options de personnalisation pour répondre à tous les besoins"
+    ],
+    "scrollingImagesPath": "/images/windows/scrollingImages/",
     "variations": [
       {
-        "id": "b8c9dd5b-11d8-4202-a43a-7e8c3e6932a0",
-        "name": "fenêtres aluminium",
-        "image": "",
-        "description": "",
-        "link": "/windows/aluminum"
+        "id": "9b6b4b9b-87a4-4327-b0cf-b2d4b9f1d3b9",
+        "name": "Fenêtres Aluminium",
+        "image": "/images/windows/aluminum/aluminum.png",
+        "3dHoverImagesPath": "/images/windows/aluminum/3dHoverImages/",
+        "description": "Fenêtres en aluminium modernes et élégantes, conçues pour durer.",
+        "fullDescription": "Les fenêtres en aluminium sont idéales pour les constructions modernes grâce à leur esthétique épurée et leur durabilité exceptionnelle. Elles offrent une grande flexibilité de design et une excellente performance énergétique, tout en nécessitant peu d'entretien.",
+        "link": "/windows/aluminum",
+        "details": [
+          "Matériau robuste et durable",
+          "Disponible en plusieurs couleurs et finitions",
+          "Excellente isolation thermique et phonique",
+          "Sécurité renforcée avec options de verrouillage avancées"
+        ]
       },
       {
-        "id": "e473a045-60cb-4784-95c0-75a7f9f89f7a",
-        "name": "fenêtres pvc",
-        "image": "",
-        "description": "",
-        "link": "/windows/pvc"
+        "id": "ea4b01ef-3073-4bfc-9c6a-162fbd4c9f5e",
+        "name": "Fenêtres PVC",
+        "image": "/images/windows/pvc/pvc.webp",
+        "3dHoverImagesPath": "/images/windows/pvc/3dHoverImages/",
+        "description": "Fenêtres en PVC avec isolation thermique supérieure et un excellent rapport qualité/prix.",
+        "fullDescription": "Les fenêtres en PVC sont une option économique et efficace pour améliorer l'isolation de votre maison. Conçues pour être résistantes et nécessiter peu d'entretien, elles offrent une excellente performance énergétique et sont disponibles dans une variété de styles.",
+        "link": "/windows/pvc",
+        "details": [
+          "Haute performance énergétique",
+          "Résistance aux intempéries et à la corrosion",
+          "Faciles à entretenir",
+          "Disponible en différents styles et couleurs"
+        ]
       }
     ]
   },
-  "portes": {
+  "doors": {
     "name": "Portes",
+    "description": "Les portes modernes sont la pièce maîtresse de chaque bureau, appartement ou maison. Les portes d’entrée sont un élément essentiel de la menuiserie, co-responsable de l'efficacité énergétique de l'ensemble du bâtiment. Les portes d’intérieur sont essentielles pour une utilisation ergonomique de l'espace. Delta Solution propose une large gamme de portes extérieures et intérieures fabriquées dans différents matériaux, dont le PVC. Des performances supérieures à la moyenne, l'isolation thermique et acoustique et la résistance aux agents nocifs créent des produits qui offrent des avantages polyvalents. Une large gamme de couleurs, des designs variés et un grand choix de quincaillerie permettent de sélectionner la bonne porte pour chaque utilisation.",
+    "scrollDetails": [
+      "Design moderne et personnalisable",
+      "Sécurité accrue avec des matériaux de haute qualité",
+      "Isolation thermique et acoustique optimale",
+      "Variété de styles et de couleurs"
+    ],
+    "scrollingImagesPath": "/images/doors/scrollingImages/",
     "variations": [
       {
-        "id": "9a3035a7-badf-4f94-9db0-4ec1c7028b68",
-        "name": "portes aluminium",
-        "image": "",
-        "description": "",
-        "link": "/doors/aluminum"
+        "id": "4f6e7f38-b4c9-4c8e-93b1-85b1e4b7f7d4",
+        "name": "Portes Aluminium",
+        "image": "/images/doors/aluminum/aluminum.png",
+        "3dHoverImagesPath": "/images/doors/scrollingImages/",
+        "description": "Portes en aluminium offrant sécurité, style, et durabilité.",
+        "fullDescription": "Nos portes en aluminium sont conçues pour offrir une sécurité maximale tout en apportant une touche de modernité à votre maison. Disponibles dans une variété de designs et de finitions, elles offrent une excellente performance énergétique et sont faciles à entretenir.",
+        "link": "/doors/aluminum",
+        "details": [
+          "Design moderne et personnalisable",
+          "Sécurité accrue avec des matériaux de haute qualité",
+          "Isolation thermique et acoustique optimale",
+          "Variété de styles et de couleurs"
+        ]
       },
       {
-        "id": "cefe8b8f-f8c8-4f1d-bbbf-2768d6ba15ee",
-        "name": "portes pvc",
-        "image": "",
-        "description": "",
-        "link": "/doors/pvc"
+        "id": "e9e3a469-0546-4d4b-8b6e-bd5f98b9a37f",
+        "name": "Portes PVC",
+        "image": "/images/doors/pvc/pvc.png",
+        "3dHoverImagesPath": "/images/doors/scrollingImages/",
+        "description": "Portes en PVC résistantes et faciles à entretenir, idéales pour tous les styles.",
+        "fullDescription": "Les portes en PVC sont une solution polyvalente pour toutes les maisons. Elles sont résistantes aux intempéries, faciles à entretenir, et offrent une excellente isolation thermique et acoustique. Disponibles en divers styles et couleurs, elles conviennent à toutes les préférences.",
+        "link": "/doors/pvc",
+        "details": [
+          "Résistantes aux intempéries",
+          "Faciles à entretenir",
+          "Excellente isolation thermique et phonique",
+          "Disponible dans divers styles et couleurs"
+        ]
       }
     ]
   },
-  "volet roulant": {
-    "name": "Volet roulant",
+  "solarProtection": {
+    "name": "Protection Solaire",
+    "description": "Les occultations de fenêtres proposées par Delta Solution. sont le complément idéal des menuiseries. Leur utilisation est conseillée pour tous les projets. L'utilisation des occultations proposées par Delta Solution vise avant tout à contrôler la lumière et la chaleur et à protéger du bruit. Bien configurées, elles constituent aussi une solution de protection efficace contre les intrusions non désirées. L'esthétique impressionnante ou captivante de nombreuses propositions ne doit pas non plus être négligée.",
+    "scrollDetails": [
+      "En fonction de type de montage, il existe un choix de solutions encastrées, suspendues et adaptatives.",
+      "Systèmes éliminant les ponts thermiques.",
+      "La moustiquaire intégrée garantit une excellente protection non seulement contre le soleil mais aussi contre les insectes.",
+      "Installation facile avec un impact minimal sur l'esthétique de votre maison"
+    ],
+    "scrollingImagesPath": "/images/solarProtection/scrollingImages/",
     "variations": [
       {
-        "id": "afca6cb0-8c4c-4e4f-81a8-91b62f795f45",
-        "name": "volet roulant sous enduit",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/exterior-shutters/under-plaster"
+        "id": "c21df9e2-23b7-4de7-a3f1-b1b5a6c3cabc",
+        "name": "Volée Extérieur",
+        "image": "/images/solarProtection/exterior-shutters/exterior-shutters.webp",
+        "description": "Volets extérieurs offrant une excellente protection contre le soleil et une isolation supplémentaire.",
+        "fullDescription": "Les volets extérieurs sont une solution efficace pour protéger votre maison contre les rayons du soleil tout en offrant une isolation thermique et acoustique supplémentaire. Ils sont disponibles en différents matériaux, notamment l'aluminium et le bois, pour s'adapter à l'esthétique de votre maison.",
+        "link": "/solar-protection/exterior-shutters",
+        "details": [
+          "Disponibles en aluminium, bois, et PVC",
+          "Offrent une protection solaire efficace",
+          "Améliorent l'isolation thermique et acoustique",
+          "Disponible en plusieurs styles et couleurs"
+        ]
       },
       {
-        "id": "0d8a1af5-3502-4c34-8160-80a49fd1288f",
-        "name": "volet roulant extérieur de renovation",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/exterior-shutters/renovation"
+        "id": "f8e3a935-b3d1-4d7b-ae3f-ae56e03b3d2e",
+        "name": "Store D’intérieur",
+        "image": "/images/solarProtection/interior-blinds/interior-blinds.webp",
+        "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+        "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+        "link": "/solar-protection/interior-blinds",
+        "details": [
+          "Types disponibles : vénitiens, rouleaux, verticaux",
+          "Fabriqués avec des matériaux de haute qualité",
+          "Faciles à installer et à utiliser",
+          "Disponible en plusieurs couleurs et motifs"
+        ]
       },
       {
-        "id": "6c60b2db-72a2-4fc5-9933-2120f9f8a3a8",
-        "name": "volet roulant mono block",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/exterior-shutters/mono-block"
+        "id": "f8e3a935-b3d1-4d7b-ae3f-ae56e03b3d2e",
+        "name": "Brises Soleil",
+        "image": "/images/solarProtection/sunshades/sunshades.webp",
+        "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+        "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+        "link": "/solar-protection/interior-blinds",
+        "details": [
+          "Types disponibles : vénitiens, rouleaux, verticaux",
+          "Fabriqués avec des matériaux de haute qualité",
+          "Faciles à installer et à utiliser",
+          "Disponible en plusieurs couleurs et motifs"
+        ]
+      },
+      {
+        "id": "f8e3a935-b3d1-4d7b-ae3f-ae56e03b3d2e",
+        "name": "Volet Battants",
+        "image": "/images/solarProtection/hinged-shutters/hinged-shutters.png",
+        "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+        "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+        "link": "/solar-protection/interior-blinds",
+        "details": [
+          "Types disponibles : vénitiens, rouleaux, verticaux",
+          "Fabriqués avec des matériaux de haute qualité",
+          "Faciles à installer et à utiliser",
+          "Disponible en plusieurs couleurs et motifs"
+        ]
       }
     ]
   },
-  "brises": {
-    "name": "Brises",
+  "guardrails": {
+    "name": "Garde Corps",
+    "description": "Les garde-corps élégants et sûrs pour balcons, terrasses et escaliers, disponibles dans une variété de matériaux et de styles.",
+    "scrollDetails": [
+      "Sécurité optimale pour balcons et terrasses",
+      "Disponible en aluminium, acier inoxydable, et verre",
+      "Designs modernes et personnalisables",
+      "Installation facile avec des fixations robustes"
+    ],
+    "scrollingImagesPath": "/images/guardrails/scrollingImages/",
     "variations": [
       {
-        "id": "7b8d40b0-1db2-4c4d-b065-6f7c7d19d0fb",
-        "name": "brises soleil",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/solar-shading"
+        "id": "e17a2f7b-4c4f-4216-9c8f-df9c8a4b7a4b",
+        "name": "Garde Corps Aluminium",
+        "image": "/images/guardrails/aluminum/aluminum.jpg",
+        "description": "Garde-corps en aluminium légers et résistants à la corrosion, parfaits pour une installation extérieure.",
+        "fullDescription": "Nos garde-corps en aluminium sont conçus pour offrir une protection robuste tout en ajoutant une touche moderne à votre maison. Leur légèreté et leur résistance à la corrosion les rendent idéaux pour les balcons, terrasses, et escaliers.",
+        "link": "/guardrails/aluminum",
+        "details": [
+          "Léger et résistant à la corrosion",
+          "Disponible en plusieurs couleurs RAL",
+          "Facile à installer",
+          "Conforme aux normes de sécurité"
+        ]
       }
     ]
   },
-  "volets": {
-    "name": "Volets",
+  "fences": {
+    "name": "Clotures",
+    "description": "Clôtures modernes et durables pour une protection accrue de votre propriété, disponibles en divers matériaux et styles.",
+    "scrollDetails": [
+      "Les clôtures en acier sont galvanisées à chaud, ce qui offre une excellente protection contre la corrosion.",
+      "Choix de portails battants et coulissants, de travées et de portillons, en profilés d'aluminium.",
+      "Des conceptions individuelles entièrement adaptées à vos besoins et à votre terrain.",
+      "La méthode d'assemblage par boulons permet de réaliser des clôtures en deux ou plusieurs couleurs."
+    ],
+    "scrollingImagesPath": "/images/fences/scrollingImages/",
     "variations": [
       {
-        "id": "362d047b-2bc7-42c8-9e65-efb53143e2f0",
-        "name": "volet battants",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/swing-shutters"
+        "id": "cfa8f2b2-7b9c-41ad-b9e7-b8f7f3e6a7c3",
+        "name": "Clôtures en Aluminium",
+        "image": "/images/fences/aluminum/aluminum.png",
+        "description": "Clôtures en aluminium élégantes et durables pour une protection longue durée.",
+        "fullDescription": "Les clôtures en aluminium sont parfaites pour ceux qui cherchent une solution de protection durable et esthétique. Elles résistent bien aux intempéries et sont disponibles en plusieurs styles et couleurs pour s'adapter à toutes les propriétés.",
+        "link": "/fences/aluminum",
+        "details": [
+          "Résistantes aux intempéries",
+          "Faible entretien",
+          "Disponible en plusieurs couleurs et styles",
+          "Idéales pour la sécurité résidentielle et commerciale"
+        ]
       }
     ]
   },
-  "stores": {
-    "name": "Stores",
-    "variations": [
-      {
-        "id": "4053f04b-442d-46bc-980f-4086f74e1f37",
-        "name": "store vénitien",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/interior-blinds/venetian"
-      },
-      {
-        "id": "ac6a7800-8dbb-46c2-bc16-0e58c885ec65",
-        "name": "store verticale",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/interior-blinds/vertical"
-      },
-      {
-        "id": "c6d04a07-d95c-4be3-bb4d-312d3dbb2e96",
-        "name": "store rouleau",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/interior-blinds/roller"
-      },
-      {
-        "id": "519f9c2b-2b43-4f7a-9c93-b09d38a7d548",
-        "name": "store double jeu",
-        "image": "",
-        "description": "",
-        "link": "/solar-protection/interior-blinds/double-roller"
-      }
-    ]
-  },
-  "rideau métallique": {
-    "name": "Rideau métallique",
-    "variations": [
-      {
-        "id": "cc6f63f6-476e-4af4-9202-7c47d3a91f17",
-        "name": "rideau métallique à lame simple",
-        "image": "",
-        "description": "",
-        "link": "/garage-doors/metal-shutters/simple-slat"
-      },
-      {
-        "id": "481dcaba-f781-469f-b1ad-6b5e5df6e21e",
-        "name": "rideau métallique à lame injecté",
-        "image": "",
-        "description": "",
-        "link": "/garage-doors/metal-shutters/injected-slat"
-      }
-    ]
-  },
-  "moustiquaires": {
-    "name": "Moustiquaires",
-    "variations": [
-      {
-        "id": "ecdf6d4a-e255-4f60-bd83-c5d53c215c10",
-        "name": "moustiquaires enroulable",
-        "image": "",
-        "description": "",
-        "link": "/mosquito-nets/roller"
-      },
-      {
-        "id": "97fc5b58-b0a7-4511-a8e2-d8b8e1a83cf4",
-        "name": "moustiquaires coulissante",
-        "image": "",
-        "description": "",
-        "link": "/mosquito-nets/sliding"
-      },
-      {
-        "id": "db234b79-fb3c-4d41-9e04-6d7cfc58ef2c",
-        "name": "moustiquaires fixe",
-        "image": "",
-        "description": "",
-        "link": "/mosquito-nets/fixed"
-      }
-    ]
-  },
-  "portails": {
+  "gates": {
     "name": "Portails",
+    "description": "Des portails robustes et stylés pour une entrée sécurisée et élégante à votre propriété.",
+    "scrollDetails": [
+      "Options de motorisation pour plus de commodité",
+      "Disponible en aluminium et acier",
+      "Sécurité accrue avec des systèmes de verrouillage avancés",
+      "Designs modernes et personnalisables"
+    ],
+    "scrollingImagesPath": "/images/gates/scrollingImages/",
     "variations": [
       {
-        "id": "117d5b2f-8bfb-4ed1-8228-4a3f905d5b9f",
-        "name": "portails en aluminium",
-        "image": "",
-        "description": "",
-        "link": "/gates/aluminum"
+        "id": "2b7c5e8f-1c9e-48a8-9436-f87f1c8a0f3e",
+        "name": "Portails en Aluminium",
+        "image": "/images/gates/aluminum/aluminum.png",
+        "description": "Portails en aluminium résistants et élégants pour une entrée sécurisée.",
+        "fullDescription": "Les portails en aluminium offrent une excellente combinaison de durabilité et de style. Ils sont disponibles dans une variété de finitions et peuvent être motorisés pour plus de commodité.",
+        "link": "/gates/aluminum",
+        "details": [
+          "Construction légère mais robuste",
+          "Options de motorisation disponibles",
+          "Disponible en plusieurs styles et finitions",
+          "Résistant à la corrosion"
+        ]
       },
       {
-        "id": "d1483a83-b11e-4c7b-a836-5e366856779e",
-        "name": "portails en acier",
-        "image": "",
-        "description": "",
-        "link": "/gates/steel"
+        "id": "6e1f4b8c-d4a8-4e99-8a9c-a9b1c1d2e3f4",
+        "name": "Portails en Acier",
+        "image": "/images/gates/steel/steel.png",
+        "description": "Portails en acier robustes pour une protection maximale.",
+        "fullDescription": "Les portails en acier sont conçus pour offrir une sécurité maximale à votre propriété. Disponibles en plusieurs styles et couleurs, ils sont idéaux pour les applications résidentielles et commerciales.",
+        "link": "/gates/steel",
+        "details": [
+          "Robustes et durables",
+          "Disponible en plusieurs finitions",
+          "Options de personnalisation disponibles",
+          "Idéaux pour les environnements résidentiels et commerciaux"
+        ]
+      }
+    ]
+  },
+  "garageDoors": {
+    "name": "Porte des Garages",
+    "description": "Les portes modernes sont la pièce maîtresse de chaque bureau, appartement ou maison. Les portes d’entrée sont un élément essentiel de la menuiserie, co-responsable de l'efficacité énergétique de l'ensemble du bâtiment. Les portes d’intérieur sont essentielles pour une utilisation ergonomique de l'espace. Delta Solution propose une large gamme de portes extérieures et intérieures fabriquées dans différents matériaux, dont le PVC. Des performances supérieures à la moyenne, l'isolation thermique et acoustique et la résistance aux agents nocifs créent des produits qui offrent des avantages polyvalents. Une large gamme de couleurs, des designs variés et un grand choix de quincaillerie permettent de sélectionner la bonne porte pour chaque utilisation.",
+    "scrollDetails": [
+      "Options de motorisation pour une utilisation facile",
+      "Disponible en acier et aluminium",
+      "Excellente isolation thermique et acoustique",
+      "Designs personnalisables pour s'adapter à l'esthétique de votre maison"
+    ],
+    "scrollingImagesPath": "/images/garageDoors/scrollingImages/",
+    "variations": [
+      {
+        "id": "4f2c3d4e-9a6f-41c3-b7e1-5a6d7e8f9b0c",
+        "name": "Porte Sectionnelle",
+        "image": "/images/garageDoors/big_porte-sectionnelle.jpg",
+        "description": "Portes sectionnelles offrant une excellente isolation et un fonctionnement silencieux.",
+        "fullDescription": "Les portes sectionnelles sont parfaites pour les garages qui nécessitent une isolation thermique et acoustique supérieure. Conçues pour s'ouvrir verticalement, elles économisent de l'espace et sont disponibles avec des options de motorisation.",
+        "link": "/garage-doors/sectional",
+        "details": [
+          "Ouverture verticale pour économiser de l'espace",
+          "Excellente isolation thermique et acoustique",
+          "Options de motorisation disponibles",
+          "Disponible en plusieurs finitions et styles"
+        ]
+      },
+      {
+        "id": "3e5b7c9d-0d9e-4b2a-88c9-a2e3d4f5a6b7",
+        "name": "Porte Basculante",
+        "image": "/images/garageDoors/Produit-10-Garage-600x600.png",
+        "description": "Portes basculantes robustes pour un accès facile au garage.",
+        "fullDescription": "Les portes basculantes sont une solution robuste et pratique pour les garages. Elles s'ouvrent d'un seul tenant et sont disponibles avec des options de motorisation pour une utilisation facile.",
+        "link": "/garage-doors/tilt",
+        "details": [
+          "Construction robuste en acier ou aluminium",
+          "Disponible avec ou sans motorisation",
+          "Options de personnalisation disponibles",
+          "Installation facile avec instructions détaillées"
+        ]
+      },
+      {
+        "id": "102e04cb-626a-47d7-8d18-a65859ebb5c2",
+        "name": "Rideau Métallique",
+        "image": "/images/garageDoors/brama_49.jpg",
+        "description": "Rideau Métalliques robustes pour un accès facile au garage.",
+        "fullDescription": "Les portes basculantes sont une solution robuste et pratique pour les garages. Elles s'ouvrent d'un seul tenant et sont disponibles avec des options de motorisation pour une utilisation facile.",
+        "link": "/garage-doors/metal-shutters",
+        "details": [
+          "Construction robuste en acier ou aluminium",
+          "Disponible avec ou sans motorisation",
+          "Options de personnalisation disponibles",
+          "Installation facile avec instructions détaillées"
+        ]
+      }
+    ]
+  },
+  "mosquitoNets": {
+    "name": "Moustiquaires",
+    "description": "Des moustiquaires de haute qualité pour une protection efficace contre les insectes tout en permettant une bonne ventilation.",
+    "scrollDetails": [
+      "Profilés en aluminium extrudé.",
+      "Filet en fibre de verre.",
+      "Profilés vernis dans n'importe quelle couleur de la palette RAL."
+    ],
+    "scrollingImagesPath": "/images/mosquitoNets/scrollingImages/",
+    "variations": [
+      {
+        "id": "1d2e3f4a-5b6c-7d8e-9f0a-1a2b3c4d5e6f",
+        "name": "Moustiquaires fixes",
+        "image": "/images/mosquitoNets/Mostiquaire%20Fixe.jpg",
+        "description": "Fabriqué à partir de profilés en aluminium extrudé et d'une maille en fibre de verre. Peut être intégré aux volets roulants.",
+        "fullDescription": "Système de moustiquaires à cadre en aluminium extrudé avec joints à brosse. Elles sont montées sur le cadre de la fenêtre à l'aide de platines spéciales. La moustiquaire Prime peut également être utilisée sur les fenêtres des systèmes Naturo 68, Naturo 76 et Naturo 88. Pour les deux premiers, il existe des platines de montage de 18 mm avec des ressorts et des joints à brosse supplémentaires pour protéger le bois. Pour le Naturo 88, les platines de montage ont une largeur de 19 mm.",
+        "link": "/mosquito-nets/fixed",
+        "details": [
+          "cadre: profilé en aluminium extrudé",
+          "revêtement: vernis en poudre dans n'importe quelle couleur de la palette RAL",
+          "filet: fibre de verre enduite de PVC dans les couleurs: gris, noir",
+          "montage: externe à l'aide de crochets non invasifs et de joints durables",
+          "dimensions: adaptées aux besoins du client",
+          "peut être déplacé ou démonté rapidement",
+          "compatibilité avec le filet anti-smog",
+          "désormais disponible pour les fenêtres en bois Naturo 68, 76 et 88"
+        ]
+      },
+      {
+        "id": "ec0e8ee4-4d93-4b84-8ede-1d325ee03782",
+        "name": "Moustiquaires Enroulable",
+        "image": "/images/mosquitoNets/Mostiquaire%20enroulable.jpg",
+        "description": "La moustiquaire enroulable est montée directement sur le cadre de la porte. En option, elle peut être renforcée par une plaque de remplissage, qui protège le filet contre les dommages causés par les animaux.",
+        "fullDescription": "Les moustiquaires enroulables sont idéales pour ceux qui recherchent une solution discrète et efficace contre les insectes. Faciles à utiliser, elles peuvent être enroulées lorsqu'elles ne sont pas nécessaires, offrant ainsi une flexibilité maximale. Ce système de moustiquaire est parfait pour les fenêtres et les portes, permettant de profiter de l'air frais sans l'intrusion des insectes. Le design compact et élégant s'intègre parfaitement à tout style d'intérieur ou d'extérieur.",
+        "link": "/mosquito-nets/roller",
+        "details": [
+          "Cadre: profilé en aluminium extrudé, garantissant robustesse et durabilité.",
+          "Revêtement: vernis en poudre, disponible dans n'importe quelle couleur de la palette RAL, offrant une finition esthétique et résistante aux intempéries.",
+          "Filet: fibre de verre enduite de PVC, disponible en deux couleurs : gris et noir, pour une meilleure adaptation à votre décor et une haute résistance aux conditions extérieures.",
+          "Couleurs des joints: disponibles en gris et noir, pour une harmonisation parfaite avec le filet.",
+          "Montage: installation extérieure avec des coulisses fixées par des vis au cadre de la fenêtre, assurant une fixation sécurisée et stable.",
+          "Compatibilité: peut être équipé d'un filet anti-smog pour une protection supplémentaire contre la pollution de l'air.",
+          "Options d'installation: possibilité d'installer deux vantaux, permettant une couverture flexible et étendue selon les besoins."
+        ]
+      },
+      {
+        "id": "cb7a1d1d-487e-475a-bad0-f523781cefa6",
+        "name": "Moustiquaires coulissantes",
+        "image": "/images/mosquitoNets/moustiquaire-laterale.jpg",
+        "description": "Le rail de guidage bas convient parfaitement aux portes coulissantes avec un seuil bas. Nous fabriquons également des cadres de plus grandes dimensions.",
+        "fullDescription": "Le système de moustiquaire coulissante utilise un mécanisme de coulisses parallèles dans la partie supérieure et inférieure du cadre. Cette solution est dédiée aux systèmes coulissants HST et PSK.",
+        "link": "/mosquito-nets/sliding",
+        "details": [
+          "cadre: profilé en aluminium extrudé",
+          "revêtement: vernis en poudre dans n'importe quelle couleur de la palette RAL",
+          "filet: fibre de verre enduite de PVC dans les couleurs: gris, noir",
+          "deux couleurs de joints: gris, noir",
+          "montage: extérieur, coulisses fixés par des vis au cadre de la fenêtre",
+          "compatibilité avec le filet anti-smog",
+          "possibilité d'installer deux vantaux"
+        ]
       }
     ]
   },

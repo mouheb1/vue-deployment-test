@@ -43,12 +43,16 @@ export default defineConfig({
   rules: [
     ['bg-contact-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/gallery/image-1.jpg)` }],
     ['bg-works-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/gallery/image-4.jpg)` }],
-    ['bg-windows-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-1.jpg)` }],
-    ['bg-doors-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-5.jpeg)` }],
+    ['bg-windows-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/windows/cover/windows-cover.jpg)` }],
+    ['bg-doors-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/doors/cover/doorCover.jpg)` }],
+    ['bg-solarProtection-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/solarProtection/cover/solarProtectionCover.jpg)` }],
+    ['bg-guardrails-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/guardrails/cover/guardrailsCover.jpg)` }],
     ['bg-guardrail-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-6.jpg)` }],
     ['bg-shutters-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-7.jpg)` }],
     ['bg-bso-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/section/image-8.jpg)` }],
     ['bg-pergolas-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/pergolas/pergolas-cover.png)` }],
+    ['bg-fences-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/fences/cover/fencesCover.jpg)` }],
+    ['bg-gates-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/gates/cover/gatesCover.jpg)` }],
     ['cursor-360', { cursor: `url(${general.imageProviderBaseUrl}/images/cursor/cursor-360-drag.png), e-resize !important` }],
   ],
 })

@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import { pergolas as product } from '@/assets/json/products.json'
+import { Image } from '@unpic/vue'
+import { guardrails as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
 const route = useRoute()
-const productVariation = product.variations.find(pergola => pergola.link === route.path)
+const productVariation = product.variations.find(variation => variation.link === route.path)
 </script>
 
 <template>
@@ -11,11 +12,18 @@ const productVariation = product.variations.find(pergola => pergola.link === rou
     <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
       {{ productVariation?.name }}
     </h2>
-    <div class="grid grid-cols-1 md:flex md:justify-center">
-      <product3dHover
+    <div class="grid grid-cols-1 md:flex md:justify-center md:gap-x-10">
+      <!-- <product3dHover
         :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
         :scroll-details="product.scrollDetails"
         :frame-count="61"
+      /> -->
+      <Image
+        :src="`${general.imageProviderBaseUrl}${product?.scrollingImagesPath}01.png`"
+        :alt="`${general.imageProviderBaseUrl}${product?.scrollingImagesPath}`"
+        height="800"
+        width="800"
+        layout="constrained"
       />
       <div>
         <productDetailsList :details="productVariation?.details" class="md:pl-10" />

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { pergolas as product } from '@/assets/json/products.json'
+import { guardrails as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
 const route = useRoute()
-const productVariation = product.variations.find(pergola => pergola.link === route.path)
+const productVariation = product.variations.find(variation => variation.link === route.path)
 </script>
 
 <template>
