@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { mosquitoNets as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
@@ -11,11 +12,14 @@ const productVariation = product.variations.find(variation => variation.link ===
     <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
       {{ productVariation?.name }}
     </h2>
-    <div class="grid grid-cols-1 md:flex md:justify-center">
-      <product3dHover
-        :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
-        :scroll-details="product.scrollDetails"
-        :frame-count="61"
+    <div class="md: grid grid-cols-1 gap-x-25 md:flex md:justify-center">
+      <Image
+        :src="`${general.imageProviderBaseUrl}${productVariation?.image}`"
+        alt=""
+        height="700"
+        width="450"
+        layout="constrained"
+        class="object-fill"
       />
       <div>
         <productDetailsList :details="productVariation?.details" class="md:pl-10" />

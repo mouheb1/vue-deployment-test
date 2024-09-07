@@ -53,7 +53,11 @@ const vIntersectionObserver = {
   <product3dScroll
     :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
     :scroll-details="product.scrollDetails"
-    :frame-count="61"
+    :frame-count="1"
+    image-type="png"
+    bottom-spacing="h-0"
+    :pin="false"
+    canvas-style="ml-[25%]"
   />
 </template>
 

@@ -108,6 +108,50 @@
           "Offrent une protection solaire efficace",
           "Améliorent l'isolation thermique et acoustique",
           "Disponible en plusieurs styles et couleurs"
+        ],
+        "variations": [
+          {
+            "id": "8d49b896-8b91-41cb-a793-d42605ae9d8d",
+            "name": "Volée Roulant Mono Block",
+            "image": "/images/solarProtection/exterior-shutters/mono-block.webp",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/exterior-shutters/mono-block",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          },
+          {
+            "id": "b344fa63-eea6-4578-8019-8f38a66ab0f4",
+            "name": "Volet Roulant Extérieur de Rénovation",
+            "image": "/images/solarProtection/exterior-shutters/renovation.webp",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/exterior-shutters/renovation",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          },
+          {
+            "id": "7aefc0b1-2f7f-4bf0-8467-3cb0b5d1896e",
+            "name": "Volet Roulant Sous Enduit",
+            "image": "/images/solarProtection/exterior-shutters/under-plaster.png",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/exterior-shutters/under-plaster",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          }
         ]
       },
       {
@@ -122,6 +166,64 @@
           "Fabriqués avec des matériaux de haute qualité",
           "Faciles à installer et à utiliser",
           "Disponible en plusieurs couleurs et motifs"
+        ],
+        "variations": [
+          {
+            "id": "7238370d-22ab-465e-85b8-1d342cb3838d",
+            "name": "Store Vénitien",
+            "image": "/images/solarProtection/interior-blinds/venetian.webp",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/interior-blinds/venetian",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          },
+          {
+            "id": "c88661ae-7490-4ec6-b10a-fa13cf63c14e",
+            "name": "Store Verticale",
+            "image": "/images/solarProtection/interior-blinds/vertical.webp",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/interior-blinds/vertical",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          },
+          {
+            "id": "94593baf-dc65-4ed8-afce-dee05ff1e8bf",
+            "name": "Store Rouleau",
+            "image": "/images/solarProtection/interior-blinds/roller.png",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/interior-blinds/roller",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          },
+          {
+            "id": "2d01868d-2a99-4eb7-9ca3-584426a25ae7",
+            "name": "Store Double Jeu",
+            "image": "/images/solarProtection/interior-blinds/double-roller.png",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/solar-protection/interior-blinds/double-roller",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          }
         ]
       },
       {
@@ -190,12 +292,12 @@
       "Des conceptions individuelles entièrement adaptées à vos besoins et à votre terrain.",
       "La méthode d'assemblage par boulons permet de réaliser des clôtures en deux ou plusieurs couleurs."
     ],
-    "scrollingImagesPath": "/images/fences/scrollingImages/",
+    "scrollingImagesPath": "/images/gates/scrollingImages/",
     "variations": [
       {
         "id": "cfa8f2b2-7b9c-41ad-b9e7-b8f7f3e6a7c3",
         "name": "Clôtures en Aluminium",
-        "image": "/images/fences/aluminum/aluminum.png",
+        "image": "/images/gates/aluminum/aluminum.png",
         "description": "Clôtures en aluminium élégantes et durables pour une protection longue durée.",
         "fullDescription": "Les clôtures en aluminium sont parfaites pour ceux qui cherchent une solution de protection durable et esthétique. Elles résistent bien aux intempéries et sont disponibles en plusieurs styles et couleurs pour s'adapter à toutes les propriétés.",
         "link": "/fences/aluminum",
@@ -217,12 +319,12 @@
       "Sécurité accrue avec des systèmes de verrouillage avancés",
       "Designs modernes et personnalisables"
     ],
-    "scrollingImagesPath": "/images/gates/scrollingImages/",
+    "scrollingImagesPath": "/images/fences/scrollingImages/",
     "variations": [
       {
         "id": "2b7c5e8f-1c9e-48a8-9436-f87f1c8a0f3e",
         "name": "Portails en Aluminium",
-        "image": "/images/gates/aluminum/aluminum.png",
+        "image": "/images/fences/aluminum/aluminum.png",
         "description": "Portails en aluminium résistants et élégants pour une entrée sécurisée.",
         "fullDescription": "Les portails en aluminium offrent une excellente combinaison de durabilité et de style. Ils sont disponibles dans une variété de finitions et peuvent être motorisés pour plus de commodité.",
         "link": "/gates/aluminum",
@@ -300,6 +402,36 @@
           "Disponible avec ou sans motorisation",
           "Options de personnalisation disponibles",
           "Installation facile avec instructions détaillées"
+        ],
+        "variations": [
+          {
+            "id": "8d49b896-8b91-41cb-a793-d42605ae9d8d",
+            "name": "Rideau Métallique à Lame Simple",
+            "image": "/images/garage-doors/metal-shutters/simple-slat/simple-slat.webp",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/garage-doors/metal-shutters/simple-slat",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          },
+          {
+            "id": "b344fa63-eea6-4578-8019-8f38a66ab0f4",
+            "name": "Rideau Métallique à Lame Injecté",
+            "image": "/images/garage-doors/metal-shutters/simple-slat/injected-slat.webp",
+            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
+            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "link": "/garage-doors/metal-shutters/injected-slat",
+            "details": [
+              "Types disponibles : vénitiens, rouleaux, verticaux",
+              "Fabriqués avec des matériaux de haute qualité",
+              "Faciles à installer et à utiliser",
+              "Disponible en plusieurs couleurs et motifs"
+            ]
+          }
         ]
       }
     ]
@@ -317,7 +449,7 @@
       {
         "id": "1d2e3f4a-5b6c-7d8e-9f0a-1a2b3c4d5e6f",
         "name": "Moustiquaires fixes",
-        "image": "/images/mosquitoNets/Mostiquaire%20Fixe.jpg",
+        "image": "/images/mosquitoNets/fixed/fixed.jpg",
         "description": "Fabriqué à partir de profilés en aluminium extrudé et d'une maille en fibre de verre. Peut être intégré aux volets roulants.",
         "fullDescription": "Système de moustiquaires à cadre en aluminium extrudé avec joints à brosse. Elles sont montées sur le cadre de la fenêtre à l'aide de platines spéciales. La moustiquaire Prime peut également être utilisée sur les fenêtres des systèmes Naturo 68, Naturo 76 et Naturo 88. Pour les deux premiers, il existe des platines de montage de 18 mm avec des ressorts et des joints à brosse supplémentaires pour protéger le bois. Pour le Naturo 88, les platines de montage ont une largeur de 19 mm.",
         "link": "/mosquito-nets/fixed",
@@ -335,7 +467,7 @@
       {
         "id": "ec0e8ee4-4d93-4b84-8ede-1d325ee03782",
         "name": "Moustiquaires Enroulable",
-        "image": "/images/mosquitoNets/Mostiquaire%20enroulable.jpg",
+        "image": "/images/mosquitoNets/roller/roller.jpg",
         "description": "La moustiquaire enroulable est montée directement sur le cadre de la porte. En option, elle peut être renforcée par une plaque de remplissage, qui protège le filet contre les dommages causés par les animaux.",
         "fullDescription": "Les moustiquaires enroulables sont idéales pour ceux qui recherchent une solution discrète et efficace contre les insectes. Faciles à utiliser, elles peuvent être enroulées lorsqu'elles ne sont pas nécessaires, offrant ainsi une flexibilité maximale. Ce système de moustiquaire est parfait pour les fenêtres et les portes, permettant de profiter de l'air frais sans l'intrusion des insectes. Le design compact et élégant s'intègre parfaitement à tout style d'intérieur ou d'extérieur.",
         "link": "/mosquito-nets/roller",
@@ -352,7 +484,7 @@
       {
         "id": "cb7a1d1d-487e-475a-bad0-f523781cefa6",
         "name": "Moustiquaires coulissantes",
-        "image": "/images/mosquitoNets/moustiquaire-laterale.jpg",
+        "image": "/images/mosquitoNets/sliding/sliding.jpg",
         "description": "Le rail de guidage bas convient parfaitement aux portes coulissantes avec un seuil bas. Nous fabriquons également des cadres de plus grandes dimensions.",
         "fullDescription": "Le système de moustiquaire coulissante utilise un mécanisme de coulisses parallèles dans la partie supérieure et inférieure du cadre. Cette solution est dédiée aux systèmes coulissants HST et PSK.",
         "link": "/mosquito-nets/sliding",

@@ -1,7 +1,10 @@
 <script setup lang="ts">
-import { garageDoors as product } from '@/assets/json/products.json'
+import { garageDoors as baseProduct } from '@/assets/json/products.json'
 import { animateSection } from '@/utils/animations/section'
 import { general } from '@/assets/json/config.json'
+
+const route = useRoute()
+const product = baseProduct.variations.find(variation => variation.link === route.path)
 
 // IntersectionObserver directive
 const intersectionObserver = new IntersectionObserver(animateSection, {
@@ -25,7 +28,7 @@ const vIntersectionObserver = {
     <div
       class="relative top-40 mx-10 text-4xl text-white font-extrabold leading-17 text-shadow-lg -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
-      {{ product.name }}
+      {{ product?.name }}
     </div>
   </div>
   <div
@@ -33,12 +36,12 @@ const vIntersectionObserver = {
   >
     <div class="max-w-[1100px]">
       <p>
-        <span class="text-lg text-gray-500">{{ product.description }}</span>
+        <span class="text-lg text-gray-500">{{ product?.description }}</span>
       </p>
     </div>
   </div>
 
-  <div v-for="(variation, index) in product.variations" :key="variation.id">
+  <div v-for="(variation, index) in product?.variations" :key="variation.id">
     <productTwoCols
       :ref="`section${index}`"
       v-intersection-observer="animateSection"
@@ -51,8 +54,8 @@ const vIntersectionObserver = {
   </div>
 
   <product3dScroll
-    :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
-    :scroll-details="product.scrollDetails"
+    :canvas-images-path="`${general.imageProviderBaseUrl}${product?.scrollingImagesPath}`"
+    :scroll-details="product?.scrollDetails"
     :frame-count="61"
   />
 </template>
