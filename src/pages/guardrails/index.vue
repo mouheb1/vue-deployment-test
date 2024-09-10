@@ -57,7 +57,7 @@ const vIntersectionObserver = {
     image-type="png"
     bottom-spacing="h-0"
     :pin="false"
-    canvas-style="ml-[25%]"
+    canvas-style="scale-60 -mt-50 md:-mt-80"
   />
 </template>
 

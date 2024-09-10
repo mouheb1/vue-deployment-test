@@ -149,37 +149,40 @@ onMounted(() => {
         v-intersection-observer="animateSection"
         class="section font-poppins relative text-left text-sm text-gray-500 tracking-wider md:absolute md:left-[5%] md:top-30 md:max-w-60"
       >
-        {{ scrollDetails && scrollDetails[0] }}
-        <span
-          class="underline-effect absolute left-0 top-23 h-0.2 w-60 bg-gray-200 after:right-[240px] md:top-30 md:after:right-[-23px]"
-        />
+        <span class="relative inline-block">
+          <p class="mb-4">{{ scrollDetails && scrollDetails[0] }}</p>
+          <span class="underline-effect block h-0.5 w-full bg-gray-200" />
+        </span>
       </p>
+
       <p
         v-intersection-observer="animateSection"
         class="section font-poppins relative text-left text-sm text-gray-500 tracking-wider md:absolute md:left-[80%] md:top-35 md:max-w-60"
       >
-        {{ scrollDetails && scrollDetails[1] }}
-        <span
-          class="underline-effect absolute left-0 top-18 h-0.2 w-60 bg-gray-200 after:right-[240px] md:top-20"
-        />
+        <span class="relative inline-block">
+          <p class="mb-4">{{ scrollDetails && scrollDetails[1] }}</p>
+          <span class="underline-effect block h-0.5 w-full bg-gray-200" />
+        </span>
       </p>
+
       <p
         v-intersection-observer="animateSection"
         class="section font-poppins relative text-left text-sm text-gray-500 tracking-wider md:absolute md:left-[5%] md:top-100 md:max-w-60"
       >
-        {{ scrollDetails && scrollDetails[2] }}
-        <span
-          class="underline-effect absolute left-0 top-23 h-0.2 w-60 bg-gray-200 after:right-[240px] md:top-25 md:after:right-[-23px]"
-        />
+        <span class="relative inline-block">
+          <p class="mb-4">{{ scrollDetails && scrollDetails[2] }}</p>
+          <span class="underline-effect block h-0.5 w-full bg-gray-200" />
+        </span>
       </p>
+
       <p
         v-intersection-observer="animateSection"
         class="section font-poppins relative text-left text-sm text-gray-500 tracking-wider md:absolute md:left-[80%] md:top-110 md:max-w-60"
       >
-        {{ scrollDetails && scrollDetails[3] }}
-        <span
-          class="underline-effect absolute left-0 top-8 h-0.2 w-60 bg-gray-200 after:right-[240px] md:top-15"
-        />
+        <span class="relative inline-block">
+          <p class="mb-4">{{ scrollDetails && scrollDetails[3] }}</p>
+          <span class="underline-effect block h-0.5 w-full bg-gray-200" />
+        </span>
       </p>
     </div>
   </div>

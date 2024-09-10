@@ -20,7 +20,7 @@ const vIntersectionObserver = {
 
 <template>
   <div
-    class="bg-garageDoors-image relative top-0 h-75 bg-cover bg-no-repeat before:absolute before:inset-0 md:h-125 before:bg-black before:opacity-40 before:content-['']"
+    class="relative top-0 h-75 bg-cover bg-no-repeat bg-garageDoors-image before:absolute before:inset-0 md:h-125 before:bg-black before:opacity-40 before:content-['']"
   >
     <div
       class="relative top-40 mx-10 text-4xl text-white font-extrabold leading-17 text-shadow-lg -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
@@ -29,7 +29,7 @@ const vIntersectionObserver = {
     </div>
   </div>
   <div
-    class="style1 font-poppins mb-14 border-b-2 border-gray-200 border-solid"
+    class="font-poppins style1 mb-14 border-b-2 border-gray-200 border-solid"
   >
     <div class="max-w-[1100px]">
       <p>
@@ -53,7 +53,7 @@ const vIntersectionObserver = {
   <product3dScroll
     :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
     :scroll-details="product.scrollDetails"
-    :frame-count="61"
+    :frame-count="60"
   />
 </template>
 

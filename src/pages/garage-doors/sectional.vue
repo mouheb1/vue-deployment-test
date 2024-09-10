@@ -15,7 +15,7 @@ const productVariation = product.variations.find(variation => variation.link ===
       <product3dHover
         :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
         :scroll-details="product.scrollDetails"
-        :frame-count="61"
+        :frame-count="60"
       />
       <div>
         <productDetailsList :details="productVariation?.details" class="md:pl-10" />

@@ -100,6 +100,7 @@
         "id": "c21df9e2-23b7-4de7-a3f1-b1b5a6c3cabc",
         "name": "Volée Extérieur",
         "image": "/images/solarProtection/exterior-shutters/exterior-shutters.webp",
+        "scrollingImagesPath": "/images/solarProtection/scrollingImages/",
         "description": "Volets extérieurs offrant une excellente protection contre le soleil et une isolation supplémentaire.",
         "fullDescription": "Les volets extérieurs sont une solution efficace pour protéger votre maison contre les rayons du soleil tout en offrant une isolation thermique et acoustique supplémentaire. Ils sont disponibles en différents matériaux, notamment l'aluminium et le bois, pour s'adapter à l'esthétique de votre maison.",
         "link": "/solar-protection/exterior-shutters",
@@ -109,11 +110,17 @@
           "Améliorent l'isolation thermique et acoustique",
           "Disponible en plusieurs styles et couleurs"
         ],
+        "scrollDetails": [
+          "En fonction de type de montage, il existe un choix de solutions encastrées, suspendues et adaptatives.",
+          "Systèmes éliminant les ponts thermiques.",
+          "La moustiquaire intégrée garantit une excellente protection non seulement contre le soleil mais aussi contre les insectes.",
+          "Installation facile avec un impact minimal sur l'esthétique de votre maison"
+        ],
         "variations": [
           {
             "id": "8d49b896-8b91-41cb-a793-d42605ae9d8d",
             "name": "Volée Roulant Mono Block",
-            "image": "/images/solarProtection/exterior-shutters/mono-block.webp",
+            "image": "/images/solarProtection/exterior-shutters/mono-block/mono-block.png",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/exterior-shutters/mono-block",
@@ -127,7 +134,7 @@
           {
             "id": "b344fa63-eea6-4578-8019-8f38a66ab0f4",
             "name": "Volet Roulant Extérieur de Rénovation",
-            "image": "/images/solarProtection/exterior-shutters/renovation.webp",
+            "image": "/images/solarProtection/exterior-shutters/renovation/renovation.jpg",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/exterior-shutters/renovation",
@@ -141,7 +148,7 @@
           {
             "id": "7aefc0b1-2f7f-4bf0-8467-3cb0b5d1896e",
             "name": "Volet Roulant Sous Enduit",
-            "image": "/images/solarProtection/exterior-shutters/under-plaster.png",
+            "image": "/images/solarProtection/exterior-shutters/under-plaster/under-plaster.png",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/exterior-shutters/under-plaster",
@@ -232,7 +239,7 @@
         "image": "/images/solarProtection/sunshades/sunshades.webp",
         "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
         "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
-        "link": "/solar-protection/interior-blinds",
+        "link": "/solar-protection/solar-shading",
         "details": [
           "Types disponibles : vénitiens, rouleaux, verticaux",
           "Fabriqués avec des matériaux de haute qualité",
@@ -246,7 +253,7 @@
         "image": "/images/solarProtection/hinged-shutters/hinged-shutters.png",
         "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
         "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
-        "link": "/solar-protection/interior-blinds",
+        "link": "/solar-protection/swing-shutters",
         "details": [
           "Types disponibles : vénitiens, rouleaux, verticaux",
           "Fabriqués avec des matériaux de haute qualité",
@@ -271,6 +278,20 @@
         "id": "e17a2f7b-4c4f-4216-9c8f-df9c8a4b7a4b",
         "name": "Garde Corps Aluminium",
         "image": "/images/guardrails/aluminum/aluminum.jpg",
+        "description": "Garde-corps en aluminium légers et résistants à la corrosion, parfaits pour une installation extérieure.",
+        "fullDescription": "Nos garde-corps en aluminium sont conçus pour offrir une protection robuste tout en ajoutant une touche moderne à votre maison. Leur légèreté et leur résistance à la corrosion les rendent idéaux pour les balcons, terrasses, et escaliers.",
+        "link": "/guardrails/aluminum",
+        "details": [
+          "Léger et résistant à la corrosion",
+          "Disponible en plusieurs couleurs RAL",
+          "Facile à installer",
+          "Conforme aux normes de sécurité"
+        ]
+      },
+      {
+        "id": "fa3813dd-e7ca-4e8d-b612-2a557512eea5",
+        "name": "Garde Corps en Verre",
+        "image": "/images/guardrails/green/green.webp",
         "description": "Garde-corps en aluminium légers et résistants à la corrosion, parfaits pour une installation extérieure.",
         "fullDescription": "Nos garde-corps en aluminium sont conçus pour offrir une protection robuste tout en ajoutant une touche moderne à votre maison. Leur légèreté et leur résistance à la corrosion les rendent idéaux pour les balcons, terrasses, et escaliers.",
         "link": "/guardrails/aluminum",
@@ -353,19 +374,19 @@
   },
   "garageDoors": {
     "name": "Porte des Garages",
-    "description": "Les portes modernes sont la pièce maîtresse de chaque bureau, appartement ou maison. Les portes d’entrée sont un élément essentiel de la menuiserie, co-responsable de l'efficacité énergétique de l'ensemble du bâtiment. Les portes d’intérieur sont essentielles pour une utilisation ergonomique de l'espace. Delta Solution propose une large gamme de portes extérieures et intérieures fabriquées dans différents matériaux, dont le PVC. Des performances supérieures à la moyenne, l'isolation thermique et acoustique et la résistance aux agents nocifs créent des produits qui offrent des avantages polyvalents. Une large gamme de couleurs, des designs variés et un grand choix de quincaillerie permettent de sélectionner la bonne porte pour chaque utilisation.",
+    "description": "Les portes de garage comme leur nom l’indique sont principalement utilisées dans les garages, où leur fonctionnalité, leur durabilité, leur esthétique et leur facilité d'utilisation vous permettent de profiter au maximum de votre espace. Il s'agit d'une catégorie très large qui propose des solutions pour tous : des portes battantes simples et universelles aux solutions efficaces pour les professionnels, y compris dans l'industrie, en passant par les solutions sectionnelles modernes pour les propriétaires exigeants.",
     "scrollDetails": [
-      "Options de motorisation pour une utilisation facile",
-      "Disponible en acier et aluminium",
-      "Excellente isolation thermique et acoustique",
-      "Designs personnalisables pour s'adapter à l'esthétique de votre maison"
+      "Moteurs facilitant le contrôle des portes sectionnelles, donnant la possibilité de les ouvrir avec une télécommande.",
+      "Vaste gamme des couleurs de la palette RAL et des plaxages.",
+      "Accessoires garantissant la sécurité d'utilisation, par exemple la technologie de protection des doigts.",
+      "Nous proposons plusieurs solutions complémentaires telles que les hublots ou portes de service."
     ],
     "scrollingImagesPath": "/images/garageDoors/scrollingImages/",
     "variations": [
       {
         "id": "4f2c3d4e-9a6f-41c3-b7e1-5a6d7e8f9b0c",
         "name": "Porte Sectionnelle",
-        "image": "/images/garageDoors/big_porte-sectionnelle.jpg",
+        "image": "/images/garageDoors/sectional/sectional.png",
         "description": "Portes sectionnelles offrant une excellente isolation et un fonctionnement silencieux.",
         "fullDescription": "Les portes sectionnelles sont parfaites pour les garages qui nécessitent une isolation thermique et acoustique supérieure. Conçues pour s'ouvrir verticalement, elles économisent de l'espace et sont disponibles avec des options de motorisation.",
         "link": "/garage-doors/sectional",
@@ -379,7 +400,7 @@
       {
         "id": "3e5b7c9d-0d9e-4b2a-88c9-a2e3d4f5a6b7",
         "name": "Porte Basculante",
-        "image": "/images/garageDoors/Produit-10-Garage-600x600.png",
+        "image": "/images/garageDoors/tilt/tilt.webp",
         "description": "Portes basculantes robustes pour un accès facile au garage.",
         "fullDescription": "Les portes basculantes sont une solution robuste et pratique pour les garages. Elles s'ouvrent d'un seul tenant et sont disponibles avec des options de motorisation pour une utilisation facile.",
         "link": "/garage-doors/tilt",
@@ -393,7 +414,7 @@
       {
         "id": "102e04cb-626a-47d7-8d18-a65859ebb5c2",
         "name": "Rideau Métallique",
-        "image": "/images/garageDoors/brama_49.jpg",
+        "image": "/images/garageDoors/metal-shutters/metal-shutters.jpg",
         "description": "Rideau Métalliques robustes pour un accès facile au garage.",
         "fullDescription": "Les portes basculantes sont une solution robuste et pratique pour les garages. Elles s'ouvrent d'un seul tenant et sont disponibles avec des options de motorisation pour une utilisation facile.",
         "link": "/garage-doors/metal-shutters",

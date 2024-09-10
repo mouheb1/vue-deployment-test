@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { windows as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
@@ -11,12 +12,13 @@ const productVariation = product.variations.find(variation => variation.link ===
     <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
       {{ productVariation?.name }}
     </h2>
-    <div class="grid grid-cols-1 md:flex md:justify-center">
-      <product3dHover
-        :canvas-images-path="`${general.imageProviderBaseUrl}${productVariation?.['3dHoverImagesPath']}`"
-        :scroll-details="product.scrollDetails"
-        :frame-count="61"
-        desktop-width="700px"
+    <div class="grid grid-cols-1 md:flex md:justify-center md:gap-x-20">
+      <Image
+        :src="`${general.imageProviderBaseUrl}${productVariation?.image}`"
+        alt=""
+        height="700"
+        width="700"
+        layout="constrained"
       />
       <div>
         <productDetailsList :details="productVariation?.details" class="md:pl-10" />
