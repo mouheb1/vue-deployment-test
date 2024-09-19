@@ -23,7 +23,7 @@ const vIntersectionObserver = {
 
 <template>
   <div
-    class="relative top-0 h-75 bg-cover bg-center bg-no-repeat bg-guardrails-image before:absolute before:inset-0 md:h-125 before:bg-black before:opacity-40 before:content-['']"
+    class="relative top-0 h-75 bg-cover bg-center bg-no-repeat bg-interiorBlinds-image before:absolute before:inset-0 md:h-125 before:bg-black before:opacity-40 before:content-['']"
   >
     <div
       class="relative top-40 mx-10 text-4xl text-white font-extrabold leading-17 text-shadow-lg -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
@@ -54,9 +54,13 @@ const vIntersectionObserver = {
   </div>
 
   <product3dScroll
-    :canvas-images-path="`${general.imageProviderBaseUrl}${product?.scrollingImagesPath}`"
-    :scroll-details="product?.scrollDetails"
-    :frame-count="61"
+    :canvas-images-path="`${general.imageProviderBaseUrl}/images/solarProtection/interior-blinds/scrollingImages/`"
+    :scroll-details="baseProduct.scrollDetails"
+    :frame-count="1"
+    image-type="jpg"
+    bottom-spacing="h-0"
+    :pin="false"
+    canvas-style="ml-[5%] scale-75"
   />
 </template>
 

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { Image } from '@unpic/vue'
 import { fences as product } from '@/assets/json/products.json'
 import { contact, general } from '@/assets/json/config.json'
 
@@ -11,11 +12,13 @@ const productVariation = product.variations.find(variation => variation.link ===
     <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
       {{ productVariation?.name }}
     </h2>
-    <div class="grid grid-cols-1 md:flex md:justify-center">
-      <product3dHover
-        :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"
-        :scroll-details="product.scrollDetails"
-        :frame-count="61"
+    <div class="grid grid-cols-1 md:flex md:justify-center md:gap-x-40">
+      <Image
+        :src="`${general.imageProviderBaseUrl}${product?.scrollingImagesPath}01.png`"
+        :alt="`${general.imageProviderBaseUrl}${product?.scrollingImagesPath}`"
+        height="800"
+        width="800"
+        layout="constrained"
       />
       <div>
         <productDetailsList :details="productVariation?.details" class="md:pl-10" />
@@ -33,7 +36,7 @@ const productVariation = product.variations.find(variation => variation.link ===
       </div>
     </div>
     <div
-      class="mx-10 my-14 text-left text-xl text-gray-400 font-extralight leading-12 md:mx-40 md:my-30"
+      class="mx-10 my-14 text-left text-xl text-gray-400 font-extralight leading-12 md:mx-40 md:mb-30"
     >
       {{ productVariation?.fullDescription }}
     </div>

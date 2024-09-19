@@ -178,7 +178,7 @@
           {
             "id": "7238370d-22ab-465e-85b8-1d342cb3838d",
             "name": "Store Vénitien",
-            "image": "/images/solarProtection/interior-blinds/venetian.webp",
+            "image": "/images/solarProtection/interior-blinds/venetian/venetian.jpg",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/interior-blinds/venetian",
@@ -192,7 +192,7 @@
           {
             "id": "c88661ae-7490-4ec6-b10a-fa13cf63c14e",
             "name": "Store Verticale",
-            "image": "/images/solarProtection/interior-blinds/vertical.webp",
+            "image": "/images/solarProtection/interior-blinds/vertical/vertical.jpg",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/interior-blinds/vertical",
@@ -206,7 +206,7 @@
           {
             "id": "94593baf-dc65-4ed8-afce-dee05ff1e8bf",
             "name": "Store Rouleau",
-            "image": "/images/solarProtection/interior-blinds/roller.png",
+            "image": "/images/solarProtection/interior-blinds/roller/roller.jpg",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/interior-blinds/roller",
@@ -220,7 +220,7 @@
           {
             "id": "2d01868d-2a99-4eb7-9ca3-584426a25ae7",
             "name": "Store Double Jeu",
-            "image": "/images/solarProtection/interior-blinds/double-roller.png",
+            "image": "/images/solarProtection/interior-blinds/double-roller/double-roller.webp",
             "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
             "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
             "link": "/solar-protection/interior-blinds/double-roller",
@@ -313,12 +313,12 @@
       "Des conceptions individuelles entièrement adaptées à vos besoins et à votre terrain.",
       "La méthode d'assemblage par boulons permet de réaliser des clôtures en deux ou plusieurs couleurs."
     ],
-    "scrollingImagesPath": "/images/gates/scrollingImages/",
+    "scrollingImagesPath": "/images/fences/scrollingImages/",
     "variations": [
       {
         "id": "cfa8f2b2-7b9c-41ad-b9e7-b8f7f3e6a7c3",
         "name": "Clôtures en Aluminium",
-        "image": "/images/gates/aluminum/aluminum.png",
+        "image": "/images/fences/aluminum/aluminum.png",
         "description": "Clôtures en aluminium élégantes et durables pour une protection longue durée.",
         "fullDescription": "Les clôtures en aluminium sont parfaites pour ceux qui cherchent une solution de protection durable et esthétique. Elles résistent bien aux intempéries et sont disponibles en plusieurs styles et couleurs pour s'adapter à toutes les propriétés.",
         "link": "/fences/aluminum",
@@ -340,12 +340,12 @@
       "Sécurité accrue avec des systèmes de verrouillage avancés",
       "Designs modernes et personnalisables"
     ],
-    "scrollingImagesPath": "/images/fences/scrollingImages/",
+    "scrollingImagesPath": "/images/gates/scrollingImages/",
     "variations": [
       {
         "id": "2b7c5e8f-1c9e-48a8-9436-f87f1c8a0f3e",
         "name": "Portails en Aluminium",
-        "image": "/images/fences/aluminum/aluminum.png",
+        "image": "/images/gates/aluminum/aluminum.jpg",
         "description": "Portails en aluminium résistants et élégants pour une entrée sécurisée.",
         "fullDescription": "Les portails en aluminium offrent une excellente combinaison de durabilité et de style. Ils sont disponibles dans une variété de finitions et peuvent être motorisés pour plus de commodité.",
         "link": "/gates/aluminum",
@@ -415,10 +415,17 @@
         "id": "102e04cb-626a-47d7-8d18-a65859ebb5c2",
         "name": "Rideau Métallique",
         "image": "/images/garageDoors/metal-shutters/metal-shutters.jpg",
-        "description": "Rideau Métalliques robustes pour un accès facile au garage.",
-        "fullDescription": "Les portes basculantes sont une solution robuste et pratique pour les garages. Elles s'ouvrent d'un seul tenant et sont disponibles avec des options de motorisation pour une utilisation facile.",
+        "description": "Rideaux métalliques robustes offrant une sécurité optimale pour les garages.",
+        "fullDescription": "Les rideaux métalliques sont idéaux pour sécuriser les garages et les espaces commerciaux. Fabriqués en acier ou aluminium, ils sont résistants et peuvent être motorisés pour une utilisation facile.",
         "link": "/garage-doors/metal-shutters",
+        "scrollingImagesPath": "/images/garageDoors/metal-shutters/scrollingImages/",
         "details": [
+          "Construction robuste en acier ou aluminium",
+          "Disponible avec ou sans motorisation",
+          "Options de personnalisation disponibles",
+          "Installation facile avec instructions détaillées"
+        ],
+        "scrollDetails": [
           "Construction robuste en acier ou aluminium",
           "Disponible avec ou sans motorisation",
           "Options de personnalisation disponibles",
@@ -428,34 +435,35 @@
           {
             "id": "8d49b896-8b91-41cb-a793-d42605ae9d8d",
             "name": "Rideau Métallique à Lame Simple",
-            "image": "/images/garage-doors/metal-shutters/simple-slat/simple-slat.webp",
-            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
-            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "image": "/images/garageDoors/metal-shutters/simple-slat/simple-slat.jpg",
+            "description": "Rideaux métalliques à lame simple, offrant une protection durable et fiable.",
+            "fullDescription": "Les rideaux métalliques à lame simple sont conçus pour offrir une protection durable et fiable pour les garages et les commerces. Ils sont robustes, disponibles avec motorisation, et s'adaptent à diverses tailles d'ouvertures.",
             "link": "/garage-doors/metal-shutters/simple-slat",
             "details": [
-              "Types disponibles : vénitiens, rouleaux, verticaux",
-              "Fabriqués avec des matériaux de haute qualité",
-              "Faciles à installer et à utiliser",
-              "Disponible en plusieurs couleurs et motifs"
+              "Lame simple offrant une robustesse exceptionnelle",
+              "Disponible avec motorisation pour une ouverture facile",
+              "Personnalisable en fonction des besoins",
+              "Excellente résistance aux intempéries et à l'usure"
             ]
           },
           {
             "id": "b344fa63-eea6-4578-8019-8f38a66ab0f4",
             "name": "Rideau Métallique à Lame Injecté",
-            "image": "/images/garage-doors/metal-shutters/simple-slat/injected-slat.webp",
-            "description": "Stores d'intérieur élégants pour une régulation efficace de la lumière.",
-            "fullDescription": "Les stores d'intérieur sont parfaits pour réguler la lumière dans votre maison tout en offrant un style élégant. Disponibles en différents types comme les stores vénitiens, rouleaux, et verticaux, ils s'adaptent à tous les styles d'intérieur et offrent une excellente durabilité.",
+            "image": "/images/garageDoors/metal-shutters/injected-slat/injected-slat.jpg",
+            "description": "Rideaux métalliques à lame injectée pour une meilleure isolation thermique.",
+            "fullDescription": "Les rideaux métalliques à lame injectée offrent une isolation thermique renforcée tout en maintenant une robustesse élevée. Idéals pour les garages et les espaces nécessitant une protection supplémentaire contre les intempéries, ils peuvent être motorisés pour un confort d'utilisation.",
             "link": "/garage-doors/metal-shutters/injected-slat",
             "details": [
-              "Types disponibles : vénitiens, rouleaux, verticaux",
-              "Fabriqués avec des matériaux de haute qualité",
-              "Faciles à installer et à utiliser",
-              "Disponible en plusieurs couleurs et motifs"
+              "Isolation thermique supérieure grâce aux lames injectées",
+              "Motorisation disponible pour un usage facile",
+              "Personnalisation en fonction des besoins",
+              "Construction robuste pour une sécurité accrue"
             ]
           }
         ]
       }
     ]
+
   },
   "mosquitoNets": {
     "name": "Moustiquaires",

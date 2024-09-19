@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Image } from '@unpic/vue'
-import { general } from '@/assets/json/config.json'
 
 const props = defineProps({
   images: {
@@ -107,13 +106,14 @@ const hoveredStates = ref(props.images.map(() => false))
   >
     <template #item="slotProps">
       <div
-        class="relative inline-block h-80 w-100 overflow-hidden"
+        class="relative inline-block overflow-hidden"
+        :class="[!fullScreen ? 'h-80 w-100' : '']"
         @mouseover="hoveredStates[slotProps.index] = true"
         @mouseout="hoveredStates[slotProps.index] = false"
         @click="toggleFullScreen"
       >
         <Image
-          :src="`${general.imageProviderBaseUrl}${slotProps.item.itemImageSrc}`"
+          :src="`${slotProps.item.itemImageSrc}`"
           :alt="slotProps.item.alt"
           :style="[
             {
@@ -121,7 +121,8 @@ const hoveredStates = ref(props.images.map(() => false))
               display: !fullScreen ? 'block' : '',
             },
           ]"
-          class="h-80 w-100 cursor-pointer object-cover"
+          class="cursor-pointer object-cover"
+          :class="[!fullScreen ? 'h-80 w-100' : 'max-w-[1200px] max-h-[1000px]']"
         />
         <div class="absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center bg-black bg-opacity-40">
           <i
@@ -138,7 +139,8 @@ const hoveredStates = ref(props.images.map(() => false))
         <Image
           :src="slotProps.item.thumbnailImageSrc"
           :alt="slotProps.item.alt"
-          style="display: block"
+          width="300"
+          class="block max-h-30"
         />
       </div>
     </template>

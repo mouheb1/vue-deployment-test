@@ -46,6 +46,7 @@ export default defineConfig({
     ['bg-windows-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/windows/cover/windows-cover.jpg)` }],
     ['bg-doors-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/doors/cover/doorCover.jpg)` }],
     ['bg-solarProtection-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/solarProtection/cover/solarProtectionCover.jpg)` }],
+    ['bg-interiorBlinds-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/solarProtection/interior-blinds/cover/interiorBlindsCover.jpg)` }],
     ['bg-guardrails-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/guardrails/cover/guardrailsCover.jpg)` }],
     ['bg-garageDoors-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/garageDoors/cover/garageDoorsCover.jpg)` }],
     ['bg-metalShutters-image', { 'background-image': `url(${general.imageProviderBaseUrl}/images/garageDoors/metal-shutters/metal-shutters.jpg)` }],
