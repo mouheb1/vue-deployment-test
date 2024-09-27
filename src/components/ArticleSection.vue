@@ -11,6 +11,8 @@ defineProps({
     default: false,
   },
 })
+
+const router = useRouter()
 </script>
 
 <template>
@@ -24,12 +26,14 @@ defineProps({
       :title="article.title"
       :description="article.description"
       :image="`${general.imageProviderBaseUrl}${article.image}`"
+      @click="router.push({ path: article.link })"
     />
 
     <ArticleCard
       v-else
       :title="article.title"
       :image="`${general.imageProviderBaseUrl}${article.image}`"
+      @click="router.push({ path: article.link })"
     />
   </div>
 </template>
