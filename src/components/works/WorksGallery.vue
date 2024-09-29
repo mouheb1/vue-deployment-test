@@ -135,12 +135,12 @@ const hoveredStates = ref(props.images.map(() => false))
       </div>
     </template>
     <template #thumbnail="slotProps">
-      <div class="grid-nogutter justify-content-center relative grid">
+      <div class="justify-content-center relative grid gap-0">
         <Image
           :src="slotProps.item.thumbnailImageSrc"
           :alt="slotProps.item.alt"
           width="300"
-          class="block max-h-30"
+          class="block !max-h-30"
         />
       </div>
     </template>

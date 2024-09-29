@@ -324,14 +324,14 @@
   "topArticles": [
     {
       "articleId": "1",
-      "title": "Fenêtres & Baies vitrées en Aluminium",
-      "image": "/images/articles/image-5.jpg",
-      "link": "/windows"
+      "title": "Pergolas bioclimatiques",
+      "image": "/images/pergolas/pergolas-bioclimatique.png",
+      "link": "/pergolas/bioclimatic"
     },
     {
       "articleId": "2",
       "title": "Portails Aluminium",
-      "image": "/images/gates/aluminum/article.jpg",
+      "image": "/images/gates/aluminum/aluminum.jpg",
       "link": "/gates"
     },
     {
@@ -348,9 +348,9 @@
     },
     {
       "articleId": "5",
-      "title": "Pergolas bioclimatiques",
-      "image": "/images/pergolas/pergolas-bioclimatique.png",
-      "link": "/pergolas/bioclimatic"
+      "title": "Fenêtres & Baies vitrées en Aluminium",
+      "image": "/images/articles/image-5.jpg",
+      "link": "/windows"
     },
     {
       "articleId": "6",
