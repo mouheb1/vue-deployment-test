@@ -102,26 +102,26 @@ const hoveredStates = ref(props.images.map(() => false))
     v-model:activeIndex="activeIndex"
     :value="images"
     :num-visible="5"
-    container-style="max-width: 640px"
+    container-style="width: 100%; max-width: 640px; margin: 0 auto;"
     :show-thumbnails="fullScreen"
     :show-item-navigators="fullScreen"
-    :show-item-navigators-on-hover="fullScreen"
+    :show-item-navigators-on-hover="false"
     :circular="true"
     :responsive-options="responsiveOptions"
     :pt="{
       root: {
-        class: [{ 'flex flex-column': fullScreen }],
+        class: ['w-full', { 'flex flex-column': fullScreen }],
       },
       content: {
-        class: ['relative', { 'flex-1 justify-content-center': fullScreen }],
+        class: ['relative w-full', { 'flex-1 justify-content-center': fullScreen }],
       },
       thumbnailwrapper: 'absolute w-full left-0 bottom-0',
     }"
   >
     <template #item="slotProps">
       <div
-        class="relative inline-block overflow-hidden"
-        :class="[!fullScreen ? 'h-80 w-100' : '']"
+        class="group relative block w-full overflow-hidden"
+        :class="[!fullScreen ? 'aspect-4/3 sm:aspect-5/4' : 'h-full w-full flex items-center justify-center']"
         @mouseover="hoveredStates[slotProps.index] = true"
         @mouseout="hoveredStates[slotProps.index] = false"
         @click="toggleFullScreen"
@@ -132,23 +132,23 @@ const hoveredStates = ref(props.images.map(() => false))
           priority
           :style="[
             {
-              width: !fullScreen ? '100%' : '',
-              display: !fullScreen ? 'block' : '',
+              width: !fullScreen ? '100%' : 'auto',
+              height: !fullScreen ? '100%' : 'auto',
+              display: 'block',
             },
           ]"
           class="cursor-pointer object-cover"
-          :class="[!fullScreen ? 'h-80 w-100' : 'max-w-[1200px] max-h-[1000px]']"
+          :class="[!fullScreen ? 'h-full w-full' : 'max-h-[80vh] max-w-[95vw] md:max-h-[1000px] md:max-w-[1200px]']"
         />
         <div
-          class="absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center transition-colors duration-200"
-          :class="[hoveredStates[slotProps.index] && !fullScreen ? 'bg-black bg-opacity-20' : 'bg-opacity-0']"
+          v-if="!fullScreen"
+          class="pointer-events-none absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center bg-black bg-opacity-0 transition-colors duration-200 group-hover:bg-opacity-20"
         >
-          <i
-            v-if="hoveredStates[slotProps.index] && !fullScreen"
-            class="pi pi-eye cursor-pointer color-white"
-            style="font-size: 1.2rem"
-            @click="toggleFullScreen"
-          />
+          <span
+            class="absolute bottom-2 right-2 h-9 w-9 flex items-center justify-center rounded-full bg-black bg-opacity-50 text-white opacity-90 transition-opacity md:opacity-0 md:group-hover:opacity-90"
+          >
+            <i class="pi pi-eye" style="font-size: 1rem" />
+          </span>
         </div>
       </div>
     </template>
@@ -158,29 +158,27 @@ const hoveredStates = ref(props.images.map(() => false))
           :src="slotProps.item.thumbnailImageSrc"
           :alt="slotProps.item.alt"
           width="300"
-          class="block !max-h-30"
+          class="block max-h-30!"
         />
       </div>
     </template>
     <template #footer>
-      <div v-if="fullScreen" class="align-items-center bg-black-alpha-90 flex text-white">
+      <div v-if="fullScreen" class="align-items-center bg-black-alpha-90 w-full flex flex-wrap gap-2 px-2 py-2 text-white sm:flex-nowrap">
         <Button
           icon="pi pi-list"
           :pt="{
             root: {
               class:
-                'border-none border-noround hover:bg-white-alpha-10 text-white',
+                'border-none border-noround hover:bg-white-alpha-10 text-white shrink-0',
               style: 'background: transparent',
             },
           }"
           @click="onThumbnailButtonClick"
         />
-        <span v-if="images" class="title-container">
-          <span class="p-3 text-sm">{{ activeIndex + 1 }}/{{ images.length }}</span>
-          <span class="p-3 text-sm font-bold">{{
-            images[activeIndex].title
-          }}</span>
-          <span class="p-3 text-sm">{{ images[activeIndex].alt }}</span>
+        <span v-if="images" class="min-w-0 flex flex-1 flex-wrap items-center gap-x-3 gap-y-1">
+          <span class="text-xs sm:text-sm">{{ activeIndex + 1 }}/{{ images.length }}</span>
+          <span class="text-xs font-bold sm:text-sm">{{ images[activeIndex].title }}</span>
+          <span class="wrap-break-word text-xs opacity-80 sm:text-sm">{{ images[activeIndex].alt }}</span>
         </span>
       </div>
     </template>
