@@ -2,446 +2,314 @@ export const PhotoService = {
   getData() {
     return [
       {
-        itemImageSrc:
-          `https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140240.jpg?updatedAt=1726346705007`,
-        thumbnailImageSrc:
-          `https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140240.jpg?updatedAt=1726346705007`,
-        alt: 'Description for Image 1111',
-        title: 'Title 1',
+        itemImageSrc: '/images/works/villa-bdeoui/1.webp',
+        thumbnailImageSrc: '/images/works/villa-bdeoui/1-thumb.webp',
+        alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui',
+        title: 'Villa Bdeoui',
         subImages: [
           {
-            itemImageSrc:
-              `https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140240.jpg?updatedAt=1726346705007`,
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140240.jpg?updatedAt=1726346705007',
-            alt: 'Description for Image 1',
-            title: 'Title 1',
+            itemImageSrc: '/images/works/villa-bdeoui/1.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/1-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 1)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140249.jpg?updatedAt=1726341673485',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140249.jpg?updatedAt=1726341673485',
-            alt: 'Description for Image 2',
-            title: 'Title 2',
+            itemImageSrc: '/images/works/villa-bdeoui/2.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/2-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 2)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093420.jpg?updatedAt=1726341672118',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093420.jpg?updatedAt=1726341672118',
-            alt: 'Description for Image 3',
-            title: 'Title 3',
+            itemImageSrc: '/images/works/villa-bdeoui/3.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/3-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 3)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_135045.jpg?updatedAt=1726341670789',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_135045.jpg?updatedAt=1726341670789',
-            alt: 'Description for Image 4',
-            title: 'Title 4',
+            itemImageSrc: '/images/works/villa-bdeoui/4.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/4-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 4)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_101018.jpg?updatedAt=1726341654049',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_101018.jpg?updatedAt=1726341654049',
-            alt: 'Description for Image 5',
-            title: 'Title 5',
+            itemImageSrc: '/images/works/villa-bdeoui/5.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/5-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 5)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_135724.jpg?updatedAt=1726341652856',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_135724.jpg?updatedAt=1726341652856',
-            alt: 'Description for Image 6',
-            title: 'Title 6',
+            itemImageSrc: '/images/works/villa-bdeoui/6.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/6-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 6)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093358.jpg?updatedAt=1726341632940',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093358.jpg?updatedAt=1726341632940',
-            alt: 'Description for Image 6',
-            title: 'Title 6',
+            itemImageSrc: '/images/works/villa-bdeoui/7.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/7-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 7)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093257.jpg?updatedAt=1726341290414',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093257.jpg?updatedAt=1726341290414',
-            alt: 'Description for Image 7',
-            title: 'Title 7',
+            itemImageSrc: '/images/works/villa-bdeoui/8.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/8-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 8)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200131_102814.jpg?updatedAt=1726341197770',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200131_102814.jpg?updatedAt=1726341197770',
-            alt: 'Description for Image 8',
-            title: 'Title 8',
+            itemImageSrc: '/images/works/villa-bdeoui/9.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/9-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 9)',
+            title: 'Villa Bdeoui',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200317_120218.jpg?updatedAt=1726341138589',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200317_120218.jpg?updatedAt=1726341138589',
-            alt: 'Description for Image 9',
-            title: 'Title 9',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200514_133459.jpg?updatedAt=1726340874770',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200514_133459.jpg?updatedAt=1726340874770',
-            alt: 'Description for Image 10',
-            title: 'Title 10',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093225.jpg?updatedAt=1726340833951',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093225.jpg?updatedAt=1726340833951',
-            alt: 'Description for Image 11',
-            title: 'Title 11',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093101.jpg?updatedAt=1726340805986',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_093101.jpg?updatedAt=1726340805986',
-            alt: 'Description for Image 12',
-            title: 'Title 12',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_092950.jpg?updatedAt=1726340754412',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_092950.jpg?updatedAt=1726340754412',
-            alt: 'Description for Image 13',
-            title: 'Title 13',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200129_124204.jpg?updatedAt=1726340750464',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200129_124204.jpg?updatedAt=1726340750464',
-            alt: 'Description for Image 14',
-            title: 'Title 14',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140326.jpg?updatedAt=1726340683415',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_140326.jpg?updatedAt=1726340683415',
-            alt: 'Description for Image 15',
-            title: 'Title 15',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200514_133515.jpg?updatedAt=1726340647378',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200514_133515.jpg?updatedAt=1726340647378',
-            alt: 'Description for Image 16',
-            title: 'Title 16',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_145149.jpg?updatedAt=1726340559064',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa%20bdeoui/20200504_145149.jpg?updatedAt=1726340559064',
-            alt: 'Description for Image 17',
-            title: 'Title 17',
+            itemImageSrc: '/images/works/villa-bdeoui/10.webp',
+            thumbnailImageSrc: '/images/works/villa-bdeoui/10-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa Bdeoui (photo 10)',
+            title: 'Villa Bdeoui',
           },
         ],
       },
       {
-        itemImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0000.jpg?updatedAt=1726339920606',
-        thumbnailImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0000.jpg?updatedAt=1726339920606',
-        alt: 'Description for Image 2',
-        title: 'Title 2',
+        itemImageSrc: '/images/works/villa/1.webp',
+        thumbnailImageSrc: '/images/works/villa/1-thumb.webp',
+        alt: 'Menuiserie aluminium DELTA Solution — Villa',
+        title: 'Villa',
         subImages: [
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0000.jpg?updatedAt=1726339920606',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0000.jpg?updatedAt=1726339920606',
-            alt: 'Description for Image 1',
-            title: 'Title 1',
+            itemImageSrc: '/images/works/villa/1.webp',
+            thumbnailImageSrc: '/images/works/villa/1-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa (photo 1)',
+            title: 'Villa',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0011.jpg?updatedAt=1726339920766',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0011.jpg?updatedAt=1726339920766',
-            alt: 'Description for Image 2',
-            title: 'Title 2',
+            itemImageSrc: '/images/works/villa/2.webp',
+            thumbnailImageSrc: '/images/works/villa/2-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa (photo 2)',
+            title: 'Villa',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0013.jpg?updatedAt=1726339920675',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0013.jpg?updatedAt=1726339920675',
-            alt: 'Description for Image 3',
-            title: 'Title 3',
+            itemImageSrc: '/images/works/villa/3.webp',
+            thumbnailImageSrc: '/images/works/villa/3-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa (photo 3)',
+            title: 'Villa',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0012.jpg?updatedAt=1726339916230',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0012.jpg?updatedAt=1726339916230',
-            alt: 'Description for Image 4',
-            title: 'Title 4',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0003.jpg?updatedAt=1726339911270',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0003.jpg?updatedAt=1726339911270',
-            alt: 'Description for Image 5',
-            title: 'Title 5',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0010.jpg?updatedAt=1726339901288',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0010.jpg?updatedAt=1726339901288',
-            alt: 'Description for Image 6',
-            title: 'Title 6',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0001.jpg?updatedAt=1726339901247',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0001.jpg?updatedAt=1726339901247',
-            alt: 'Description for Image 7',
-            title: 'Title 7',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0007.jpg?updatedAt=1726339895200',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Villa/IMG-20220810-WA0007.jpg?updatedAt=1726339895200',
-            alt: 'Description for Image 8',
-            title: 'Title 8',
+            itemImageSrc: '/images/works/villa/4.webp',
+            thumbnailImageSrc: '/images/works/villa/4-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Villa (photo 4)',
+            title: 'Villa',
           },
         ],
       },
       {
-        itemImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_120430.jpg?updatedAt=1726341168195',
-        thumbnailImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_120430.jpg?updatedAt=1726341168195',
-        alt: 'Description for Image 3',
-        title: 'Title 3',
+        itemImageSrc: '/images/works/residence-turquoise/1.webp',
+        thumbnailImageSrc: '/images/works/residence-turquoise/1-thumb.webp',
+        alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise',
+        title: 'Résidence Turquoise',
         subImages: [
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_120430.jpg?updatedAt=1726341168195',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_120430.jpg?updatedAt=1726341168195',
-            alt: 'Description for Image 1',
-            title: 'Title 1',
+            itemImageSrc: '/images/works/residence-turquoise/1.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/1-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 1)',
+            title: 'Résidence Turquoise',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_121005.jpg?updatedAt=1726341154202',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_121005.jpg?updatedAt=1726341154202',
-            alt: 'Description for Image 2',
-            title: 'Title 2',
+            itemImageSrc: '/images/works/residence-turquoise/2.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/2-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 2)',
+            title: 'Résidence Turquoise',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115552.jpg?updatedAt=1726341122742',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115552.jpg?updatedAt=1726341122742',
-            alt: 'Description for Image 3',
-            title: 'Title 3',
+            itemImageSrc: '/images/works/residence-turquoise/3.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/3-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 3)',
+            title: 'Résidence Turquoise',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115522.jpg?updatedAt=1726341067641',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115522.jpg?updatedAt=1726341067641',
-            alt: 'Description for Image 4',
-            title: 'Title 4',
+            itemImageSrc: '/images/works/residence-turquoise/4.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/4-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 4)',
+            title: 'Résidence Turquoise',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115522.jpg?updatedAt=1726341067641',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115522.jpg?updatedAt=1726341067641',
-            alt: 'Description for Image 5',
-            title: 'Title 5',
+            itemImageSrc: '/images/works/residence-turquoise/5.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/5-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 5)',
+            title: 'Résidence Turquoise',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_121058.jpg?updatedAt=1726341062754',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_121058.jpg?updatedAt=1726341062754',
-            alt: 'Description for Image 6',
-            title: 'Title 6',
+            itemImageSrc: '/images/works/residence-turquoise/6.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/6-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 6)',
+            title: 'Résidence Turquoise',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115824.jpg?updatedAt=1726341044479',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Turquoise/20220510_115824.jpg?updatedAt=1726341044479',
-            alt: 'Description for Image 7',
-            title: 'Title 7',
+            itemImageSrc: '/images/works/residence-turquoise/7.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/7-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 7)',
+            title: 'Résidence Turquoise',
+          },
+          {
+            itemImageSrc: '/images/works/residence-turquoise/8.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/8-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 8)',
+            title: 'Résidence Turquoise',
+          },
+          {
+            itemImageSrc: '/images/works/residence-turquoise/9.webp',
+            thumbnailImageSrc: '/images/works/residence-turquoise/9-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Turquoise (photo 9)',
+            title: 'Résidence Turquoise',
           },
         ],
       },
       {
-        itemImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210106_133939.jpg?updatedAt=1726340962652',
-        thumbnailImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210106_133939.jpg?updatedAt=1726340962652',
-        alt: 'Description for Image 4',
-        title: 'Title 4',
+        itemImageSrc: '/images/works/residence-nozha/1.webp',
+        thumbnailImageSrc: '/images/works/residence-nozha/1-thumb.webp',
+        alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha',
+        title: 'Résidence Nozha',
         subImages: [
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210106_133939.jpg?updatedAt=1726340962652',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210106_133939.jpg?updatedAt=1726340962652',
-            alt: 'Description for Image 1',
-            title: 'Title 1',
+            itemImageSrc: '/images/works/residence-nozha/1.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/1-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 1)',
+            title: 'Résidence Nozha',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210806_122131.jpg?updatedAt=1726340934201',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210806_122131.jpg?updatedAt=1726340934201',
-            alt: 'Description for Image 2',
-            title: 'Title 2',
+            itemImageSrc: '/images/works/residence-nozha/2.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/2-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 2)',
+            title: 'Résidence Nozha',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210806_122148.jpg?updatedAt=1726340861529',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210806_122148.jpg?updatedAt=1726340861529',
-            alt: 'Description for Image 3',
-            title: 'Title 3',
+            itemImageSrc: '/images/works/residence-nozha/3.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/3-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 3)',
+            title: 'Résidence Nozha',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210120_114141.jpg?updatedAt=1726340654381',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210120_114141.jpg?updatedAt=1726340654381',
-            alt: 'Description for Image 4',
-            title: 'Title 4',
+            itemImageSrc: '/images/works/residence-nozha/4.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/4-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 4)',
+            title: 'Résidence Nozha',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210106_135434.jpg?updatedAt=1726340649989',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/R%C3%A9sidence%20Nozha/20210106_135434.jpg?updatedAt=1726340649989',
-            alt: 'Description for Image 5',
-            title: 'Title 5',
+            itemImageSrc: '/images/works/residence-nozha/5.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/5-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 5)',
+            title: 'Résidence Nozha',
+          },
+          {
+            itemImageSrc: '/images/works/residence-nozha/6.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/6-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 6)',
+            title: 'Résidence Nozha',
+          },
+          {
+            itemImageSrc: '/images/works/residence-nozha/7.webp',
+            thumbnailImageSrc: '/images/works/residence-nozha/7-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Résidence Nozha (photo 7)',
+            title: 'Résidence Nozha',
           },
         ],
       },
       {
-        itemImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20201006_160905.jpg?updatedAt=1727532895557',
-        thumbnailImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20201006_160905.jpg?updatedAt=1727532895557',
-        alt: 'Description for Image 4',
-        title: 'Title 4',
+        itemImageSrc: '/images/works/miss-fitness/1.webp',
+        thumbnailImageSrc: '/images/works/miss-fitness/1-thumb.webp',
+        alt: 'Menuiserie aluminium DELTA Solution — Miss Fitness',
+        title: 'Miss Fitness',
         subImages: [
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20201006_160905.jpg?updatedAt=1727532895557',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20201006_160905.jpg?updatedAt=1727532895557',
-            alt: 'Description for Image 1',
-            title: 'Title 1',
+            itemImageSrc: '/images/works/miss-fitness/1.webp',
+            thumbnailImageSrc: '/images/works/miss-fitness/1-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Miss Fitness (photo 1)',
+            title: 'Miss Fitness',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20200912_143815.jpg?updatedAt=1727532891414',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20200912_143815.jpg?updatedAt=1727532891414',
-            alt: 'Description for Image 2',
-            title: 'Title 2',
+            itemImageSrc: '/images/works/miss-fitness/2.webp',
+            thumbnailImageSrc: '/images/works/miss-fitness/2-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Miss Fitness (photo 2)',
+            title: 'Miss Fitness',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20201006_160923.jpg?updatedAt=1727532890976',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20201006_160923.jpg?updatedAt=1727532890976',
-            alt: 'Description for Image 3',
-            title: 'Title 3',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20200912_143859.jpg?updatedAt=1727532879551',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20200912_143859.jpg?updatedAt=1727532879551',
-            alt: 'Description for Image 4',
-            title: 'Title 4',
-          },
-          {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20200912_103200.jpg?updatedAt=1727532876933',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/MissFitness/20200912_103200.jpg?updatedAt=1727532876933',
-            alt: 'Description for Image 5',
-            title: 'Title 5',
+            itemImageSrc: '/images/works/miss-fitness/3.webp',
+            thumbnailImageSrc: '/images/works/miss-fitness/3-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Miss Fitness (photo 3)',
+            title: 'Miss Fitness',
           },
         ],
       },
       {
-        itemImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131609.jpg?updatedAt=1727532887481',
-        thumbnailImageSrc:
-          'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131609.jpg?updatedAt=1727532887481',
-        alt: 'Description for Image 4',
-        title: 'Title 4',
+        itemImageSrc: '/images/works/preface/1.webp',
+        thumbnailImageSrc: '/images/works/preface/1-thumb.webp',
+        alt: 'Menuiserie aluminium DELTA Solution — Préface',
+        title: 'Préface',
         subImages: [
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131609.jpg?updatedAt=1727532887481',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131609.jpg?updatedAt=1727532887481',
-            alt: 'Description for Image 1',
-            title: 'Title 1',
+            itemImageSrc: '/images/works/preface/1.webp',
+            thumbnailImageSrc: '/images/works/preface/1-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 1)',
+            title: 'Préface',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131605.jpg?updatedAt=1727532871856',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131605.jpg?updatedAt=1727532871856',
-            alt: 'Description for Image 2',
-            title: 'Title 2',
+            itemImageSrc: '/images/works/preface/2.webp',
+            thumbnailImageSrc: '/images/works/preface/2-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 2)',
+            title: 'Préface',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131510.jpg?updatedAt=1727532866006',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_131510.jpg?updatedAt=1727532866006',
-            alt: 'Description for Image 3',
-            title: 'Title 3',
+            itemImageSrc: '/images/works/preface/3.webp',
+            thumbnailImageSrc: '/images/works/preface/3-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 3)',
+            title: 'Préface',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_142429.jpg?updatedAt=1727532860378',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_142429.jpg?updatedAt=1727532860378',
-            alt: 'Description for Image 4',
-            title: 'Title 4',
+            itemImageSrc: '/images/works/preface/4.webp',
+            thumbnailImageSrc: '/images/works/preface/4-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 4)',
+            title: 'Préface',
           },
           {
-            itemImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_142419.jpg?updatedAt=1727532855213',
-            thumbnailImageSrc:
-              'https://ik.imagekit.io/deltaSolution/images/works/Pr%C3%A9face/20200910_142419.jpg?updatedAt=1727532855213',
-            alt: 'Description for Image 5',
-            title: 'Title 5',
+            itemImageSrc: '/images/works/preface/5.webp',
+            thumbnailImageSrc: '/images/works/preface/5-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 5)',
+            title: 'Préface',
+          },
+          {
+            itemImageSrc: '/images/works/preface/6.webp',
+            thumbnailImageSrc: '/images/works/preface/6-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 6)',
+            title: 'Préface',
+          },
+          {
+            itemImageSrc: '/images/works/preface/7.webp',
+            thumbnailImageSrc: '/images/works/preface/7-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 7)',
+            title: 'Préface',
+          },
+          {
+            itemImageSrc: '/images/works/preface/8.webp',
+            thumbnailImageSrc: '/images/works/preface/8-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 8)',
+            title: 'Préface',
+          },
+          {
+            itemImageSrc: '/images/works/preface/9.webp',
+            thumbnailImageSrc: '/images/works/preface/9-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 9)',
+            title: 'Préface',
+          },
+          {
+            itemImageSrc: '/images/works/preface/10.webp',
+            thumbnailImageSrc: '/images/works/preface/10-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 10)',
+            title: 'Préface',
+          },
+          {
+            itemImageSrc: '/images/works/preface/11.webp',
+            thumbnailImageSrc: '/images/works/preface/11-thumb.webp',
+            alt: 'Menuiserie aluminium DELTA Solution — Préface (photo 11)',
+            title: 'Préface',
           },
         ],
       },
