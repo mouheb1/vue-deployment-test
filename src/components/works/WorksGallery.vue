@@ -124,7 +124,7 @@ const onItemClick = () => {
     :value="images"
     :num-visible="5"
     :container-style="fullScreen
-      ? 'position: fixed; inset: 0; z-index: 9999; width: 100vw; height: 100vh; max-width: none; margin: 0; background: #000;'
+      ? 'position: fixed; inset: 0; z-index: 1000000; width: 100vw; height: 100vh; max-width: none; margin: 0; background: #000;'
       : 'width: 100%; max-width: 640px; margin: 0 auto;'"
     :show-thumbnails="fullScreen"
     :show-item-navigators="fullScreen"
