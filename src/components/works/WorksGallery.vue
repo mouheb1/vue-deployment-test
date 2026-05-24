@@ -124,7 +124,10 @@ const hoveredStates = ref(props.images.map(() => false))
           class="cursor-pointer object-cover"
           :class="[!fullScreen ? 'h-80 w-100' : 'max-w-[1200px] max-h-[1000px]']"
         />
-        <div class="absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center bg-black bg-opacity-40">
+        <div
+          class="absolute left-0 top-0 h-full w-full flex cursor-pointer items-center justify-center transition-colors duration-200"
+          :class="[hoveredStates[slotProps.index] && !fullScreen ? 'bg-black bg-opacity-20' : 'bg-opacity-0']"
+        >
           <i
             v-if="hoveredStates[slotProps.index] && !fullScreen"
             class="pi pi-eye cursor-pointer color-white"
