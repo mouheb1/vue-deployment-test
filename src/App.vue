@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import {
-  DEFAULT_OG_IMAGE,
   SITE_NAME,
   canonicalUrl,
+  getOgImage,
   getSeo,
   localBusinessJsonLd,
 } from '@/composables/useSeo'
@@ -13,6 +13,7 @@ import {
 const route = useRoute()
 const seo = computed(() => getSeo(route.path))
 const canonical = computed(() => canonicalUrl(route.path))
+const ogImage = computed(() => getOgImage(route.path))
 
 useHead({
   title: () => seo.value.title,
@@ -29,12 +30,12 @@ useHead({
     { property: 'og:title', content: () => seo.value.title },
     { property: 'og:description', content: () => seo.value.description },
     { property: 'og:url', content: () => canonical.value },
-    { property: 'og:image', content: DEFAULT_OG_IMAGE },
+    { property: 'og:image', content: () => ogImage.value },
     // Twitter
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: () => seo.value.title },
     { name: 'twitter:description', content: () => seo.value.description },
-    { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
+    { name: 'twitter:image', content: () => ogImage.value },
   ],
   link: [
     { rel: 'icon', type: 'image/svg+xml', href: '/favicon.ico' },

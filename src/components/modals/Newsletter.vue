@@ -88,17 +88,17 @@ const handleDialogHide = () => {
       </div>
 
       <div v-if="showSuccess">
-        <h1
+        <h2
           class="animate-text"
         >
           {{ newsletter.successMessage }}
-        </h1>
+        </h2>
         />
       </div>
       <div v-else style="padding: 12px 18px">
-        <h1 style="font-size: 30px; font-style: italic">
+        <h2 style="font-size: 30px; font-style: italic">
           {{ newsletter.form.title }}
-        </h1>
+        </h2>
         <h3 v-if="width > 959" style="font-size: 19px; font-weight: 400">
           {{ newsletter.form.description }}
         </h3>

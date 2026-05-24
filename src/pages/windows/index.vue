@@ -22,11 +22,11 @@ const vIntersectionObserver = {
   <div
     class="relative top-0 h-75 bg-cover bg-center bg-no-repeat bg-windows-image before:absolute before:inset-0 md:h-125 before:bg-black before:opacity-40 before:content-['']"
   >
-    <div
+    <h1
       class="relative top-40 mx-10 text-4xl text-white font-extrabold leading-17 text-shadow-lg -left-1 md:top-70 sm:top-50 md:mx-30 lg:text-5xl lg:leading-20"
     >
       {{ product.name }}
-    </div>
+    </h1>
   </div>
   <div
     class="style1 font-poppins mb-14 border-b-2 border-gray-200 border-solid"

@@ -9,13 +9,13 @@ const productVariation = product.variations.find(pergola => pergola.link === rou
 
 <template>
   <pageContainer :show-breadcrumb="true">
-    <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
+    <h1 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
       {{ productVariation?.name }}
-    </h2>
+    </h1>
     <div class="grid grid-cols-1 md:flex md:justify-center md:gap-x-20">
       <Image
         :src="`${general.imageProviderBaseUrl}${productVariation?.image}`"
-        alt=""
+        :alt="productVariation?.name"
         height="700"
         width="700"
         layout="constrained"
