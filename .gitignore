@@ -35,6 +35,9 @@ package-lock.json
 # Ignore TypeScript build info
 *.tsbuildinfo
 
+# Ignore local AI assistant instructions
+CLAUDE.md
+
 # Ignore editor directories and files
 .idea
 .vscode
