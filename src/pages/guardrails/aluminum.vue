@@ -9,9 +9,9 @@ const productVariation = product.variations.find(variation => variation.link ===
 
 <template>
   <pageContainer :show-breadcrumb="true">
-    <h2 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
+    <h1 class="mx-auto mb-10 text-4xl text-[#112337] font-extrabold md:mb-30 md:text-7xl">
       {{ productVariation?.name }}
-    </h2>
+    </h1>
     <div class="grid grid-cols-1 md:flex md:justify-center md:gap-x-10">
       <!-- <product3dHover
         :canvas-images-path="`${general.imageProviderBaseUrl}${product.scrollingImagesPath}`"

@@ -166,7 +166,7 @@ export default defineConfig({
     },
     onFinished() {
       generateSitemap({
-        hostname: 'https://www.ste-deltasolution.com/',
+        hostname: 'https://ste-deltasolution.com/',
       })
     },
   },

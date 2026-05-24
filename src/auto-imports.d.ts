@@ -7,6 +7,7 @@ export {}
 declare global {
   const DEFAULT_OG_IMAGE: typeof import('./composables/useSeo')['DEFAULT_OG_IMAGE']
   const EffectScope: typeof import('vue')['EffectScope']
+  const LOGO_URL: typeof import('./composables/useSeo')['LOGO_URL']
   const SITE_NAME: typeof import('./composables/useSeo')['SITE_NAME']
   const SITE_URL: typeof import('./composables/useSeo')['SITE_URL']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
@@ -40,6 +41,7 @@ declare global {
   const extendRef: typeof import('@vueuse/core')['extendRef']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getOgImage: typeof import('./composables/useSeo')['getOgImage']
   const getSeo: typeof import('./composables/useSeo')['getSeo']
   const h: typeof import('vue')['h']
   const hideNewsletter: typeof import('./stores/global')['hideNewsletter']
@@ -320,6 +322,7 @@ declare module 'vue' {
   interface ComponentCustomProperties {
     readonly DEFAULT_OG_IMAGE: UnwrapRef<typeof import('./composables/useSeo')['DEFAULT_OG_IMAGE']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly LOGO_URL: UnwrapRef<typeof import('./composables/useSeo')['LOGO_URL']>
     readonly SITE_NAME: UnwrapRef<typeof import('./composables/useSeo')['SITE_NAME']>
     readonly SITE_URL: UnwrapRef<typeof import('./composables/useSeo')['SITE_URL']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -352,6 +355,7 @@ declare module 'vue' {
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getOgImage: UnwrapRef<typeof import('./composables/useSeo')['getOgImage']>
     readonly getSeo: UnwrapRef<typeof import('./composables/useSeo')['getSeo']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly hideNewsletterUntil: UnwrapRef<typeof import('./stores/global')['hideNewsletterUntil']>
@@ -621,6 +625,7 @@ declare module '@vue/runtime-core' {
   interface ComponentCustomProperties {
     readonly DEFAULT_OG_IMAGE: UnwrapRef<typeof import('./composables/useSeo')['DEFAULT_OG_IMAGE']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly LOGO_URL: UnwrapRef<typeof import('./composables/useSeo')['LOGO_URL']>
     readonly SITE_NAME: UnwrapRef<typeof import('./composables/useSeo')['SITE_NAME']>
     readonly SITE_URL: UnwrapRef<typeof import('./composables/useSeo')['SITE_URL']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
@@ -653,6 +658,7 @@ declare module '@vue/runtime-core' {
     readonly extendRef: UnwrapRef<typeof import('@vueuse/core')['extendRef']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getOgImage: UnwrapRef<typeof import('./composables/useSeo')['getOgImage']>
     readonly getSeo: UnwrapRef<typeof import('./composables/useSeo')['getSeo']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly hideNewsletterUntil: UnwrapRef<typeof import('./stores/global')['hideNewsletterUntil']>

@@ -1,13 +1,18 @@
 import config from '@/assets/json/config.json'
 
 // Canonical origin for the production site (no trailing slash).
-export const SITE_URL = 'https://www.ste-deltasolution.com'
+export const SITE_URL = 'https://ste-deltasolution.com'
 export const SITE_NAME = 'DELTA Solution'
-export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/logo.png`
+// Brand logo (used for structured-data logo).
+export const LOGO_URL = `${SITE_URL}/images/logo.png`
+// Default social-share image: a real project photo reads better than a logo.
+export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/gallery/image-1.jpg`
 
 interface SeoEntry {
   title: string
   description: string
+  // Optional per-route share image (root-relative path under /public).
+  image?: string
 }
 
 const BRAND = 'DELTA Solution'
@@ -184,24 +189,29 @@ export const seoMap: Record<string, SeoEntry> = {
   '/pergolas': {
     title: `Pergolas Aluminium & Bioclimatiques | ${BRAND}`,
     description: 'Pergolas en aluminium, à toile et bioclimatiques pour profiter de votre extérieur toute l\'année. Sur mesure par DELTA Solution, Tunisie.',
+    image: '/images/pergolas/pergolas-cover.png',
   },
   '/pergolas/aluminum': {
     title: `Pergola en Aluminium sur mesure | ${BRAND}`,
     description: 'Pergola en aluminium sur mesure : structure durable et design pour terrasse et jardin. Par DELTA Solution en Tunisie.',
+    image: '/images/pergolas/pergolas-alu.jpg',
   },
   '/pergolas/pvc': {
     title: `Pergola à Toile sur mesure | ${BRAND}`,
     description: 'Pergola à toile rétractable pour un ombrage modulable sur votre terrasse. Sur mesure par DELTA Solution, Tunisie.',
+    image: '/images/pergolas/pergolas-canvas.webp',
   },
   '/pergolas/bioclimatic': {
     title: `Pergola Bioclimatique sur mesure | ${BRAND}`,
     description: 'Pergola bioclimatique à lames orientables pour réguler soleil et ventilation. Confort extérieur signé DELTA Solution, Tunisie.',
+    image: '/images/pergolas/pergolas-bioclimatique.png',
   },
 
   // Réalisations & contact
   '/works': {
     title: `Nos Réalisations — Menuiserie Aluminium | ${BRAND}`,
     description: 'Découvrez nos réalisations de menuiserie aluminium en Tunisie : villas, résidences et projets sur mesure réalisés par DELTA Solution.',
+    image: '/images/works/villa-bdeoui/1.webp',
   },
   '/contact': {
     title: `Contact & Devis Gratuit | ${BRAND}`,
@@ -222,6 +232,11 @@ export function canonicalUrl(path: string): string {
   return path === '/' ? `${SITE_URL}/` : `${SITE_URL}${path}`
 }
 
+export function getOgImage(path: string): string {
+  const image = seoMap[path]?.image
+  return image ? `${SITE_URL}${image}` : DEFAULT_OG_IMAGE
+}
+
 // LocalBusiness structured data so Google can surface the business in local
 // results / knowledge panel. Sourced from the site config.
 export function localBusinessJsonLd() {
@@ -231,7 +246,7 @@ export function localBusinessJsonLd() {
     '@id': `${SITE_URL}/#business`,
     'name': SITE_NAME,
     'image': DEFAULT_OG_IMAGE,
-    'logo': DEFAULT_OG_IMAGE,
+    'logo': LOGO_URL,
     'url': SITE_URL,
     'telephone': config.contact.phone.replace(/\s/g, ''),
     'email': config.contact.email,

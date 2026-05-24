@@ -48,11 +48,11 @@ const vIntersectionObserver = {
             <div class="mb-3 text-sm text-white tracking-[0.5em] uppercase">
               {{ headlines.up }}
             </div>
-            <div
+            <h1
               class="text-5xl text-white font-bold leading-17 lg:text-6xl lg:leading-20"
             >
               {{ headlines.down }}
-            </div>
+            </h1>
           </div>
           <scrollDown />
         </template>

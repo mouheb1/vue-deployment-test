@@ -86,9 +86,9 @@ const sendMail = async () => {
     class="relative top-0 h-150 bg-cover bg-center bg-no-repeat bg-contact-image before:absolute before:inset-0 before:bg-black before:opacity-40 before:content-['']"
   />
   <div class="absolute mx-3.5 mt-68 max-w-[95%] w-[95%] pb-20 md:mx-7">
-    <div class="text-left text-[3em] text-white font-extrabold">
-      Contact Delta Solution
-    </div>
+    <h1 class="text-left text-[3em] text-white font-extrabold">
+      Contact DELTA Solution
+    </h1>
     <div class="mb-5 text-left text-2xl text-white font-normal tracking-[0.01em] uppercase">
       CONTACTEZ-NOUS
     </div>
