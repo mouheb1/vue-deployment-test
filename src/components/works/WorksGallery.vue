@@ -11,6 +11,9 @@ const props = defineProps({
 const galleria = ref()
 const activeIndex = ref(0)
 const showThumbnails = ref(false)
+// CSS-based lightbox flag. The browser Fullscreen API is unreliable on
+// iOS Safari (iPhone has no support outside <video>), so we render our
+// own modal overlay and control open/close ourselves.
 const fullScreen = ref(false)
 
 const onThumbnailButtonClick = () => {
@@ -28,12 +31,8 @@ const responsiveOptions = ref([
   },
 ])
 
-const onFullScreenChange = () => {
-  fullScreen.value = !fullScreen.value
-}
-
 // Preload the full-resolution images once so navigating between them in
-// fullscreen is instant instead of lagging behind the thumbnail strip.
+// the lightbox is instant instead of lagging behind the thumbnail strip.
 const fullImagesPreloaded = ref(false)
 const preloadFullImages = () => {
   if (fullImagesPreloaded.value || typeof window === 'undefined')
@@ -45,55 +44,77 @@ const preloadFullImages = () => {
   })
 }
 
-const openFullScreen = () => {
-  preloadFullImages()
-  const elem = galleria.value.$el
-
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen()
-  }
-  else if (elem.mozRequestFullScreen) {
-    /* Firefox */
-    elem.mozRequestFullScreen()
-  }
-  else if (elem.webkitRequestFullscreen) {
-    /* Chrome, Safari & Opera */
-    elem.webkitRequestFullscreen()
-  }
-  else if (elem.msRequestFullscreen) {
-    /* IE/Edge */
-    elem.msRequestFullscreen()
-  }
-}
-const closeFullScreen = () => {
-  if (document.exitFullscreen)
-    document.exitFullscreen()
-  else if (document.mozCancelFullScreen)
-    document.mozCancelFullScreen()
-  else if (document.webkitExitFullscreen)
-    document.webkitExitFullscreen()
-  else if (document.msExitFullscreen)
-    document.msExitFullscreen()
-}
-const bindDocumentListeners = () => {
-  document.addEventListener('fullscreenchange', onFullScreenChange)
-  document.addEventListener('mozfullscreenchange', onFullScreenChange)
-  document.addEventListener('webkitfullscreenchange', onFullScreenChange)
-  document.addEventListener('msfullscreenchange', onFullScreenChange)
-}
-
 const toggleFullScreen = () => {
-  if (fullScreen.value)
-    closeFullScreen()
-  else openFullScreen()
+  if (!fullScreen.value)
+    preloadFullImages()
+  fullScreen.value = !fullScreen.value
 }
+
+const onKeyDown = (e: KeyboardEvent) => {
+  if (e.key === 'Escape' && fullScreen.value)
+    fullScreen.value = false
+}
+
+watch(fullScreen, (isOpen) => {
+  if (typeof document === 'undefined')
+    return
+  document.body.style.overflow = isOpen ? 'hidden' : ''
+})
 
 onMounted(() => {
-  bindDocumentListeners()
+  document.addEventListener('keydown', onKeyDown)
+})
+
+onUnmounted(() => {
+  if (typeof document === 'undefined')
+    return
+  document.removeEventListener('keydown', onKeyDown)
+  document.body.style.overflow = ''
 })
 
 // Create a reactive array to store hover states for each image
 const hoveredStates = ref(props.images.map(() => false))
+
+// Native touch-swipe: track start X, on end decide next/prev/no-op.
+const SWIPE_THRESHOLD = 40
+const touchStartX = ref<number | null>(null)
+const touchStartY = ref<number | null>(null)
+const swipeJustHandled = ref(false)
+
+const onTouchStart = (e: TouchEvent) => {
+  const t = e.touches[0]
+  touchStartX.value = t.clientX
+  touchStartY.value = t.clientY
+}
+
+const onTouchEnd = (e: TouchEvent) => {
+  if (touchStartX.value == null || touchStartY.value == null)
+    return
+  const t = e.changedTouches[0]
+  const dx = t.clientX - touchStartX.value
+  const dy = t.clientY - touchStartY.value
+  touchStartX.value = null
+  touchStartY.value = null
+  if (Math.abs(dx) < SWIPE_THRESHOLD || Math.abs(dx) <= Math.abs(dy))
+    return
+  const total = props.images.length
+  if (total < 2)
+    return
+  // Suppress the synthetic click that follows a swipe so we don't also
+  // toggle the lightbox while paging through images.
+  swipeJustHandled.value = true
+  setTimeout(() => (swipeJustHandled.value = false), 350)
+  if (dx < 0)
+    activeIndex.value = (activeIndex.value + 1) % total
+  else
+    activeIndex.value = (activeIndex.value - 1 + total) % total
+}
+
+const onItemClick = () => {
+  if (swipeJustHandled.value)
+    return
+  toggleFullScreen()
+}
 </script>
 
 <template>
@@ -102,7 +123,9 @@ const hoveredStates = ref(props.images.map(() => false))
     v-model:activeIndex="activeIndex"
     :value="images"
     :num-visible="5"
-    container-style="width: 100%; max-width: 640px; margin: 0 auto;"
+    :container-style="fullScreen
+      ? 'position: fixed; inset: 0; z-index: 9999; width: 100vw; height: 100vh; max-width: none; margin: 0; background: #000;'
+      : 'width: 100%; max-width: 640px; margin: 0 auto;'"
     :show-thumbnails="fullScreen"
     :show-item-navigators="fullScreen"
     :show-item-navigators-on-hover="false"
@@ -118,13 +141,25 @@ const hoveredStates = ref(props.images.map(() => false))
       thumbnailwrapper: 'absolute w-full left-0 bottom-0',
     }"
   >
+    <template v-if="fullScreen" #header>
+      <button
+        type="button"
+        aria-label="Fermer"
+        class="absolute right-3 top-3 z-10 h-11 w-11 flex items-center justify-center rounded-full bg-black bg-opacity-60 text-white transition-colors hover:bg-opacity-80"
+        @click.stop="toggleFullScreen"
+      >
+        <i class="pi pi-times" style="font-size: 1.25rem" />
+      </button>
+    </template>
     <template #item="slotProps">
       <div
-        class="group relative block w-full overflow-hidden"
+        class="group relative block w-full touch-pan-y select-none overflow-hidden"
         :class="[!fullScreen ? 'aspect-4/3 sm:aspect-5/4' : 'h-full w-full flex items-center justify-center']"
         @mouseover="hoveredStates[slotProps.index] = true"
         @mouseout="hoveredStates[slotProps.index] = false"
-        @click="toggleFullScreen"
+        @click="onItemClick"
+        @touchstart.passive="onTouchStart"
+        @touchend="onTouchEnd"
       >
         <Image
           :src="`${slotProps.item.itemImageSrc}`"
