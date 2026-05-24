@@ -32,7 +32,21 @@ const onFullScreenChange = () => {
   fullScreen.value = !fullScreen.value
 }
 
+// Preload the full-resolution images once so navigating between them in
+// fullscreen is instant instead of lagging behind the thumbnail strip.
+const fullImagesPreloaded = ref(false)
+const preloadFullImages = () => {
+  if (fullImagesPreloaded.value || typeof window === 'undefined')
+    return
+  fullImagesPreloaded.value = true
+  props.images.forEach((img: any) => {
+    const preloader = new window.Image()
+    preloader.src = img.itemImageSrc
+  })
+}
+
 const openFullScreen = () => {
+  preloadFullImages()
   const elem = galleria.value.$el
 
   if (elem.requestFullscreen) {
@@ -115,6 +129,7 @@ const hoveredStates = ref(props.images.map(() => false))
         <Image
           :src="`${slotProps.item.itemImageSrc}`"
           :alt="slotProps.item.alt"
+          priority
           :style="[
             {
               width: !fullScreen ? '100%' : '',
